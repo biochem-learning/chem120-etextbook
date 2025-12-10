@@ -182,11 +182,18 @@
                                         let imgContent = document.createElement("img");
                                         
                                         imgContent.setAttribute("src", value[i]["src"]);
+
+                                        imgContent.style.display = "block";
+                                        imgContent.style.margin = "0 auto";
+
                                         pageEl.appendChild(imgContent);
                                         
                                         break;
                                     case "video":
                                         let vidContainer = document.createElement("video");
+
+                                        vidContainer.style.display = "block";
+                                        vidContainer.style.margin = "0 auto";
 
                                         let vidSrc = document.createElement("source");
                                         

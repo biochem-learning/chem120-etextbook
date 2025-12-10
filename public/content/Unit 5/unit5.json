@@ -54,6 +54,20 @@
     {
       "type": "text",
       "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "image",
+      "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/test.jpg",
+      "alt": "cat"
+    },
+    {
+      "type": "video",
+      "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%205/cat.mp4",
+      "title": "cat vid"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
     }
   ]
 }
