@@ -103,6 +103,8 @@
     import unit8 from '/public/content/Unit 8/unit8.json';
     import unit9 from '/public/content/Unit 9/unit9.json';
     import unit10 from '/public/content/Unit 10/unit10.json';
+    import unit11 from '/public/content/Unit 11/unit11.json';
+    import unit12 from '/public/content/Unit 12/unit12.json';
 
     export default {
         props: ["btnText"],
@@ -116,7 +118,9 @@
                     unit7,
                     unit8,
                     unit9,
-                    unit10
+                    unit10,
+                    unit11,
+                    unit12
                 },
                 selectedUnit: this.btnText,
 

@@ -26,8 +26,8 @@
                 <div class="section-title" href="#" @click="openSubMenu('dropdown-content3')">Section 2</div>
                 <div class="dropdown-content" id="dropdown-content3">
                   <ul style="list-style-type: none; padding: 0;">
-                    <li><router-link to="/">Unit 11.</router-link></li>
-                    <li><router-link to="/">Unit 12. </router-link></li>
+                    <li @click="selectUnit('unit11')"><router-link to="/unit4">Unit 11. </router-link></li>
+                    <li @click="selectUnit('unit12')"><router-link to="/unit4">Unit 12. </router-link></li>
                     <li><router-link to="/">Unit 13. </router-link></li>
                     <li><router-link to="/">Unit 14.</router-link></li>
                     <li><router-link to="/">Unit 15.</router-link></li>
