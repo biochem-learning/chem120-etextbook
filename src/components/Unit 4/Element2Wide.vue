@@ -75,7 +75,6 @@
                     </p>
                 </div>
                 -->
-                <canvas id="id"></canvas>
             </div> 
 
             <div class="progress-container">
@@ -188,15 +187,45 @@
                                     switch (value[i][innerKey]) {
                                         
                                         case "text": {
-                                            let content = document.createElement("p");
-                                            content.textContent = value[i]["content"];
+                                            const p = document.createElement("p");
 
+                                            p.textContent = value[i]["content"];
+                                            
+                                            const format = value[i]["format"] || "normal";
+
+                                            if (format !== "normal") {
+                                                switch (format) {
+                                                    case "bold":
+                                                        p.style.fontWeight = "700";
+                                                        break;
+
+                                                    case "italic":
+                                                        p.style.fontStyle = "italic";
+                                                        break;
+
+                                                    case "underline":
+                                                        p.style.textDecoration = "underline";
+                                                        break;
+
+                                                    case "bold-italic":
+                                                        p.style.fontWeight = "700";
+                                                        p.style.fontStyle = "italic";
+                                                        break;
+
+                                                    case "code":
+                                                        p.style.fontFamily = "monospace";
+                                                        p.style.background = "#f5f5f5";
+                                                        p.style.padding = "0.25em 0.4em";
+                                                        p.style.borderRadius = "4px";
+                                                        break;
+                                                }
+                                            }
                                             if (value[i]["border"] === "true") {
-                                                content.style.border = "1px solid #ccc";
-                                                content.style.padding = "8px";
+                                                p.style.border = "1px solid black";
+                                                p.style.padding = "8px";
                                             }
 
-                                            pageEl.appendChild(content);
+                                            pageEl.appendChild(p);
                                             break;
                                         }
 
@@ -669,8 +698,6 @@
         }
     };
 </script>
-
-<!-- <style scoped src="public/libraries/chemdoodle/ChemDoodleWeb.css"></style> -->
 
 <style>
 .title {

@@ -20,12 +20,24 @@
             "width": "0.9"
         },
         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+        },
+        {
             "type": "list",
             "content": [
                 "Item 1",
                 "Item 2",
                 "Item 3"
             ]
+        },
+        {
+            "type": "text",
+            "format": "italic",
+            "border": "true",
+            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
         },
         {
             "type": "bullet-list",
