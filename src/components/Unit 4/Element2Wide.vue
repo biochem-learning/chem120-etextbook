@@ -75,6 +75,7 @@
                     </p>
                 </div>
                 -->
+                <canvas id="id"></canvas>
             </div> 
 
             <div class="progress-container">
@@ -138,9 +139,6 @@
             title() {
                 return this.units[this.selectedUnit]?.title || 'Default Title';
             },
-            introduction() {
-                return this.units[this.selectedUnit]?.introduction || 'Default Intro';
-            },
             items() {
                 return this.units[this.selectedUnit]?.items || [];
             },
@@ -150,6 +148,10 @@
         },
 
         mounted() {
+            // const script = document.createElement("script");
+            // script.src ='public/libraries/chemdoodle/ChemDoodleWeb.js';
+            // document.body.appendChild(script);
+            
             let pageDiv = document.createElement("div");
             pageDiv.setAttribute("id", "1");
             pageDiv.setAttribute("class", "page");
@@ -176,47 +178,258 @@
 
                         if (typeof value[i] === "object" && value !== null) {
                         // Loop through object values
-                            for (const innerKey in value[i]) {
-                                // console.log(`  ${innerKey}: ${value[i][innerKey]}`);
+                            if (typeof value[i] === "object" && value[i] !== null) {
 
-                                //handle accordingly according to type of content
-                                switch (value[i][innerKey]) {
-                                    case "text":
-                                        let content = document.createElement("p");
-                                        content.textContent = value[i]["content"];
-                                        pageEl.appendChild(content);
-                                        break;
-                                    case "image":
-                                        let imgContent = document.createElement("img");
+                                for (const innerKey in value[i]) {
+
+                                    // Only react to the "type" field
+                                    if (innerKey !== "type") continue;
+
+                                    switch (value[i][innerKey]) {
                                         
-                                        imgContent.setAttribute("src", value[i]["src"]);
+                                        case "text": {
+                                            let content = document.createElement("p");
+                                            content.textContent = value[i]["content"];
 
-                                        imgContent.style.display = "block";
-                                        imgContent.style.margin = "0 auto";
+                                            if (value[i]["border"] === "true") {
+                                                content.style.border = "1px solid #ccc";
+                                                content.style.padding = "8px";
+                                            }
 
-                                        pageEl.appendChild(imgContent);
-                                        
-                                        break;
-                                    case "video":
-                                        let vidContainer = document.createElement("video");
+                                            pageEl.appendChild(content);
+                                            break;
+                                        }
 
-                                        vidContainer.style.display = "block";
-                                        vidContainer.style.margin = "0 auto";
+                                        case "image": {
+                                            /// Zoom in when clicked
+                                            let imgContent = document.createElement("img");
+                                            imgContent.src = value[i]["src"];
+                                            imgContent.alt = value[i]["alt"] || "";
 
-                                        let vidSrc = document.createElement("source");
-                                        
-                                        vidSrc.setAttribute("src", value[i]["src"]);
-                                        vidSrc.setAttribute("type", "video/mp4")
-                                        vidContainer.setAttribute("controls", "true");
+                                            if (value[i]["width"]) {
+                                                imgContent.style.width = `${Number(value[i]["width"]) * 100}%`;
+                                            }
 
-                                        vidContainer.appendChild(vidSrc)
-                                        pageEl.appendChild(vidContainer);
-                                        
-                                        break;
+                                            imgContent.style.display = "block";
+                                            imgContent.style.margin = "0 auto";
+
+                                            pageEl.appendChild(imgContent);
+                                            break;
+                                        }
+
+                                        case "video": {
+                                            let video = document.createElement("video");
+
+                                            video.src = value[i]["src"];
+                                            video.controls = true;
+
+                                            if (value[i]["title"]) {
+                                                video.title = value[i]["title"];
+                                            }
+
+                                            if (value[i]["width"]) {
+                                                video.style.width = `${Number(value[i]["width"]) * 100}%`;
+                                            }
+
+                                            video.style.display = "block";
+                                            video.style.margin = "0 auto";
+
+                                            pageEl.appendChild(video);
+                                            break;
+                                            }
+
+                                        case "list": {
+                                            let ul = document.createElement("ul");
+
+                                            value[i]["content"].forEach(item => {
+                                                let li = document.createElement("li");
+                                                li.textContent = item;
+                                                ul.appendChild(li);
+                                            });
+
+                                            pageEl.appendChild(ul);
+                                            break;
+                                        }
+
+                                        case "bullet-list": {
+                                            let ol = document.createElement("ol");
+
+                                            value[i]["content"].forEach(item => {
+                                                let li = document.createElement("li");
+                                                li.textContent = item;
+                                                ol.appendChild(li);
+                                            });
+
+                                            pageEl.appendChild(ol);
+                                            break;
+                                        }
+
+                                        case "table": {
+                                            let table = document.createElement("table");
+                                            table.style.borderCollapse = "collapse";
+                                            table.style.width = "100%";
+
+                                            // Header
+                                            if (value[i]["head"]) {
+                                            let thead = document.createElement("thead");
+                                            let tr = document.createElement("tr");
+
+                                            value[i]["head"].forEach(h => {
+                                                let th = document.createElement("th");
+                                                th.textContent = h;
+                                                th.style.border = "1px solid #ccc";
+                                                th.style.padding = "6px";
+                                                tr.appendChild(th);
+                                            });
+
+                                            thead.appendChild(tr);
+                                            table.appendChild(thead);
+                                            }
+
+                                            // Body
+                                            let tbody = document.createElement("tbody");
+
+                                            value[i]["rows"].forEach(row => {
+                                            let tr = document.createElement("tr");
+
+                                            row.forEach(cell => {
+                                                let td = document.createElement("td");
+                                                td.style.border = "1px solid #ccc";
+                                                td.style.padding = "6px";
+
+                                                if (typeof cell === "object" && cell.type === "image") {
+                                                    let img = document.createElement("img");
+                                                    img.src = cell.src;
+                                                    img.alt = cell.alt || "";
+                                                    img.style.width = "40px";
+                                                    img.style.display = "block";
+                                                    td.appendChild(img);
+                                                } else {
+                                                    td.textContent = cell;
+                                                }
+
+                                                tr.appendChild(td);
+                                            });
+
+                                            tbody.appendChild(tr);
+                                            });
+
+                                            table.appendChild(tbody);
+                                            pageEl.appendChild(table);
+                                            break;
+                                        }
+
+                                        case "textarea": {
+                                            let textarea = document.createElement("textarea");
+                                            textarea.placeholder = value[i]["prompt"] || "";
+
+                                            if (value[i]["height"]) {
+                                                textarea.style.height = `${Number(value[i]["height"])}px`;
+                                            }
+
+                                            textarea.rows = 4;
+                                            pageEl.appendChild(textarea);
+                                            break;
+                                        }
+
+                                        case "podcast": {
+                                            // Outer container
+                                            let container = document.createElement("div");
+                                            container.className = "podcast-container";
+
+                                            // Introduction text
+                                            if (value[i]["introduction"]) {
+                                                let intro = document.createElement("p");
+                                                intro.className = "podcast-text";
+                                                intro.textContent = value[i]["introduction"];
+                                                container.appendChild(intro);
+                                            }
+
+                                            // Podcast media row
+                                            let podcastRow = document.createElement("div");
+                                            podcastRow.className = "podcast";
+
+                                            // Image
+                                            if (value[i]["image"]) {
+                                                let img = document.createElement("img");
+                                                img.src = value[i]["image"]["src"];
+                                                img.alt = value[i]["image"]["alt"] || "";
+                                                podcastRow.appendChild(img);
+                                            }
+
+                                            // Embedded player
+                                            if (value[i]["link"]) {
+                                                let iframe = document.createElement("iframe");
+                                                iframe.src = value[i]["link"];
+                                                iframe.setAttribute("frameBorder", "0");
+                                                iframe.setAttribute("scrolling", "no");
+                                                iframe.style.width = "60%";
+
+                                                podcastRow.appendChild(iframe);
+                                            }
+
+                                            container.appendChild(podcastRow);
+
+                                            // Text content blocks
+                                            if (Array.isArray(value[i]["text-content"])) {
+                                                value[i]["text-content"].forEach(block => {
+                                                if (block.type === "text") {
+                                                    let p = document.createElement("p");
+                                                    p.className = "podcast-text";
+                                                    p.textContent = block.content;
+                                                    container.appendChild(p);
+                                                }
+                                                });
+                                            }
+
+                                            pageEl.appendChild(container);
+                                            break;
+                                        }
+
+                                        case "3d-model": {
+                                            /// create a canvas element 
+                                            /// insert 3d model with thecorresponding width and height
+                                            
+                                            break;
+                                        }
+
+                                        case "iframe": {
+                                            let iframe = document.createElement("iframe");
+
+                                            // Ensure absolute URL
+                                            let src = value[i]["src"];
+                                            if (!src.startsWith("http")) {
+                                                src = "https://" + src;
+                                            }
+                                            iframe.src = src;
+
+                                            // Width handling (0–1 → percentage)
+                                            if (value[i]["width"] !== undefined) {
+                                                iframe.style.width = `${Number(value[i]["width"]) * 100}%`;
+                                            } else {
+                                                iframe.style.width = "100%";
+                                            }
+
+                                            // Sensible defaults
+                                            iframe.style.height = "400px";
+                                            iframe.style.border = "none";
+                                            iframe.style.display = "block";
+                                            iframe.style.margin = "0 auto";
+
+                                            iframe.setAttribute("loading", "lazy");
+
+                                            pageEl.appendChild(iframe);
+                                            break;
+                                            }
+
+
+                                    }
                                 }
+
+                                continue;
                             }
-                            continue;
                         }
+
                         let content = document.createElement("p");
                         let list = document.createElement("li");
                         list.textContent = value[i];
@@ -456,6 +669,8 @@
         }
     };
 </script>
+
+<!-- <style scoped src="public/libraries/chemdoodle/ChemDoodleWeb.css"></style> -->
 
 <style>
 .title {
@@ -716,9 +931,8 @@
 
 /***ANSWER BOX***/
 #slide > div > textarea{
-  margin: 0 4% 4% 4%;
-  width:95%;
-  height:10%;
+  margin: 3% 0;
+  width: 100%;
 }
 
 /***PROGRESS CONTAINER***/
