@@ -1,0 +1,69 @@
+{
+  "title": "Unit 3",
+  "introduction": "This is a simple example of the introduction of unit 3.",
+  "items": [
+    "Item 1",
+    "Item 2",
+    "Item 3"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "fdsfs  "
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "text",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    },
+    {
+      "type": "image",
+      "src": "public/content/Unit 4/cat.mp4",
+      "alt": "cat pic"
+    },
+    {
+      "type": "video",
+      "src": "unit4/test.jpg",
+      "title": "cat vid"
+    }
+  ]
+}

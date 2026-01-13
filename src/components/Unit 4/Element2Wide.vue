@@ -95,6 +95,8 @@
     // - Add enlargement upon clicking to photos and images
     // - Add excercises, podcast and games as a type of media
 
+    import unit1 from '/public/content/Unit 1/unit1.json';
+    import unit2 from '/public/content/Unit 2/unit2.json';
     import unit3 from '/public/content/Unit 3/unit3.json';
     import unit4 from '/public/content/Unit 4/unit4.json';
     import unit5 from '/public/content/Unit 5/unit5.json';
@@ -111,6 +113,8 @@
         data() {
             return {
                 units: {
+                    unit1,
+                    unit2,
                     unit3,
                     unit4, 
                     unit5,

@@ -9,8 +9,8 @@
                 <div class="section-title" @click="openSubMenu('dropdown-content1')">Section 1</div>
                 <div class="dropdown-content" id="dropdown-content1">
                   <ul style="list-style-type: none; padding: 0;">
-                    <li><router-link to="/unit1">Unit 1. Bonding, Introduction to Structural Representations</router-link></li>
-                    <li><router-link to="/unit2">Unit 2. More Structural Representations and Isomers</router-link></li>
+                    <li @click="selectUnit('unit1')"><router-link to="/unit4">Unit 1. Bonding, Introduction to Structural Representations</router-link></li>
+                    <li @click="selectUnit('unit2')"><router-link to="/unit4">Unit 2. More Structural Representations and Isomers</router-link></li>
                     <li @click="selectUnit('unit3')"><router-link to="/unit4">Unit 3. </router-link></li>
                     <li @click="selectUnit('unit4')"><router-link to="/unit4">Unit 4. </router-link></li>
                     <li @click="selectUnit('unit5')"><router-link to="/unit4">Unit 5. </router-link></li>
