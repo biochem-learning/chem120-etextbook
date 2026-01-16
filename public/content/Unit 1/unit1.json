@@ -1,72 +1,29 @@
 {
-    "title": "Unit 1",
+    "title": "Unit 1. Bonding, Introduction to Structural Representations",
     "content": [
         {
             "type": "text",
-            "format": "underline",
+            "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
-        },
-        {
-            "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
-            "width": "0.9"
-        },
-        {
-            "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
-            "width": "0.9"
+            "content": "Throughout the semester, we will incorporate scientist spotlights highlighting scientists whose research is related to the topics we are studying and our course theme of neurotransmitters." 
         },
         {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
-        },
-        {
-            "type": "list",
-            "content": [
-                "I1",
-                "I2",
-                "I3"
-            ]
+            "content": "Deena Walker is a scientist who studies the molecular mechanisms of addiction and depression. She found that mice that were raised in social isolation showed higher levels of anxiety than mice raised in groups. These mice also had different levels of the neurotransmitters dopamine and serotonin than mice raised in groups." 
         },
         {
             "type": "text",
-            "format": "italic",
-            "border": "true",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "format": "normal",
+            "border": "false",
+            "content": "Deena has a family history of anxiety and depression. She was able to overcome her own struggles with anxiety to become a successful research scientist. Her family history inspired her research because she wanted to explore how genes vs. environment affect susceptibility to anxiety and depression." 
         },
         {
-            "type": "bullet-list",
-            "content": [
-                "It 1",
-                "It 2",
-                "It 3"
-            ]
-        },
-        {
-            "type": "table",
-
-            "head": ["Name", "Age", "Job","A","B"],
-            "rows": [
-                ["Anh Vu", "21", "Researcher", "A", "B"],
-                [
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    "21",
-                    "Cute Doll",
-                    "A",
-                    "B"
-                ]
-
-            ]
-        },
-        {
-            "type": "textarea",
-            "height": "100",
-            "prompt": "Hello world"
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Dopamine and serotonin both play a role in anxiety and depression, although scientists are still trying to figure out the details of how they do this. We will discuss the structures of these neurotransmitters over the next few classes. But first, we must learn about bonding and structural representations of molecules." 
         },
         {
             "type": "podcast",
@@ -90,23 +47,272 @@
                 }
             ]
         },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "What we will learn in this unit:" 
+        },
+         {
+            "type": "list",
+            "content": [
+                "Common bonding patterns in organic compounds",
+                "Drawing Lewis structures",
+                "Drawing Bond-line structures",
+                "Some abbreviations for structural pieces (Condensed Structures)"
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "true",
+            "content": "Skill Building - Which type of bond? One key skill we need is identifying which type of bond is likely to form between particular elements. Basically, metals bonding to non-metals make ionic bonds. Non-metals bonding to other non-metals make covalent bonds. Ionic bonding is something with a positive charge attracted to something with a negative charge. Metals typically form positively charged ions called cations. Non-metals typically make negatively charged ions called anions." 
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Bonding" 
+        },
         {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "Atoms are made of a nucleus that contains protons and neutrons, and orbiting around that nucleus are electrons. The nucleus is very small in volume relative to the overall volume of the atom, but it contains most of the atom’s mass. The protons in the nucleus are positively charged, the neutrons have no charge, and the electrons have a negative charge. Atoms combine with each other by making bonds. There are many types of bonds: ionic, covalent, coordinate covalent, metallic, and more. In this course, we will talk a little about ionic bonding, but our major concern will be covalent bonds. We won’t really talk about other types of bonds in this course at all. This is an organic chemistry course, so we will be learning about compounds made from a limited set of elements. Since organic chemistry is often defined as the chemistry of carbon compounds, carbon will be central to our studies. Other elements commonly found in organic compounds are hydrogen, oxygen, nitrogen, and the halogens (fluorine, chlorine, bromine, and iodine). We will also occasionally see sulfur and phosphorus." 
         },
         {
-            "type": "iframe",
-            "src": "https://www.mapembed.org/?gad_source=1&gad_campaignid=22280139497&gbraid=0AAAAA98a5IPIDkrDPfsI0aL2syFcCR7M4&gclid=Cj0KCQiA1JLLBhCDARIsAAVfy7jm5TPPRaXjg39M5O-H5AfZO4YjbqXJQVw8MOIinfNwkSuKdOwYFrQaAnzaEALw_wcB",
-            "width": 1
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Common elements in organic chemistry: C, H, O, N, F, Cl, Br, and I. These elements follow specific patterns when they make covalent bonds with each other. For reasons we will understand more fully later, the elements we will be working with (except for H) want to have 8 valence electrons (electrons potentially able to make bonds). Hydrogen wants to have 2 valence electrons. The atoms start with a certain number of valence electrons. The periodic table tells us (the numbers at the top of the columns) how many electrons each atom starts with. To get more electrons, the atoms share with other atoms to make covalent bonds. One electron shared from each atom makes a bond between the atoms. So every covalent bond is two electrons shared between two atoms. By sharing the electrons, it is like both atoms have one more electron than they started with.  It is possible for two atoms to share more electrons with each other, always in pairs. We will see single bonds (1 electron shared from each atom), double bonds (2 electrons shared from each atom for 4 total), and triple bonds (3 electrons shared from each atom for 6 total). Since for every bond the atom gets an extra electron and each atom wants to get a total of 8 valence electrons, the number of bonds each atom makes is 8 minus the number of valence electrons it starts with (from the periodic table). Hydrogen makes 1 bond." 
         },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "alt": "cat pic",
+            "width": "0.9"
+        },
+        {
+            "type": "video",
+            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
+            "title": "cat vid",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Put in a table of common numbers of bonds and bonding examples." 
+        },
+        {
+            "type": "list",
+            "content": [
+                "C - 4 bonds",
+                "N - 3 bonds",
+                "O - 2 bonds",
+                "H, F, Cl, Br, I - 1 bond"
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Lewis dot symbols are written by writing the symbol (letter) for each atom, then surrounding it with dots to represent electrons. Imagine the symbol is inside a square. We write up to two electrons on each side of the square, but start with one electron per side and only pair them up when we have more than 4 valence electrons. The dot structures show us how we can connect atoms to make molecules. Everywhere we have a single electron on a side, we can make a bond to another atom. When all the atoms have all their single electrons used up, the molecule is complete. Usually, we represent a bond with a line between the two atoms. A line represents a bond, which is a sharing of two electrons. On sides where there are two electrons, we don’t make a bond. Those electrons are not shared. Sometimes they are referred to as non-bonding electrons or as “lone pairs.”" 
+        },
+        {
+            "type": "video",
+            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
+            "title": "cat vid",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Representing structures" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "There are multiple ways that chemists represent a molecule. We saw the Lewis dot structure, or Lewis Structure (with lines for bonds). Of course, we can also just write a molecular formula. The molecular formula simply lists the types of atoms present and the number of each kind of atom. We always list the atoms in the order of C, then H, then any other atoms in alphabetical order. This is because all organic molecules contain C and almost all contain H, but they don’t necessarily have other elements, and usually have fewer of them. The molecular formula contains less information than the Lewis structure. It tells us how many of each kind of atom, but not how they are connected. It has the advantage of being easier to write and is useful for things like stoichiometry, but not very useful for understanding the physical and chemical properties of the compound." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The Lewis Structure tells us a lot about how the molecule is put together, but when we start working with larger molecules, let's say with 8 or more carbon atoms, it becomes cumbersome to write out every atom and every bond. So chemists have developed ways of writing less while still representing how the atoms are connected. One of these ways is the condensed structure." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "None of these ways of representing the molecule (molecular formula, Lewis structure, condensed structure) are completely accurate representations. While the Lewis and condensed structures show us how the atoms are connected, they don’t adequately represent the three-dimensional nature of the molecules, as we saw in the video. One of the skills we need to develop is translating between the actual three-dimensional molecule and the two-dimensional representations we are forced to use because of the nature of the paper, computer screens, white boards, and other media we use to communicate. We will want to use videos like this along with other 3D representations to help us learn to make this 3D to 2D connection. You should also use your model kit to help with this. Ultimately, we want to be able to see the 2D representation but have a mental image of the 3D molecule. Understanding the 3D nature of these molecules is important for fully understanding their chemistry." 
+        },
+          {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Bond-Line structures" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Drawing every atom in the molecule as we do in Lewis structures quickly becomes cumbersome. If we only have to draw out four or five carbon atoms, then it isn’t too bad, but when the molecules we are representing become larger and more complex, we need a more efficient way of representing them. This is where the bond-line structure comes in. These are also sometimes referred to as skeletal structures. In bond-line structures we only draw the bonds. We leave out the carbon and hydrogen atoms. The only atoms drawn are heteroatoms, those that are not carbon or hydrogen. In the images below you can see a 3D representation of butane (rotatable - go ahead, click and drag it to rotate it), the Lewis structure of butane, and the bond-line structure of butane. Notice how simple and quickly drawn the bond-line structure is compared to the others. How do three straight lines drawn in a zig-zag represent 4 carbon atoms and 10 hydrogen atoms? We interpret bond-line formulas as having carbon atoms at the end of lines and at corners where two lines meet. Since the bond-line structure for butane has two ends and two corners, it represents all four of those carbon atoms. As we learned above, neutral carbon atoms always make four bonds. Since the first carbon atom in the bond-line structure only has one line coming from it (one bond) we can reason that it must have 3 hydrogen atoms also bonded to it. The fourth carbon atom similarly has 3 hydrogen atoms bonded to it. The second and third carbon atoms both have two bonds shown, which means they each need 2 hydrogen atoms to get to a total of 4 bonds. We must become very good at recognizing where the carbon atoms are in a bond-line structure and how many hydrogen atoms are attached to each carbon atom." 
+        },
+         {
+            "type": "video",
+            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
+            "title": "cat vid",
+            "width": "0.9"
+        },
+         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "alt": "cat pic",
+            "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 1. The images of butane (n-butane) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Let's look at a more complicated example. The structure below is called 2-methyl-2-buten-1-ol. Again, we have represented it with a 3D model, Lewis structure, and bond-line structure. What we need to understand about this bond-line structure is that we simply draw another line parallel to one of the bonds to represent a double bond. Also, the oxygen atom is written out at the end of one of the lines. When we do this, it means oxygen replaces carbon at the end of that line. Finally, in bond-line structures we write out hydrogen atoms only when they are bonded to something other than carbon." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "alt": "cat pic",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 2. The images of 2-methyl-2-buten-1-ol are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "One more thing. Triple bonds can be a little confusing in bond-line structures. This is because, technically, we should write all the atoms bonded to a triple-bonded carbon in a straight line. We’ll learn more about why this is later. A good example of how this works is 2-pentyne, shown below. It is easy to identify where the triple bond is by the three parallel lines. Less clear is that the middle line extending to the left represents the first carbon. The fourth carbon is a little easier to recognize since it is at a corner." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "alt": "cat pic",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 3. The images of 2-pentyne are shown in different types of structures:(a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Condensed Formulas" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We will not use these as much, but we will encounter them. Let’s consider the structure of ethyl benzoate, which is shown below. We can represent this using a condensed formula as C6H5CO2CH2CH3. Comparing this to the structures, we can see that C6H5 is an abbreviation for the six-membered ring containing three double bonds. This is a very common structure called a benzene ring or phenyl group. It is also commonly abbreviated as Ph, so this compound could also be written as PhCO2CH2CH3. Note that CO2 represents carbon double-bonded to one oxygen and single-bonded to another. It will always represent this arrangement of atoms. In condensed formulas, the number of atoms is subscripted, so CH2 indicates two hydrogen atoms are bonded to that carbon atom." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "alt": "cat pic",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 4. The images of ethyl benzoate (benzoic acid) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Functional Groups" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Functional groups are basically what the name says. They are parts of molecules, groups of atoms, that have a function. This function can be related to physical properties or reactivity. We’ve actually already learned two functional groups, alkenes and alkynes. You might be wondering, what about alkanes? Aren’t they a functional group, too? The carbon-carbon single bonds and carbon-hydrogen single bonds don’t really contribute as much to a compound's properties or reactivity, so they don’t have much of a function. In a way, alkanes are the opposite of a functional group." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Other than alkenes and alkynes, functional groups are characterized by some atom other than carbon and hydrogen. We call these heteroatoms. For us, these will usually be oxygen and nitrogen. We will start with just a few of the functional groups we will encounter, shown in the table below. We will learn additional functional groups later. You will also need to know them in future classes, like biochemistry. In the table, the letter R serves as a kind of variable. It stands for any carbon-containing group." 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "<b>Table 1.</b> The structure and nomenclature of some common functional groups." 
+        },
+        {
+            "type": "table",
 
-        {
-            "type": "3d-model",
-            "src": "",
-            "width": 0.7,
-            "height": 0.3
+            "head": ["Functional Group", "Generic Structure", "Example","Suffix"],
+            "rows": [
+                [
+                    "Alkene",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-ene"
+                ],
+                [
+                    "Alkyne",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-yne"
+                ],
+                [
+                    "Alcohol",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-ol"
+                ],
+                [
+                    "Amine",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-amine"
+                ],
+                [
+                    "Aldehyde",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-al"
+                ],
+                [
+                    "Ketone",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-one"
+                ],
+                [
+                    "Carboxylic acid",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    "-oic acid"
+                ]
+          
+                  
+            ]
         }
     ]
 }
