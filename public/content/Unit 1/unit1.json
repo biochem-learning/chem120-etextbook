@@ -32,7 +32,7 @@
             "image": {
                 "type": "image",
                 "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-                "alt": "Gwen avatar"
+                "alt": "1. Deena Walker"
             },
             "text-content": [
                 {
@@ -84,7 +84,7 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Common elements in organic chemistry: C, H, O, N, F, Cl, Br, and I. These elements follow specific patterns when they make covalent bonds with each other. For reasons we will understand more fully later, the elements we will be working with (except for H) want to have 8 valence electrons (electrons potentially able to make bonds). Hydrogen wants to have 2 valence electrons. The atoms start with a certain number of valence electrons. The periodic table tells us (the numbers at the top of the columns) how many electrons each atom starts with. To get more electrons, the atoms share with other atoms to make covalent bonds. One electron shared from each atom makes a bond between the atoms. So every covalent bond is two electrons shared between two atoms. By sharing the electrons, it is like both atoms have one more electron than they started with.  It is possible for two atoms to share more electrons with each other, always in pairs. We will see single bonds (1 electron shared from each atom), double bonds (2 electrons shared from each atom for 4 total), and triple bonds (3 electrons shared from each atom for 6 total). Since for every bond the atom gets an extra electron and each atom wants to get a total of 8 valence electrons, the number of bonds each atom makes is 8 minus the number of valence electrons it starts with (from the periodic table). Hydrogen makes 1 bond." 
+            "content": "Common elements in organic chemistry: C, H, O, N, F, Cl, Br, and I. These elements follow specific patterns when they make covalent bonds with each other. For reasons we will understand more fully later, the elements we will be working with (except for H) want to have 8 valence electrons (electrons potentially able to make bonds). Hydrogen wants to have 2 valence electrons. The atoms start with a certain number of valence electrons. The periodic table tells us (the numbers at the top of the columns) how many electrons each atom starts with. To get more electrons, the atoms share with other atoms to make covalent bonds. One electron shared from each atom makes a bond between the atoms. So every covalent bond is two electrons shared between two atoms." 
         },
         {
             "type": "image",
@@ -92,11 +92,23 @@
             "alt": "2. Periodic table",
             "width": "0.9"
         },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "By sharing the electrons, it is like both atoms have one more electron than they started with.  It is possible for two atoms to share more electrons with each other, always in pairs. We will see single bonds (1 electron shared from each atom), double bonds (2 electrons shared from each atom for 4 total), and triple bonds (3 electrons shared from each atom for 6 total). Since for every bond the atom gets an extra electron and each atom wants to get a total of 8 valence electrons, the number of bonds each atom makes is 8 minus the number of valence electrons it starts with (from the periodic table). Hydrogen makes 1 bond." 
+        },
         {
             "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/1.%20Two%20people%20sharing%20soda.mp4",
+            "title": "Video 1. Two people sharing soda",
             "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "underline",
+            "border": "false",
+            "content": "Two people sharing soda" 
         },
         {
             "type": "text",
@@ -122,8 +134,14 @@
         {
             "type": "video",
             "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
+            "title": "Video 2. Drawing Lewis dot structures",
             "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "underline",
+            "border": "false",
+            "content": "Drawing Lewis dot structures" 
         },
         {
             "type": "text",
@@ -149,6 +167,18 @@
             "border": "false",
             "content": "None of these ways of representing the molecule (molecular formula, Lewis structure, condensed structure) are completely accurate representations. While the Lewis and condensed structures show us how the atoms are connected, they don’t adequately represent the three-dimensional nature of the molecules, as we saw in the video. One of the skills we need to develop is translating between the actual three-dimensional molecule and the two-dimensional representations we are forced to use because of the nature of the paper, computer screens, white boards, and other media we use to communicate. We will want to use videos like this along with other 3D representations to help us learn to make this 3D to 2D connection. You should also use your model kit to help with this. Ultimately, we want to be able to see the 2D representation but have a mental image of the 3D molecule. Understanding the 3D nature of these molecules is important for fully understanding their chemistry." 
         },
+        {
+            "type": "video",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/3.%20Ethanol%202D%20vs%203D.mp4",
+            "title": "Video 3. Ethanol 2D vs. 3D",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "underline",
+            "border": "false",
+            "content": "Ethanol 2D vs. 3D" 
+        },
           {
             "type": "text",
             "format": "bold",
@@ -160,12 +190,6 @@
             "format": "normal",
             "border": "false",
             "content": "Drawing every atom in the molecule as we do in Lewis structures quickly becomes cumbersome. If we only have to draw out four or five carbon atoms, then it isn’t too bad, but when the molecules we are representing become larger and more complex, we need a more efficient way of representing them. This is where the bond-line structure comes in. These are also sometimes referred to as skeletal structures. In bond-line structures we only draw the bonds. We leave out the carbon and hydrogen atoms. The only atoms drawn are heteroatoms, those that are not carbon or hydrogen. In the images below you can see a 3D representation of butane (rotatable - go ahead, click and drag it to rotate it), the Lewis structure of butane, and the bond-line structure of butane. Notice how simple and quickly drawn the bond-line structure is compared to the others. How do three straight lines drawn in a zig-zag represent 4 carbon atoms and 10 hydrogen atoms? We interpret bond-line formulas as having carbon atoms at the end of lines and at corners where two lines meet. Since the bond-line structure for butane has two ends and two corners, it represents all four of those carbon atoms. As we learned above, neutral carbon atoms always make four bonds. Since the first carbon atom in the bond-line structure only has one line coming from it (one bond) we can reason that it must have 3 hydrogen atoms also bonded to it. The fourth carbon atom similarly has 3 hydrogen atoms bonded to it. The second and third carbon atoms both have two bonds shown, which means they each need 2 hydrogen atoms to get to a total of 4 bonds. We must become very good at recognizing where the carbon atoms are in a bond-line structure and how many hydrogen atoms are attached to each carbon atom." 
-        },
-         {
-            "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
-            "width": "0.9"
         },
          {
             "type": "image",
