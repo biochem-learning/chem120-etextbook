@@ -1,99 +1,351 @@
 {
-    "title": "Unit 1",
+    "title": "Unit 2. Introduction to Nomenclature",
     "content": [
         {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "What we will learn in this unit:" 
+        },
+          {
+            "type": "list",
+            "content": [
+                "Functional groups (alkenes, alkynes, amines, alcohols, ketones, aldehydes, carboxylic acids)",
+                "A systematic approach to naming organic compounds - parent names"
+            ]
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Types of Hydrocarbons" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As the name implies, hydrocarbons are compounds made from only hydrogen and carbon. While this may sound kind of simple, and maybe a little boring, hydrocarbons are actually an interesting and important class of compounds. They make up the bulk of crude oil, which is refined into gasoline, diesel fuel, and jet fuel, and from which many of the chemicals used in chemical research are derived. Many plastics are also hydrocarbons, including high-density polyethylene (2), low-density polyethylene (4), polypropylene (5), and polystyrene (6). The number of different hydrocarbon compounds is literally more than the number of stars in the sky." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We can categorize hydrocarbons in a number of useful ways. For now, we are going to talk about 3 types of hydrocarbons. They are alkanes, alkenes, and alkynes. Alkanes are compounds of carbon and hydrogen that contain only single bonds. Alkenes are hydrocarbons that contain one or more carbon-to-carbon double bonds. Alkenes may also have some carbon-to-carbon single bonds. In other words, it is not necessary for there to be only carbon-to-carbon double bonds for a compound to be considered an alkene. Alkynes are like alkenes except they have at least one carbon-to-carbon triple bond instead of double bonds." 
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/1.%20Figure%201.png",
+            "alt": "1. Figure 1",
             "width": "0.9"
         },
-        {
-            "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
-            "width": "0.9"
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 1. The bond-line structures of (a) alkane, (b) alkene, and (c) alkyne." 
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Nomenclature" 
         },
         {
-            "type": "list",
-            "content": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
-            ]
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The naming of organic compounds is done systematically. The name comes directly from the structure and tells us exactly how all the atoms in the structure are connected. Consequently, names can oftentimes be complex. Understanding the system we use for naming helps us understand structure. One important skill in naming an organic compound is identifying the longest chain of carbon atoms. Names have meaning; they tell us what the structure is. Think about it this way: if your name had to describe to people all they need to know to understand who you are, it would be a very long name! Let's consider an example. Likely, many of us are familiar with ibuprofen, which is also known as Advil, Midol, Motrin, and several other names. If I say I took some ibuprofen, you would probably understand that I had a headache or some other pain, and I took the ibuprofen to relieve that pain. In that way, the name tells us something important about what it is. However, a chemist might very well want to know more about ibuprofen than that name can tell us. Chemists are interested in the structure of the compound because the structure tells us much that can help us understand how ibuprofen interacts with the body and produces its pain-relieving effect. So chemists might use the name (R,S)-2-[4-(2-methylpropyl)phenyl]propanoic acid. Quite a long and complicated name, to be sure, but to someone trained in organic chemistry, it allows us to write the structure and, from that, understand quite a bit about ibuprofen." 
         },
-        {
-            "type": "bullet-list",
-            "content": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
-            ]
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We'll start with nomenclature in the simplest way. The first thing we look for when naming an organic compound is the longest chain or ring of carbon atoms. This longest chain (or ring) becomes the parent structure, and the parent name tells us two key pieces of information: the length of the longest carbon chain (indicated by a prefix) and the type of bonds and functional groups present in that chain (indicated by a suffix). Now that we know what alkanes, alkenes, and alkynes are, we can start by naming alkanes. The end of the name is going to be “ane.” Before that, we'll put a prefix to indicate the length of the longest carbon chain. So, for example, the compound with 5 carbons in a chain is called pentane - pent to indicate 5 carbons and 'ane' to indicate it is an alkane. Unfortunately, all of the prefixes we used to indicate chain length are not as easy to remember as pent. The hardest are the first four, as you can see in this table."
         },
-        {
+{
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Table 1. The zig-zag (skeletal) structures of simple alkanes with increasing carbon chain length" 
+        },
+         {
             "type": "table",
 
-            "head": ["Name", "Age", "Job","A","B"],
+            "head": ["Number of Carbons", "Prefix", "Zig-zag (bond-line) structure"],
             "rows": [
-                ["Anh Vu", "21", "Researcher", "A", "B"],
                 [
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    "21",
-                    "Cute Doll",
-                    "A",
-                    "B"
+                    "1", "meth",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/2.%20Zigzag.png", "alt": "2. Zigzag", "width": 1 },
+                    "-ene"
+                ],
+                [
+                    "2", "eth",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 1 },
+                    "-yne"
+                ],
+                [
+                    "3", "prop",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 1 },
+                    "-ol"
+                ],
+                [
+                    "4", "but",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/5.%20Zigzag.png", "alt": "5. Zigzag", "width": 1 },
+                    "-amine"
+                ],
+                [
+                    "5", "pent",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/6.%20Zigzag.png", "alt": "6. Zigzag", "width": 1 },
+                    "-al"
+                ],
+                [
+                    "6", "hex",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/7.%20Zigzag.png", "alt": "7. Zigzag", "width": 1 },
+                    "-one"
+                ],
+                [
+                    "7", "hept",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/8.%20Zigzag.png", "alt": "8. Zigzag", "width": 1 },
+                    "-oic acid"
+                ],
+                [
+                    "8", "oct",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/9.%20Zigzag.png", "alt": "9. Zigzag", "width": 1 },
+                    "-one"
+                ],
+                [
+                    "9", "non",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/10.%20Zigzag.png", "alt": "10. Zigzag", "width": 1 },
+                    "-one"
+                ],
+                [
+                    "10", "dec",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/11.%20Zigzag.png", "alt": "11. Zigzag", "width": 1 },
+                    "-one"
                 ]
-            ]
-        },
-        {
-            "type": "textarea",
-            "height": "100",
-            "prompt": "Hello world"
-        },
-        {
-            "type": "podcast",
-            "introduction": "Deena did a podcast describing her motivation for her research:",
-            "link": "https://playlist.megaphone.fm/?e=PPY5510118240",
-            "image": {
-                "type": "image",
-                "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-                "alt": "Gwen avatar"
-            },
-            "text-content": [
-                {
-                "type": "text",
-                "format": "normal",
-                "content": "When anxiety begins to overtake her, biology student Deena Walker begins to worry she'll end up just like her mentally ill sister."
-                },
-                {
-                "type": "text",
-                "format": "normal",
-                "content": "Deena Walker is a postdoctoral fellow at Mt. Sinai School of Medicine where she studies the molecular mechanisms of addiction and depression..."
-                }
+          
+                  
             ]
         },
         {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "Finding the longest chain of carbon atoms seems like an easy enough thing to do. Unfortunately, it isn't always so easy. If the compounds were always drawn in the nice zig-zag way you see in the table, it would be rather simple, but they aren't always drawn that way. You can see here several examples of different ways a 10-carbon chain could be written. More on this in a bit." 
+        },
+         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/12.%20Figure%202.png",
+            "alt": "Figure 2",
+            "width": "0.9"
+        }, 
+{
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "12. Figure 2. Various ways of bond-line representation of n-decane" 
         },
         {
-            "type": "iframe",
-            "src": "https://www.mapembed.org/?gad_source=1&gad_campaignid=22280139497&gbraid=0AAAAA98a5IPIDkrDPfsI0aL2syFcCR7M4&gclid=Cj0KCQiA1JLLBhCDARIsAAVfy7jm5TPPRaXjg39M5O-H5AfZO4YjbqXJQVw8MOIinfNwkSuKdOwYFrQaAnzaEALw_wcB",
-            "width": 1
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As we have seen, organic compounds are not just simple, straight chains of carbon atoms. Let's take all the ways C5H12 can be put together as an example." 
         },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Table 2. The isomers of C5H12 are shown in a bond-line and Lewis dot structure representation" 
+        },
+        {
+            "type": "table",
 
+            "head": ["Name", "Bond-line structure", "Lewis dot structure"],
+            "rows": [
+                [
+                    "n-pentane",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/13.%20Table%202.png", "alt": "13. Table 2", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/14.%20Table%202.png", "alt": "14. Table 2", "width": 1 }
+                ],
+                [
+                    "Iso-pentane (methylbutane)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/15.%20Table%202.png", "alt": "15. Table 2", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/16.%20Table%202.png", "alt": "16. Table 2", "width": 1 }
+                ],
+                [
+                    "Neo-pentane (2,2-dimethylpropane)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/17.%20Table%202.png", "alt": "17. Table 2", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/18.%20Table%202.png", "alt": "18. Table 2", "width": 1 }
+                ]
+          
+                  
+            ]
+        },
         {
-            "type": "3d-model",
-            "src": "",
-            "width": 0.7,
-            "height": 0.3
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "You see that in addition to just having a 5-carbon chain, we can also have a 4-carbon chain with a 1-carbon branch or a 3-carbon chain with two 1-carbon branches. In the case of the 4-carbon chain with a 1-carbon branch, we start naming it with the longest carbon chain, which would be called butane. As we said before, the structure with the 5-carbon chain is pentane. The parent name for the compound with a 3-carbon chain and two branches is propane." 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "To name alkenes or alkynes, we need to modify our approach to account for the multiple bonds in the parent chain. The longest chain must include both atoms of the double or triple bond, even if there is a longer carbon chain not including those atoms. We must also number the chain from the end closest to the double or triple bond and include a number in the name to indicate where the double or triple bond is located. The number indicating where the double or triple bond is goes either before the parent name or in the middle of the parent name, right before ene or yne. We put a dash between this number and the rest of the name. For alkenes, the parent name ends in 'ene' (like 2-pentene), and for alkynes, the parent name ends in 'yne' (like 2-pentyne)." 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "To wrap it up, in order to name alkenes or alkynes, we need to add four things to this process:" 
+        },
+         {
+            "type": "bullet-list",
+            "content": [
+                "We must change the parent name using ene at the end to indicate an alkene and yne at the end to indicate an alkyne.",
+                "We must change how we identify and number the longest chain. First of all, the longest chain must include both atoms of the double or triple bond, even if there is a longer carbon chain not including those atoms.",
+                "We must start numbering the chain from the chain closest to the double or triple bond.",
+                "We must include a number in the name to indicate where the double or triple bond is."
+            ]
+        }, 
+          {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/19.%20Figure%203.png",
+            "alt": "19. Figure 3",
+            "width": "0.9"
+        }, 
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 3. The images of 2-butyl-1-octene are shown in different types of structures:(a) Ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, (c) Bond-line structure." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Functional groups also play an important role in naming the parent chain. Notice that three of the functional groups we saw in Unit 1 contain a carbon double-bonded to an oxygen, C=O. This common and very important type of bond is called a carbonyl. We will use that term frequently. When a functional group is part of the parent chain, it is reflected in the parent name through specific suffixes. For example, an alcohol (containing -OH) is named with the suffix '-ol' (like ethanol), an aldehyde (containing a C=O at the end of the chain) is named with '-al' (like ethanal), a ketone (containing a C=O in the middle of the chain) is named with '-one' (like 2-propanone), and an amine (containing -NH₂) is named with '-amine' (like ethylamine)." 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Table 3. The structure and nomenclature of some common functional groups." 
+        },
+         {
+            "type": "table",
+
+            "head": ["Functional Group", "Generic Structure", "Example","Suffix"],
+            "rows": [
+                [
+                    "Alkene",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/7.%20Table.png", "alt": "20. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/8.%20Table.png", "alt": "21. Table 3", "width": 1 },
+                    "-ene"
+                ],
+                [
+                    "Alkyne",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/9.%20Table.png", "alt": "22. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/10.%20Table.png", "alt": "23. Table 3", "width": 1 },
+                    "-yne"
+                ],
+                [
+                    "Alcohol",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/11.%20Table.png", "alt": "24. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/12.%20Table.png", "alt": "25. Table 3", "width": 1 },
+                    "-ol"
+                ],
+                [
+                    "Amine",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/13.%20Table.png", "alt": "26. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/14.%20Table.png", "alt": "27. Table 3", "width": 1 },
+                    "-amine"
+                ],
+                [
+                    "Aldehyde",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/15.%20Table.png", "alt": "28. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/16.%20Table.png", "alt": "29. Table 3", "width": 1 },
+                    "-al"
+                ],
+                [
+                    "Ketone",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/17.%20Table.png", "alt": "30. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/18.%20Table.png", "alt": "31. Table 3", "width": 1 },
+                    "-one"
+                ],
+                [
+                    "Carboxylic acid",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png", "alt": "32. Table 3", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png", "alt": "33. Table 3", "width": 1 },
+                    "-oic acid"
+                ]
+          
+                  
+            ]
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "When a parent chain contains more than one of the same functional group, we add a prefix to indicate how many there are: di-, tri-, tetra-, and so on. For example, a compound with two alcohol groups is called a diol (like 1,2-ethanediol), and a compound with two double bonds is called a diene (like 1,3-butadiene). Similarly, a compound with two triple bonds would be called a diyne, and a compound with three alcohol groups would be called a triol. When naming these compounds, we must include a number for each functional group to indicate where it is located along the chain (like 1,3-butadiene)."
+         },
+           {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/34.%20Figure%204.png",
+            "alt": "34. Figure 4",
+            "width": "0.9"
+        }, 
+ {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Figure 4. The structures of 1,2-ethanediol and 1,3-butanediene are shown in different types of structures: (a) Lewis dot structure, (b) bond-line structure." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As we have seen, some organic compounds contain rings. When a compound contains a ring, there are two possibilities for how it must be named. Either the ring will be the parent, or the ring will be a substituent. The ring will never be part of a chain of carbons. The ring will be the parent if it has more carbon atoms than any carbon chain in the rest of the molecule, or it contains a functional group. The ring will be a substituent if it has fewer carbons than a chain in the rest of the molecule or if the chain contains a functional group. To name a ring as the parent, we put 'cyclo' in front of the normal parent name. So a ring of 5 carbons is cyclopentane, and a ring of 6 carbons with a double bond is cyclohexene." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We now know the basic process of assigning a parent name to a compound:" 
+        },
+         {
+            "type": "bullet-list",
+            "content": [
+                "Identify the longest chain of carbon atoms (or ring if present and it's the parent).",
+                "Identify functional groups in the longest chain and how many of each.",
+                "Figure out which end of the chain is closest to a functional group.",
+                "Number the chain starting from the end closest to a substituent.",
+                "Build the parent name using: [prefix for chain length] + [ene/yne if applicable with position number] + [replace the e with a suffix for functional group(s) with position number]."
+            ]
+        }, 
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Note: We will deal with substituents and other structural features in the next unit. For now, focus on identifying and naming the parent chain and any functional groups that are part of it." 
+        },
+         {
+            "type": "video",
+            "src": "link",
+            "title": "Naming compounds",
+            "width": "0.9"
+        },
+          {
+            "type": "video",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/3.%20Ethanol%202D%20vs%203D.mp4",
+            "title": "Video with alkene and alkyne naming",
+            "width": "0.9"
+        },
+          {
+            "type": "video",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/3.%20Ethanol%202D%20vs%203D.mp4",
+            "title": "Video with ring examples",
+            "width": "0.9"
         }
     ]
 }
