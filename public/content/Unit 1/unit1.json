@@ -331,7 +331,7 @@
                 [
                     "Carboxylic acid",
                     { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png", "alt": "19. Carboxylic acid generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png", "alt": "20. Carboxylic acid example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/Structure.png", "alt": "20. Carboxylic acid example", "width": 1 },
                     "-oic acid"
                 ]
           
