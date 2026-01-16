@@ -88,8 +88,8 @@
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/2.%20Periodic%20table.png",
+            "alt": "2. Periodic table",
             "width": "0.9"
         },
         {
@@ -169,8 +169,8 @@
         },
          {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/3.%20Figure%201.png",
+            "alt": "Figure 1",
             "width": "0.9"
         },
          {
@@ -187,8 +187,8 @@
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/4.%20Figure%202.png",
+            "alt": "Figure 2",
             "width": "0.9"
         },
         {
@@ -205,8 +205,8 @@
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/5.%20Figure%203.png",
+            "alt": "Figure 3",
             "width": "0.9"
         },
         {
@@ -229,8 +229,8 @@
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/6.%20Figure%204.png",
+            "alt": "Figure 4",
             "width": "0.9"
         },
         {
@@ -261,7 +261,7 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "<b>Table 1.</b> The structure and nomenclature of some common functional groups." 
+            "content": "Table 1. The structure and nomenclature of some common functional groups." 
         },
         {
             "type": "table",
@@ -270,44 +270,44 @@
             "rows": [
                 [
                     "Alkene",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/7.%20Table.png", "alt": "7. Alkene generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/8.%20Table.png", "alt": "8. Alkene example", "width": 1 },
                     "-ene"
                 ],
                 [
                     "Alkyne",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/9.%20Table.png", "alt": "9. Alkyne generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/10.%20Table.png", "alt": "10. Alkyne example", "width": 1 },
                     "-yne"
                 ],
                 [
                     "Alcohol",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/11.%20Table.png", "alt": "11. Alcohol generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/12.%20Table.png", "alt": "12. Alcohol example", "width": 1 },
                     "-ol"
                 ],
                 [
                     "Amine",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/13.%20Table.png", "alt": "13. Amine generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/14.%20Table.png", "alt": "14. Amine example", "width": 1 },
                     "-amine"
                 ],
                 [
                     "Aldehyde",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/15.%20Table.png", "alt": "15. Aldehyde generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/16.%20Table.png", "alt": "16. Aldehyde example", "width": 1 },
                     "-al"
                 ],
                 [
                     "Ketone",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/17.%20Table.png", "alt": "17. Ketone generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/18.%20Table.png", "alt": "18. Ketone example", "width": 1 },
                     "-one"
                 ],
                 [
                     "Carboxylic acid",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png", "alt": "19. Carboxylic acid generic structure", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png", "alt": "20. Carboxylic acid example", "width": 1 },
                     "-oic acid"
                 ]
           
