@@ -75,22 +75,22 @@
             "rows": [
                 [
                     "1", "meth",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/2.%20Zigzag.png", "alt": "2. Zigzag", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/2.%20Zigzag.png", "alt": "2. Zigzag", "width": 0.75 },
                     "-ene"
                 ],
                 [
                     "2", "eth",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 0.75 },
                     "-yne"
                 ],
                 [
                     "3", "prop",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 0.75 },
                     "-ol"
                 ],
                 [
                     "4", "but",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/5.%20Zigzag.png", "alt": "5. Zigzag", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/5.%20Zigzag.png", "alt": "5. Zigzag", "width": 0.80 },
                     "-amine"
                 ],
                 [
@@ -151,12 +151,6 @@
             "border": "false",
             "content": "As we have seen, organic compounds are not just simple, straight chains of carbon atoms. Let's take all the ways C5H12 can be put together as an example." 
         },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Table 2. The isomers of C5H12 are shown in a bond-line and Lewis dot structure representation" 
-        },
         { 
 "type": "text", 
 "border": "false", 
@@ -164,7 +158,7 @@
    { "type": "span", "text": "Table 2. The isomers of C" }, 
    { "type": "span", "text": "5",  "format": "sub"},
    { "type": "span", "text": "H" }, 
-   { "type": "span", "text": "12",  "format": "sub"}, 
+   { "type": "span", "text": "12 ",  "format": "sub"}, 
    { "type": "span", "text": "are shown in a bond-line and Lewis dot structure representation"} 
 ] },
         {
