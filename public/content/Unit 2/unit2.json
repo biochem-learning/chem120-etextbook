@@ -162,9 +162,9 @@
 "border": "false", 
    "content": [ 
    { "type": "span", "text": "Table 2. The isomers of C" }, 
-   { "type": "span", "text": " 5",  "format": "sub"},
-   { "type": "span", "text": " H " }, 
-   { "type": "span", "text": " 12",  "format": "sub"}, 
+   { "type": "span", "text": "5",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "12",  "format": "sub"}, 
    { "type": "span", "text": "are shown in a bond-line and Lewis dot structure representation"} 
 ] },
         {
