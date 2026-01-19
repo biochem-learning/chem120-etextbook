@@ -157,6 +157,16 @@
             "border": "false",
             "content": "Table 2. The isomers of C5H12 are shown in a bond-line and Lewis dot structure representation" 
         },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Table 2. The isomers of C" }, 
+   { "type": "span", "text": " 5",  "format": "sub"},
+   { "type": "span", "text": " H " }, 
+   { "type": "span", "text": " 12",  "format": "sub"}, 
+   { "type": "span", "text": "are shown in a bond-line and Lewis dot structure representation"} 
+] },
         {
             "type": "table",
 
@@ -331,9 +341,15 @@
         },
          {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%202/Video%201.%20Naming%20compounds.mp4",
             "title": "Naming compounds",
             "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "underline",
+            "border": "false",
+            "content": "Example of naming compounds" 
         },
           {
             "type": "video",
@@ -341,11 +357,23 @@
             "title": "Video with alkene and alkyne naming",
             "width": "0.9"
         },
+         {
+            "type": "text",
+            "format": "underline",
+            "border": "false",
+            "content": "Video with alkene and alkyne naming" 
+        },
           {
             "type": "video",
             "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/3.%20Ethanol%202D%20vs%203D.mp4",
             "title": "Video with ring examples",
             "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "underline",
+            "border": "false",
+            "content": "Video with ring examples" 
         }
     ]
 }
