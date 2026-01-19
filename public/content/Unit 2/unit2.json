@@ -80,12 +80,12 @@
                 ],
                 [
                     "2", "eth",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 0.2 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 0.1 },
                     "-yne"
                 ],
                 [
                     "3", "prop",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 0.4 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 0.3 },
                     "-ol"
                 ],
                 [
@@ -100,7 +100,7 @@
                 ],
                 [
                     "6", "hex",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/7.%20Zigzag.png", "alt": "7. Zigzag", "width": 0.8 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/7.%20Zigzag.png", "alt": "7. Zigzag", "width": 0.7 },
                     "-one"
                 ],
                 [
