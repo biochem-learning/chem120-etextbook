@@ -9,6 +9,17 @@
         },
         {
             "type": "text",
+            "border": "false",
+            "content": [
+                { "type": "span", "text": "Sed ut perspiciatis unde omnis " },
+                { "type": "span", "text": "iste natus error", "format": "underline" },
+                { "type": "span", "text": " sit voluptatem accusantium " },
+                { "type": "span", "text": "doloremque", "format": "bold" },
+                { "type": "span", "text": " laudantium." }
+            ]
+        },
+        {
+            "type": "text",
             "format": "normal",
             "border": "false",
             "content": "Deena Walker is a scientist who studies the molecular mechanisms of addiction and depression. She found that mice that were raised in social isolation showed higher levels of anxiety than mice raised in groups. These mice also had different levels of the neurotransmitters dopamine and serotonin than mice raised in groups." 
@@ -98,10 +109,30 @@
             "border": "false",
             "content": "By sharing the electrons, it is like both atoms have one more electron than they started with.  It is possible for two atoms to share more electrons with each other, always in pairs. We will see single bonds (1 electron shared from each atom), double bonds (2 electrons shared from each atom for 4 total), and triple bonds (3 electrons shared from each atom for 6 total). Since for every bond the atom gets an extra electron and each atom wants to get a total of 8 valence electrons, the number of bonds each atom makes is 8 minus the number of valence electrons it starts with (from the periodic table). Hydrogen makes 1 bond." 
         },
+
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": [
+                
+            ]
+        },
         {
             "type": "video",
             "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/1.%20Two%20people%20sharing%20soda.mp4",
             "title": "Video 1. Two people sharing soda",
+            "caption": {
+                "type": "text",
+                "format": "normal",
+                "border": "false",
+                "content": [
+                    { "type": "span", "text": "C" },
+                    { "type": "span", "text": "2",  "format": "sub" },
+                    { "type": "span", "text": "H"},
+                    { "type": "span", "text": "4",  "format": "sub" }
+                ]
+            },
             "width": "0.9"
         },
         {

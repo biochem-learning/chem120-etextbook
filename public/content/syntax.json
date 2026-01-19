@@ -17,6 +17,7 @@
             "type": "video",
             "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
             "title": "cat vid",
+            "caption": "Figure 1. Infrared spectroscopy peak assignment demo.",
             "width": "0.9"
         },
         {
@@ -26,11 +27,22 @@
             "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
         },
         {
+            "type": "text",
+            "border": "false",
+            "content": [
+                { "type": "span", "text": "Sed ut perspiciatis unde omnis " },
+                { "type": "span", "text": "iste natus error", "format": "underline" },
+                { "type": "span", "text": " sit voluptatem accusantium " },
+                { "type": "span", "text": "doloremque", "format": "bold" },
+                { "type": "span", "text": " laudantium." }
+            ]
+        },
+        {
             "type": "list",
             "content": [
-                "I1",
-                "I2",
-                "I3"
+                "Item 1",
+                "Item 2",
+                "Item 3"
             ]
         },
         {
@@ -42,9 +54,9 @@
         {
             "type": "bullet-list",
             "content": [
-                "It 1",
-                "It 2",
-                "It 3"
+                "Item 1",
+                "Item 2",
+                "Item 3"
             ]
         },
         {
@@ -60,7 +72,6 @@
                     "A",
                     "B"
                 ]
-
             ]
         },
         {

@@ -189,45 +189,86 @@
                                         case "text": {
                                             const p = document.createElement("p");
 
-                                            p.textContent = value[i]["content"];
-                                            
-                                            const format = value[i]["format"] || "normal";
-
-                                            if (format !== "normal") {
-                                                switch (format) {
-                                                    case "bold":
-                                                        p.style.fontWeight = "700";
-                                                        break;
-
-                                                    case "italic":
-                                                        p.style.fontStyle = "italic";
-                                                        break;
-
-                                                    case "underline":
-                                                        p.style.textDecoration = "underline";
-                                                        break;
-
-                                                    case "bold-italic":
-                                                        p.style.fontWeight = "700";
-                                                        p.style.fontStyle = "italic";
-                                                        break;
-
-                                                    case "code":
-                                                        p.style.fontFamily = "monospace";
-                                                        p.style.background = "#f5f5f5";
-                                                        p.style.padding = "0.25em 0.4em";
-                                                        p.style.borderRadius = "4px";
-                                                        break;
-                                                }
-                                            }
+                                            // paragraph-level styling (border etc.)
                                             if (value[i]["border"] === "true") {
                                                 p.style.border = "1px solid black";
                                                 p.style.padding = "8px";
                                             }
 
+                                            const content = value[i]["content"];
+
+                                            // NEW: if content is an array => rich text
+                                            if (Array.isArray(content)) {
+                                                content.forEach(run => {
+                                                    if (!run || run.type !== "span") return;
+
+                                                    let node;
+
+                                                    // structural formats first
+                                                    if (run.format === "sub") {
+                                                    node = document.createElement("sub");
+                                                    node.textContent = run.text ?? "";
+                                                    } else if (run.format === "sup") {
+                                                    node = document.createElement("sup");
+                                                    node.textContent = run.text ?? "";
+                                                    } else {
+                                                    node = document.createElement("span");
+                                                    node.textContent = run.text ?? "";
+
+                                                    const fmt = run.format || "normal";
+                                                    if (fmt !== "normal") {
+                                                        switch (fmt) {
+                                                        case "bold": node.style.fontWeight = "700"; break;
+                                                        case "italic": node.style.fontStyle = "italic"; break;
+                                                        case "underline": node.style.textDecoration = "underline"; break;
+                                                        case "bold-italic":
+                                                            node.style.fontWeight = "700";
+                                                            node.style.fontStyle = "italic";
+                                                            break;
+                                                        case "code":
+                                                            node.style.fontFamily = "monospace";
+                                                            node.style.background = "#f5f5f5";
+                                                            node.style.padding = "0.25em 0.4em";
+                                                            node.style.borderRadius = "4px";
+                                                            break;
+                                                        }
+                                                    }
+                                                    }
+
+                                                    // optional hooks (handy later)
+                                                    if (run.class) node.className = run.class;
+                                                    if (run.style && typeof run.style === "object") Object.assign(node.style, run.style);
+
+                                                    p.appendChild(node);
+                                                });
+                                            } else {
+                                                // OLD behavior: content is a string, apply paragraph-wide format
+                                                p.textContent = content ?? "";
+
+                                                const format = value[i]["format"] || "normal";
+                                                if (format !== "normal") {
+                                                switch (format) {
+                                                    case "bold": p.style.fontWeight = "700"; break;
+                                                    case "italic": p.style.fontStyle = "italic"; break;
+                                                    case "underline": p.style.textDecoration = "underline"; break;
+                                                    case "bold-italic":
+                                                    p.style.fontWeight = "700";
+                                                    p.style.fontStyle = "italic";
+                                                    break;
+                                                    case "code":
+                                                    p.style.fontFamily = "monospace";
+                                                    p.style.background = "#f5f5f5";
+                                                    p.style.padding = "0.25em 0.4em";
+                                                    p.style.borderRadius = "4px";
+                                                    break;
+                                                }
+                                                }
+                                            }
+
                                             pageEl.appendChild(p);
                                             break;
                                         }
+
 
                                         case "image": {
                                             /// Zoom in when clicked
@@ -247,25 +288,142 @@
                                         }
 
                                         case "video": {
-                                            let video = document.createElement("video");
+                                        // ---------- helpers ----------
+                                        const applyFormat = (el, fmt) => {
+                                            switch (fmt) {
+                                            case "bold":
+                                                el.style.fontWeight = "700";
+                                                break;
+                                            case "italic":
+                                                el.style.fontStyle = "italic";
+                                                break;
+                                            case "underline":
+                                                el.style.textDecoration = "underline";
+                                                break;
+                                            case "bold-italic":
+                                                el.style.fontWeight = "700";
+                                                el.style.fontStyle = "italic";
+                                                break;
+                                            case "code":
+                                                el.style.fontFamily = "monospace";
+                                                el.style.background = "#f5f5f5";
+                                                el.style.padding = "0.25em 0.4em";
+                                                el.style.borderRadius = "4px";
+                                                break;
+                                            // NOTE: sub/sup are structural, handled in renderer (not here)
+                                            }
+                                        };
 
-                                            video.src = value[i]["src"];
-                                            video.controls = true;
+                                        const renderInlineRuns = (content, blockFmt = "normal") => {
+                                            // returns DocumentFragment
+                                            const frag = document.createDocumentFragment();
 
-                                            if (value[i]["title"]) {
-                                                video.title = value[i]["title"];
+                                            // rich runs
+                                            if (Array.isArray(content)) {
+                                            content.forEach(run => {
+                                                if (!run) return;
+
+                                                if (run.type === "span") {
+                                                let node;
+
+                                                // structural formats
+                                                if (run.format === "sub") {
+                                                    node = document.createElement("sub");
+                                                    node.textContent = run.text ?? "";
+                                                } else if (run.format === "sup") {
+                                                    node = document.createElement("sup");
+                                                    node.textContent = run.text ?? "";
+                                                } else {
+                                                    node = document.createElement("span");
+                                                    node.textContent = run.text ?? "";
+
+                                                    const fmt = run.format || "normal";
+                                                    if (fmt !== "normal") applyFormat(node, fmt);
+                                                }
+
+                                                // optional hooks
+                                                if (run.class) node.className = run.class;
+                                                if (run.style && typeof run.style === "object") Object.assign(node.style, run.style);
+
+                                                frag.appendChild(node);
+                                                return;
+                                                }
+
+                                                if (run.type === "br") {
+                                                frag.appendChild(document.createElement("br"));
+                                                return;
+                                                }
+                                            });
+
+                                            return frag;
                                             }
 
-                                            if (value[i]["width"]) {
-                                                video.style.width = `${Number(value[i]["width"]) * 100}%`;
+                                            // plain string fallback
+                                            const span = document.createElement("span");
+                                            span.textContent = content ?? "";
+                                            if (blockFmt && blockFmt !== "normal") applyFormat(span, blockFmt);
+                                            frag.appendChild(span);
+                                            return frag;
+                                        };
+
+                                        const renderTextBlockInline = (textBlock) => {
+                                            const frag = document.createDocumentFragment();
+                                            if (!textBlock || textBlock.type !== "text") return frag;
+
+                                            const content = textBlock.content;
+                                            const fmt = textBlock.format || "normal";
+                                            frag.appendChild(renderInlineRuns(content, fmt));
+                                            return frag;
+                                        };
+
+                                        // ---------- main video render ----------
+                                        const wrapper = document.createElement("figure");
+                                        wrapper.className = "media-figure";
+                                        wrapper.style.margin = "16px auto";
+                                        wrapper.style.textAlign = "center";
+
+                                        const video = document.createElement("video");
+                                        video.src = value[i]["src"];
+                                        video.controls = true;
+                                        video.preload = "metadata";
+
+                                        if (value[i]["title"]) video.title = value[i]["title"];
+
+                                        if (value[i]["width"] !== undefined) {
+                                            video.style.width = `${Number(value[i]["width"]) * 100}%`;
+                                        } else {
+                                            video.style.width = "100%";
+                                        }
+
+                                        video.style.display = "block";
+                                        video.style.margin = "0 auto";
+                                        wrapper.appendChild(video);
+
+                                        // ---------- caption handling ----------
+                                        const cap = value[i]["caption"];
+                                        if (cap) {
+                                            const figcaption = document.createElement("figcaption");
+                                            figcaption.className = "media-caption";
+
+                                            if (typeof cap === "string") {
+                                            figcaption.textContent = cap;
+                                            } else if (typeof cap === "object" && cap.type === "text") {
+                                            // Optional border around caption block
+                                            if (cap.border === "true") {
+                                                figcaption.style.border = "1px solid black";
+                                                figcaption.style.padding = "6px";
+                                                figcaption.style.display = "inline-block";
                                             }
 
-                                            video.style.display = "block";
-                                            video.style.margin = "0 auto";
-
-                                            pageEl.appendChild(video);
-                                            break;
+                                            figcaption.appendChild(renderTextBlockInline(cap));
                                             }
+
+                                            wrapper.appendChild(figcaption);
+                                        }
+
+                                        pageEl.appendChild(wrapper);
+                                        break;
+                                        }
 
                                         case "list": {
                                             let ul = document.createElement("ul");
@@ -449,7 +607,7 @@
 
                                             pageEl.appendChild(iframe);
                                             break;
-                                            }
+                                        }
 
 
                                     }
@@ -700,6 +858,13 @@
 </script>
 
 <style>
+.media-caption {
+  font-size: 130%;
+  color: #555;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
 .title {
   font-family: "League Spartan", sans-serif;
   margin: 1vw;
@@ -764,7 +929,7 @@
   display: none;
   }
 
-  #slide > .page > p {
+  #slide > .page > p, ul, ol {
     margin: 12.5px;
     font-size: 120%;
     font-family:"League Spartan",sans-serif;
