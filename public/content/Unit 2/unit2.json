@@ -75,22 +75,22 @@
             "rows": [
                 [
                     "1", "meth",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/2.%20Zigzag.png", "alt": "2. Zigzag", "width": 0.75 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/2.%20Zigzag.png", "alt": "2. Zigzag", "width": 0.5 },
                     "-ene"
                 ],
                 [
                     "2", "eth",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 0.75 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png", "alt": "3. Zigzag", "width": 0.5 },
                     "-yne"
                 ],
                 [
                     "3", "prop",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 0.75 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png", "alt": "4. Zigzag", "width": 0.5 },
                     "-ol"
                 ],
                 [
                     "4", "but",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/5.%20Zigzag.png", "alt": "5. Zigzag", "width": 0.80 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/5.%20Zigzag.png", "alt": "5. Zigzag", "width": 0.5 },
                     "-amine"
                 ],
                 [
