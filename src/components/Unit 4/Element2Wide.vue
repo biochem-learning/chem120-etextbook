@@ -147,505 +147,364 @@
         },
 
         mounted() {
-            // const script = document.createElement("script");
-            // script.src ='public/libraries/chemdoodle/ChemDoodleWeb.js';
-            // document.body.appendChild(script);
-            
-            let pageDiv = document.createElement("div");
-            pageDiv.setAttribute("id", "1");
-            pageDiv.setAttribute("class", "page");
-            document.getElementById("slide").appendChild(pageDiv);
-
-            let pageEl = document.getElementById("1")
-            
-            //Read data from JSON files and display them onto the website based on key/"type"
-            for (const key in this.units[this.selectedUnit]) {
-                // console.log(`${key}:`);
-                
-                const value = this.units[this.selectedUnit][key];
-                    
-                // console.log(`Next page id will be ${parseInt(pageEl.id, 10) + 1}`)
-                
-                pageEl = this.handleOverflow.call(this, pageEl)
-                
-                if (Array.isArray(value)) {
-
-                    // Loop through array values
-                    for (let i = 0; i < value.length; i++) {
-
-                        pageEl = this.handleOverflow.call(this, pageEl)
-
-                        if (typeof value[i] === "object" && value !== null) {
-                        // Loop through object values
-                            if (typeof value[i] === "object" && value[i] !== null) {
-
-                                for (const innerKey in value[i]) {
-
-                                    // Only react to the "type" field
-                                    if (innerKey !== "type") continue;
-
-                                    switch (value[i][innerKey]) {
-                                        
-                                        case "text": {
-                                            const p = document.createElement("p");
-
-                                            // paragraph-level styling (border etc.)
-                                            if (value[i]["border"] === "true") {
-                                                p.style.border = "1px solid black";
-                                                p.style.padding = "8px";
-                                            }
-
-                                            const content = value[i]["content"];
-
-                                            // NEW: if content is an array => rich text
-                                            if (Array.isArray(content)) {
-                                                content.forEach(run => {
-                                                    if (!run || run.type !== "span") return;
-
-                                                    let node;
-
-                                                    // structural formats first
-                                                    if (run.format === "sub") {
-                                                    node = document.createElement("sub");
-                                                    node.textContent = run.text ?? "";
-                                                    } else if (run.format === "sup") {
-                                                    node = document.createElement("sup");
-                                                    node.textContent = run.text ?? "";
-                                                    } else {
-                                                    node = document.createElement("span");
-                                                    node.textContent = run.text ?? "";
-
-                                                    const fmt = run.format || "normal";
-                                                    if (fmt !== "normal") {
-                                                        switch (fmt) {
-                                                        case "bold": node.style.fontWeight = "700"; break;
-                                                        case "italic": node.style.fontStyle = "italic"; break;
-                                                        case "underline": node.style.textDecoration = "underline"; break;
-                                                        case "bold-italic":
-                                                            node.style.fontWeight = "700";
-                                                            node.style.fontStyle = "italic";
-                                                            break;
-                                                        case "code":
-                                                            node.style.fontFamily = "monospace";
-                                                            node.style.background = "#f5f5f5";
-                                                            node.style.padding = "0.25em 0.4em";
-                                                            node.style.borderRadius = "4px";
-                                                            break;
-                                                        }
-                                                    }
-                                                    }
-
-                                                    // optional hooks (handy later)
-                                                    if (run.class) node.className = run.class;
-                                                    if (run.style && typeof run.style === "object") Object.assign(node.style, run.style);
-
-                                                    p.appendChild(node);
-                                                });
-                                            } else {
-                                                // OLD behavior: content is a string, apply paragraph-wide format
-                                                p.textContent = content ?? "";
-
-                                                const format = value[i]["format"] || "normal";
-                                                if (format !== "normal") {
-                                                switch (format) {
-                                                    case "bold": p.style.fontWeight = "700"; break;
-                                                    case "italic": p.style.fontStyle = "italic"; break;
-                                                    case "underline": p.style.textDecoration = "underline"; break;
-                                                    case "bold-italic":
-                                                    p.style.fontWeight = "700";
-                                                    p.style.fontStyle = "italic";
-                                                    break;
-                                                    case "code":
-                                                    p.style.fontFamily = "monospace";
-                                                    p.style.background = "#f5f5f5";
-                                                    p.style.padding = "0.25em 0.4em";
-                                                    p.style.borderRadius = "4px";
-                                                    break;
-                                                }
-                                                }
-                                            }
-
-                                            pageEl.appendChild(p);
-                                            break;
-                                        }
-
-
-                                        case "image": {
-                                            /// Zoom in when clicked
-                                            let imgContent = document.createElement("img");
-                                            imgContent.src = value[i]["src"];
-                                            imgContent.alt = value[i]["alt"] || "";
-
-                                            if (value[i]["width"]) {
-                                                imgContent.style.width = `${Number(value[i]["width"]) * 100}%`;
-                                            }
-
-                                            imgContent.style.display = "block";
-                                            imgContent.style.margin = "0 auto";
-
-                                            pageEl.appendChild(imgContent);
-                                            break;
-                                        }
-
-                                        case "video": {
-                                        // ---------- helpers ----------
-                                        const applyFormat = (el, fmt) => {
-                                            switch (fmt) {
-                                            case "bold":
-                                                el.style.fontWeight = "700";
-                                                break;
-                                            case "italic":
-                                                el.style.fontStyle = "italic";
-                                                break;
-                                            case "underline":
-                                                el.style.textDecoration = "underline";
-                                                break;
-                                            case "bold-italic":
-                                                el.style.fontWeight = "700";
-                                                el.style.fontStyle = "italic";
-                                                break;
-                                            case "code":
-                                                el.style.fontFamily = "monospace";
-                                                el.style.background = "#f5f5f5";
-                                                el.style.padding = "0.25em 0.4em";
-                                                el.style.borderRadius = "4px";
-                                                break;
-                                            // NOTE: sub/sup are structural, handled in renderer (not here)
-                                            }
-                                        };
-
-                                        const renderInlineRuns = (content, blockFmt = "normal") => {
-                                            // returns DocumentFragment
-                                            const frag = document.createDocumentFragment();
-
-                                            // rich runs
-                                            if (Array.isArray(content)) {
-                                            content.forEach(run => {
-                                                if (!run) return;
-
-                                                if (run.type === "span") {
-                                                let node;
-
-                                                // structural formats
-                                                if (run.format === "sub") {
-                                                    node = document.createElement("sub");
-                                                    node.textContent = run.text ?? "";
-                                                } else if (run.format === "sup") {
-                                                    node = document.createElement("sup");
-                                                    node.textContent = run.text ?? "";
-                                                } else {
-                                                    node = document.createElement("span");
-                                                    node.textContent = run.text ?? "";
-
-                                                    const fmt = run.format || "normal";
-                                                    if (fmt !== "normal") applyFormat(node, fmt);
-                                                }
-
-                                                // optional hooks
-                                                if (run.class) node.className = run.class;
-                                                if (run.style && typeof run.style === "object") Object.assign(node.style, run.style);
-
-                                                frag.appendChild(node);
-                                                return;
-                                                }
-
-                                                if (run.type === "br") {
-                                                frag.appendChild(document.createElement("br"));
-                                                return;
-                                                }
-                                            });
-
-                                            return frag;
-                                            }
-
-                                            // plain string fallback
-                                            const span = document.createElement("span");
-                                            span.textContent = content ?? "";
-                                            if (blockFmt && blockFmt !== "normal") applyFormat(span, blockFmt);
-                                            frag.appendChild(span);
-                                            return frag;
-                                        };
-
-                                        const renderTextBlockInline = (textBlock) => {
-                                            const frag = document.createDocumentFragment();
-                                            if (!textBlock || textBlock.type !== "text") return frag;
-
-                                            const content = textBlock.content;
-                                            const fmt = textBlock.format || "normal";
-                                            frag.appendChild(renderInlineRuns(content, fmt));
-                                            return frag;
-                                        };
-
-                                        // ---------- main video render ----------
-                                        const wrapper = document.createElement("figure");
-                                        wrapper.className = "media-figure";
-                                        wrapper.style.margin = "16px auto";
-                                        wrapper.style.textAlign = "center";
-
-                                        const video = document.createElement("video");
-                                        video.src = value[i]["src"];
-                                        video.controls = true;
-                                        video.preload = "metadata";
-
-                                        if (value[i]["title"]) video.title = value[i]["title"];
-
-                                        if (value[i]["width"] !== undefined) {
-                                            video.style.width = `${Number(value[i]["width"]) * 100}%`;
-                                        } else {
-                                            video.style.width = "100%";
-                                        }
-
-                                        video.style.display = "block";
-                                        video.style.margin = "0 auto";
-                                        wrapper.appendChild(video);
-
-                                        // ---------- caption handling ----------
-                                        const cap = value[i]["caption"];
-                                        if (cap) {
-                                            const figcaption = document.createElement("figcaption");
-                                            figcaption.className = "media-caption";
-
-                                            if (typeof cap === "string") {
-                                            figcaption.textContent = cap;
-                                            } else if (typeof cap === "object" && cap.type === "text") {
-                                            // Optional border around caption block
-                                            if (cap.border === "true") {
-                                                figcaption.style.border = "1px solid black";
-                                                figcaption.style.padding = "6px";
-                                                figcaption.style.display = "inline-block";
-                                            }
-
-                                            figcaption.appendChild(renderTextBlockInline(cap));
-                                            }
-
-                                            wrapper.appendChild(figcaption);
-                                        }
-
-                                        pageEl.appendChild(wrapper);
-                                        break;
-                                        }
-
-                                        case "list": {
-                                            let ul = document.createElement("ul");
-
-                                            value[i]["content"].forEach(item => {
-                                                let li = document.createElement("li");
-                                                li.textContent = item;
-                                                ul.appendChild(li);
-                                            });
-
-                                            pageEl.appendChild(ul);
-                                            break;
-                                        }
-
-                                        case "bullet-list": {
-                                            let ol = document.createElement("ol");
-
-                                            value[i]["content"].forEach(item => {
-                                                let li = document.createElement("li");
-                                                li.textContent = item;
-                                                ol.appendChild(li);
-                                            });
-
-                                            pageEl.appendChild(ol);
-                                            break;
-                                        }
-
-                                        case "table": {
-                                            let table = document.createElement("table");
-                                            table.style.borderCollapse = "collapse";
-                                            table.style.width = "100%";
-
-                                            // Header
-                                            if (value[i]["head"]) {
-                                            let thead = document.createElement("thead");
-                                            let tr = document.createElement("tr");
-
-                                            value[i]["head"].forEach(h => {
-                                                let th = document.createElement("th");
-                                                th.textContent = h;
-                                                th.style.border = "1px solid #ccc";
-                                                th.style.padding = "6px";
-                                                tr.appendChild(th);
-                                            });
-
-                                            thead.appendChild(tr);
-                                            table.appendChild(thead);
-                                            }
-
-                                            // Body
-                                            let tbody = document.createElement("tbody");
-
-                                            value[i]["rows"].forEach(row => {
-                                            let tr = document.createElement("tr");
-
-                                            row.forEach(cell => {
-                                                let td = document.createElement("td");
-                                                td.style.border = "1px solid #ccc";
-                                                td.style.padding = "6px";
-
-                                                if (typeof cell === "object" && cell.type === "image") {
-                                                    let img = document.createElement("img");
-                                                    img.src = cell.src;
-                                                    img.alt = cell.alt || "";
-                                                    img.style.width = "40px";
-                                                    img.style.display = "block";
-                                                    td.appendChild(img);
-                                                } else {
-                                                    td.textContent = cell;
-                                                }
-
-                                                tr.appendChild(td);
-                                            });
-
-                                            tbody.appendChild(tr);
-                                            });
-
-                                            table.appendChild(tbody);
-                                            pageEl.appendChild(table);
-                                            break;
-                                        }
-
-                                        case "textarea": {
-                                            let textarea = document.createElement("textarea");
-                                            textarea.placeholder = value[i]["prompt"] || "";
-
-                                            if (value[i]["height"]) {
-                                                textarea.style.height = `${Number(value[i]["height"])}px`;
-                                            }
-
-                                            textarea.rows = 4;
-                                            pageEl.appendChild(textarea);
-                                            break;
-                                        }
-
-                                        case "podcast": {
-                                            // Outer container
-                                            let container = document.createElement("div");
-                                            container.className = "podcast-container";
-
-                                            // Introduction text
-                                            if (value[i]["introduction"]) {
-                                                let intro = document.createElement("p");
-                                                intro.className = "podcast-text";
-                                                intro.textContent = value[i]["introduction"];
-                                                container.appendChild(intro);
-                                            }
-
-                                            // Podcast media row
-                                            let podcastRow = document.createElement("div");
-                                            podcastRow.className = "podcast";
-
-                                            // Image
-                                            if (value[i]["image"]) {
-                                                let img = document.createElement("img");
-                                                img.src = value[i]["image"]["src"];
-                                                img.alt = value[i]["image"]["alt"] || "";
-                                                podcastRow.appendChild(img);
-                                            }
-
-                                            // Embedded player
-                                            if (value[i]["link"]) {
-                                                let iframe = document.createElement("iframe");
-                                                iframe.src = value[i]["link"];
-                                                iframe.setAttribute("frameBorder", "0");
-                                                iframe.setAttribute("scrolling", "no");
-                                                iframe.style.width = "60%";
-
-                                                podcastRow.appendChild(iframe);
-                                            }
-
-                                            container.appendChild(podcastRow);
-
-                                            // Text content blocks
-                                            if (Array.isArray(value[i]["text-content"])) {
-                                                value[i]["text-content"].forEach(block => {
-                                                if (block.type === "text") {
-                                                    let p = document.createElement("p");
-                                                    p.className = "podcast-text";
-                                                    p.textContent = block.content;
-                                                    container.appendChild(p);
-                                                }
-                                                });
-                                            }
-
-                                            pageEl.appendChild(container);
-                                            break;
-                                        }
-
-                                        case "3d-model": {
-                                            /// create a canvas element 
-                                            /// insert 3d model with thecorresponding width and height
-                                            
-                                            break;
-                                        }
-
-                                        case "iframe": {
-                                            let iframe = document.createElement("iframe");
-
-                                            // Ensure absolute URL
-                                            let src = value[i]["src"];
-                                            if (!src.startsWith("http")) {
-                                                src = "https://" + src;
-                                            }
-                                            iframe.src = src;
-
-                                            // Width handling (0–1 → percentage)
-                                            if (value[i]["width"] !== undefined) {
-                                                iframe.style.width = `${Number(value[i]["width"]) * 100}%`;
-                                            } else {
-                                                iframe.style.width = "100%";
-                                            }
-
-                                            // Sensible defaults
-                                            iframe.style.height = "400px";
-                                            iframe.style.border = "none";
-                                            iframe.style.display = "block";
-                                            iframe.style.margin = "0 auto";
-
-                                            iframe.setAttribute("loading", "lazy");
-
-                                            pageEl.appendChild(iframe);
-                                            break;
-                                        }
-
-
-                                    }
-                                }
-
-                                continue;
-                            }
-                        }
-
-                        let content = document.createElement("p");
-                        let list = document.createElement("li");
-                        list.textContent = value[i];
-                        content.appendChild(list);
-                        pageEl.appendChild(content);
-                        
-                        // console.log(`  [${i}]:`, value[i]);
-
-                        ///Append the content of the list into ls tag in html
-                    }
-                } else {
-                    if (key == "title") {
-                        continue;
-                    }
-                    let bold = document.createElement("strong");
-                    let content = document.createElement("p");
-                    bold.textContent = this.units[this.selectedUnit][key];
-                    content.appendChild(bold);
-                    pageEl.appendChild(content);
-                    // console.log(`  ${this.units[this.selectedUnit][key]}`);
+        // ---------- helpers: inline rich text ----------
+        const applyInlineFormat = (el, fmt) => {
+            switch (fmt) {
+            case "bold": el.style.fontWeight = "700"; break;
+            case "italic": el.style.fontStyle = "italic"; break;
+            case "underline": el.style.textDecoration = "underline"; break;
+            case "bold-italic":
+                el.style.fontWeight = "700";
+                el.style.fontStyle = "italic";
+                break;
+            case "code":
+                el.style.fontFamily = "monospace";
+                el.style.background = "#f5f5f5";
+                el.style.padding = "0.25em 0.4em";
+                el.style.borderRadius = "4px";
+                break;
+            }
+        };
+
+        const renderInline = (content, fallbackFmt = "normal") => {
+            const frag = document.createDocumentFragment();
+
+            // Rich runs array
+            if (Array.isArray(content)) {
+            content.forEach(run => {
+                if (run == null) return;
+
+                // allow raw strings in run array
+                if (typeof run === "string") {
+                frag.appendChild(document.createTextNode(run));
+                return;
                 }
-            }
-            // console.log(`Page is ${this.isOverflow(pageEl)}`)
-            // console.log(this.selectedUnit)
 
-            if (parseInt(pageEl.id) % 2 != 0) {
-                this.createNewPage(pageEl)
+                if (run.type === "br") {
+                frag.appendChild(document.createElement("br"));
+                return;
+                }
+
+                if (run.type !== "span") return;
+
+                let node;
+
+                // structural formats
+                if (run.format === "sub") {
+                node = document.createElement("sub");
+                node.textContent = run.text ?? "";
+                } else if (run.format === "sup") {
+                node = document.createElement("sup");
+                node.textContent = run.text ?? "";
+                } else {
+                node = document.createElement("span");
+                node.textContent = run.text ?? "";
+
+                const fmt = run.format || "normal";
+                if (fmt !== "normal") applyInlineFormat(node, fmt);
+                }
+
+                if (run.class) node.className = run.class;
+                if (run.style && typeof run.style === "object") Object.assign(node.style, run.style);
+
+                frag.appendChild(node);
+            });
+
+            return frag;
             }
+
+            // Plain string/number fallback
+            const span = document.createElement("span");
+            span.textContent = content ?? "";
+            if (fallbackFmt && fallbackFmt !== "normal") applyInlineFormat(span, fallbackFmt);
+            frag.appendChild(span);
+            return frag;
+        };
+
+        const renderTextLike = (x, fallbackFmt = "normal") => {
+            if (x == null) return document.createTextNode("");
+
+            // { type:"text", content: ... }
+            if (typeof x === "object" && !Array.isArray(x) && x.type === "text") {
+            return renderInline(x.content, x.format || fallbackFmt);
+            }
+
+            // runs array
+            if (Array.isArray(x)) {
+            return renderInline(x, fallbackFmt);
+            }
+
+            // plain string/number
+            return renderInline(String(x), fallbackFmt);
+        };
+
+        // ---------- helpers: media styling + figure/caption ----------
+        const styleMediaEl = (el, b = {}) => {
+            el.style.display = "block";
+            el.style.margin = "0 auto";
+            el.style.maxWidth = "100%";
+            el.style.height = "auto";
+
+            if (b.width !== undefined) {
+            el.style.width = `${Number(b.width) * 100}%`;
+            }
+        };
+
+        const renderMediaFigure = (mediaEl, caption) => {
+            const fig = document.createElement("figure");
+            fig.className = "media-figure";
+            fig.style.margin = "16px auto";
+            fig.style.textAlign = "center";
+
+            fig.appendChild(mediaEl);
+
+            if (caption) {
+            const cap = document.createElement("figcaption");
+            cap.className = "media-caption";
+            cap.style.fontSize = "130%";
+            cap.style.marginTop = "6px";
+            cap.style.lineHeight = "1.3";
+
+            if (typeof caption === "string") {
+                cap.textContent = caption;
+            } else {
+                if (caption.border === "true") {
+                cap.style.border = "1px solid black";
+                cap.style.padding = "6px";
+                cap.style.display = "inline-block";
+                }
+                cap.appendChild(renderTextLike(caption, "normal"));
+            }
+
+            fig.appendChild(cap);
+            }
+
+            return fig;
+        };
+
+        // ---------- block renderers ----------
+        const blockRenderers = {
+            text: (b) => {
+            const p = document.createElement("p");
+
+            if (b.border === "true") {
+                p.style.border = "1px solid black";
+                p.style.padding = "8px";
+            }
+
+            p.appendChild(renderTextLike(b.content ?? "", b.format || "normal"));
+            return p;
+            },
+
+            image: (b) => {
+            const img = document.createElement("img");
+            img.src = b.src;
+            img.alt = b.alt || "";
+            styleMediaEl(img, b);
+            return renderMediaFigure(img, b.caption);
+            },
+
+            video: (b) => {
+            const video = document.createElement("video");
+            video.src = b.src;
+            video.controls = true;
+            video.preload = "metadata";
+            if (b.title) video.title = b.title;
+
+            styleMediaEl(video, b);
+            if (b.width === undefined) video.style.width = "100%";
+
+            return renderMediaFigure(video, b.caption);
+            },
+
+            list: (b) => {
+            const ul = document.createElement("ul");
+            (b.content || []).forEach(item => {
+                const li = document.createElement("li");
+                li.appendChild(renderTextLike(item, "normal"));
+                ul.appendChild(li);
+            });
+            return ul;
+            },
+
+            "bullet-list": (b) => {
+            const ol = document.createElement("ol");
+            (b.content || []).forEach(item => {
+                const li = document.createElement("li");
+                li.appendChild(renderTextLike(item, "normal"));
+                ol.appendChild(li);
+            });
+            return ol;
+            },
+
+            table: (b) => {
+            const table = document.createElement("table");
+            table.style.borderCollapse = "collapse";
+            table.style.width = "100%";
+
+            // Header (rich supported)
+            if (b.head) {
+                const thead = document.createElement("thead");
+                const tr = document.createElement("tr");
+
+                b.head.forEach(h => {
+                const th = document.createElement("th");
+                th.style.border = "1px solid #ccc";
+                th.style.padding = "6px";
+                th.appendChild(renderTextLike(h, "normal"));
+                tr.appendChild(th);
+                });
+
+                thead.appendChild(tr);
+                table.appendChild(thead);
+            }
+
+            const tbody = document.createElement("tbody");
+
+            (b.rows || []).forEach(row => {
+                const tr = document.createElement("tr");
+
+                (row || []).forEach(cell => {
+                const td = document.createElement("td");
+                td.style.border = "1px solid #ccc";
+                td.style.padding = "6px";
+
+                // image cell
+                if (cell && typeof cell === "object" && cell.type === "image") {
+                    const img = document.createElement("img");
+                    img.src = cell.src;
+                    img.alt = cell.alt || "";
+                    styleMediaEl(img, cell);
+
+                    if (cell.width === undefined) img.style.width = "120px";
+
+                    td.appendChild(img);
+                } else {
+                    td.appendChild(renderTextLike(cell, "normal"));
+                }
+
+                tr.appendChild(td);
+                });
+
+                tbody.appendChild(tr);
+            });
+
+            table.appendChild(tbody);
+            return table;
+            },
+
+            textarea: (b) => {
+            const textarea = document.createElement("textarea");
+            textarea.placeholder = b.prompt || "";
+            textarea.rows = 4;
+            if (b.height) textarea.style.height = `${Number(b.height)}px`;
+            return textarea;
+            },
+
+            podcast: (b) => {
+            const container = document.createElement("div");
+            container.className = "podcast-container";
+
+            if (b.introduction) {
+                const intro = document.createElement("p");
+                intro.className = "podcast-text";
+                intro.textContent = b.introduction;
+                container.appendChild(intro);
+            }
+
+            const row = document.createElement("div");
+            row.className = "podcast";
+
+            if (b.image?.src) {
+                const img = document.createElement("img");
+                img.src = b.image.src;
+                img.alt = b.image.alt || "";
+                styleMediaEl(img, b.image);
+                // optional: thumbnail default
+                if (b.image.width === undefined) img.style.width = "140px";
+                img.style.borderRadius = "8px";
+                row.appendChild(img);
+            }
+
+            if (b.link) {
+                const iframe = document.createElement("iframe");
+                iframe.src = b.link;
+                iframe.setAttribute("frameBorder", "0");
+                iframe.setAttribute("scrolling", "no");
+                iframe.style.width = "60%";
+                row.appendChild(iframe);
+            }
+
+            container.appendChild(row);
+
+            (b["text-content"] || []).forEach(tb => {
+                if (tb && tb.type === "text") {
+                const p = document.createElement("p");
+                p.className = "podcast-text";
+                p.appendChild(renderTextLike(tb, tb.format || "normal"));
+                container.appendChild(p);
+                }
+            });
+
+            return container;
+            },
+
+            iframe: (b) => {
+            const iframe = document.createElement("iframe");
+            let src = b.src || "";
+            if (src && !src.startsWith("http")) src = "https://" + src;
+            iframe.src = src;
+
+            if (b.width !== undefined) iframe.style.width = `${Number(b.width) * 100}%`;
+            else iframe.style.width = "100%";
+
+            iframe.style.height = "400px";
+            iframe.style.border = "none";
+            iframe.style.display = "block";
+            iframe.style.margin = "0 auto";
+            iframe.setAttribute("loading", "lazy");
+            return iframe;
+            },
+
+            "3d-model": (b) => {
+            const div = document.createElement("div");
+            div.textContent = "3D model placeholder";
+            div.style.height = `${Number(b.height || 0.3) * 1000}px`;
+            return div;
+            }
+        };
+
+        const renderBlock = (block) => {
+            if (!block || typeof block !== "object") return document.createTextNode("");
+            const fn = blockRenderers[block.type];
+            if (!fn) return document.createTextNode("");
+            return fn(block);
+        };
+
+        // ---------- mount logic ----------
+        const slide = document.getElementById("slide");
+        const unit = this.units[this.selectedUnit];
+
+        // Create first page
+        const pageDiv = document.createElement("div");
+        pageDiv.id = "1";
+        pageDiv.className = "page";
+        slide.appendChild(pageDiv);
+
+        let pageEl = pageDiv;
+
+        // Render blocks
+        const blocks = Array.isArray(unit.content) ? unit.content : [];
+        blocks.forEach(block => {
+            pageEl = this.handleOverflow.call(this, pageEl);
+            pageEl.appendChild(renderBlock(block));
+        });
+
+        if (parseInt(pageEl.id, 10) % 2 !== 0) {
+            this.createNewPage(pageEl);
+        }
         },
+
 
         created() {
             let self = this;
@@ -858,13 +717,6 @@
 </script>
 
 <style>
-.media-caption {
-  font-size: 130%;
-  color: #555;
-  margin-top: 6px;
-  line-height: 1.3;
-}
-
 .title {
   font-family: "League Spartan", sans-serif;
   margin: 1vw;
