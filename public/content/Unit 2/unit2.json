@@ -38,12 +38,13 @@
             "alt": "1. Figure 1",
             "width": "0.9"
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 1. The bond-line structures of (a) alkane, (b) alkene, and (c) alkyne." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 1.", "format": "bold" }, 
+   { "type": "span", "text": " The bond-line structures of (a) alkane, (b) alkene, and (c) alkyne."} 
+] },
          {
             "type": "text",
             "format": "bold",
@@ -62,12 +63,13 @@
             "border": "false",
             "content": "We'll start with nomenclature in the simplest way. The first thing we look for when naming an organic compound is the longest chain or ring of carbon atoms. This longest chain (or ring) becomes the parent structure, and the parent name tells us two key pieces of information: the length of the longest carbon chain (indicated by a prefix) and the type of bonds and functional groups present in that chain (indicated by a suffix). Now that we know what alkanes, alkenes, and alkynes are, we can start by naming alkanes. The end of the name is going to be “ane.” Before that, we'll put a prefix to indicate the length of the longest carbon chain. So, for example, the compound with 5 carbons in a chain is called pentane - pent to indicate 5 carbons and 'ane' to indicate it is an alkane. Unfortunately, all of the prefixes we used to indicate chain length are not as easy to remember as pent. The hardest are the first four, as you can see in this table."
         },
-{
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Table 1. The zig-zag (skeletal) structures of simple alkanes with increasing carbon chain length" 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Table 1.", "format": "bold" }, 
+   { "type": "span", "text": " The zig-zag (skeletal) structures of simple alkanes with increasing carbon chain length"} 
+] },
          {
             "type": "table",
 
@@ -136,15 +138,16 @@
          {
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/12.%20Figure%202.png",
-            "alt": "Figure 2",
+            "alt": "12. Figure 2",
             "width": "0.9"
         }, 
-{
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "12. Figure 2. Various ways of bond-line representation of n-decane" 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 2.", "format": "bold" }, 
+   { "type": "span", "text": " Various ways of bond-line representation of n-decane"} 
+] },
         {
             "type": "text",
             "format": "normal",
@@ -218,24 +221,26 @@
             "alt": "19. Figure 3",
             "width": "0.9"
         }, 
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 3. The images of 2-butyl-1-octene are shown in different types of structures:(a) Ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, (c) Bond-line structure." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 3.", "format": "bold" }, 
+   { "type": "span", "text": " The images of 2-butyl-1-octene are shown in different types of structures:(a) Ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, (c) Bond-line structure."} 
+] },
         {
             "type": "text",
             "format": "normal",
             "border": "false",
             "content": "Functional groups also play an important role in naming the parent chain. Notice that three of the functional groups we saw in Unit 1 contain a carbon double-bonded to an oxygen, C=O. This common and very important type of bond is called a carbonyl. We will use that term frequently. When a functional group is part of the parent chain, it is reflected in the parent name through specific suffixes. For example, an alcohol (containing -OH) is named with the suffix '-ol' (like ethanol), an aldehyde (containing a C=O at the end of the chain) is named with '-al' (like ethanal), a ketone (containing a C=O in the middle of the chain) is named with '-one' (like 2-propanone), and an amine (containing -NH₂) is named with '-amine' (like ethylamine)." 
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Table 3. The structure and nomenclature of some common functional groups." 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Table 3.", "format": "bold" }, 
+   { "type": "span", "text": " The structure and nomenclature of some common functional groups."} 
+] },
          {
             "type": "table",
 
@@ -299,12 +304,13 @@
             "alt": "34. Figure 4",
             "width": "0.9"
         }, 
- {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 4. The structures of 1,2-ethanediol and 1,3-butanediene are shown in different types of structures: (a) Lewis dot structure, (b) bond-line structure." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 4.", "format": "bold" }, 
+   { "type": "span", "text": " The structures of 1,2-ethanediol and 1,3-butanediene are shown in different types of structures: (a) Lewis dot structure, (b) bond-line structure."} 
+] },
         {
             "type": "text",
             "format": "normal",
