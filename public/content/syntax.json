@@ -7,6 +7,23 @@
             "border": "false",
             "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
         },
+        { 
+        "type": "text", 
+        "border": "false", 
+        "content": [ 
+            { "type": "span", "text": " Table 1.  ", "format": "bold" }, 
+            { "type": "span", "text": " Common functional groups"} 
+        ] },
+        { 
+        "type": "text", 
+        "border": "false", 
+        "content": [ 
+            { "type": "span", "text": " C " }, 
+            { "type": "span", "text": " 2",  "format": "sub"},
+            { "type": "span", "text": " H " }, 
+            { "type": "span", "text": " 5",  "format": "sub"},
+            { "type": "span", "text": " OH"} 
+        ] },
         {
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
@@ -17,7 +34,7 @@
             "type": "video",
             "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
             "title": "cat vid",
-            "caption": "Figure 1. Infrared spectroscopy peak assignment demo.",
+            "caption": "cat vid",
             "width": "0.9"
         },
         {

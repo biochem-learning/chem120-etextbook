@@ -9,17 +9,6 @@
         },
         {
             "type": "text",
-            "border": "false",
-            "content": [
-                { "type": "span", "text": "Sed ut perspiciatis unde omnis " },
-                { "type": "span", "text": "iste natus error", "format": "underline" },
-                { "type": "span", "text": " sit voluptatem accusantium " },
-                { "type": "span", "text": "doloremque", "format": "bold" },
-                { "type": "span", "text": " laudantium." }
-            ]
-        },
-        {
-            "type": "text",
             "format": "normal",
             "border": "false",
             "content": "Deena Walker is a scientist who studies the molecular mechanisms of addiction and depression. She found that mice that were raised in social isolation showed higher levels of anxiety than mice raised in groups. These mice also had different levels of the neurotransmitters dopamine and serotonin than mice raised in groups." 
@@ -126,12 +115,7 @@
                 "type": "text",
                 "format": "normal",
                 "border": "false",
-                "content": [
-                    { "type": "span", "text": "C" },
-                    { "type": "span", "text": "2",  "format": "sub" },
-                    { "type": "span", "text": "H"},
-                    { "type": "span", "text": "4",  "format": "sub" }
-                ]
+                "content": "Two people sharing soda"
             },
             "width": "0.9"
         },
