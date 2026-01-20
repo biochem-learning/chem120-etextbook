@@ -121,12 +121,6 @@
         },
         {
             "type": "text",
-            "format": "underline",
-            "border": "false",
-            "content": "Two people sharing soda" 
-        },
-        {
-            "type": "text",
             "format": "normal",
             "border": "false",
             "content": "Put in a table of common numbers of bonds and bonding examples." 
@@ -150,13 +144,8 @@
             "type": "video",
             "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
             "title": "Video 2. Drawing Lewis dot structures",
+            "caption": "Examples of drawing Lewis dot structures",
             "width": "0.9"
-        },
-        {
-            "type": "text",
-            "format": "underline",
-            "border": "false",
-            "content": "Drawing Lewis dot structures" 
         },
         {
             "type": "text",
@@ -186,13 +175,8 @@
             "type": "video",
             "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/3.%20Ethanol%202D%20vs%203D.mp4",
             "title": "Video 3. Ethanol 2D vs. 3D",
+            "caption": "Ethanol 2D vs. 3D",
             "width": "0.9"
-        },
-        {
-            "type": "text",
-            "format": "underline",
-            "border": "false",
-            "content": "Ethanol 2D vs. 3D" 
         },
           {
             "type": "text",
@@ -212,12 +196,13 @@
             "alt": "Figure 1",
             "width": "0.9"
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 1. The images of butane (n-butane) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 1.", "format": "bold" }, 
+   { "type": "span", "text": " The images of butane (n-butane) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."} 
+] },
         {
             "type": "text",
             "format": "normal",
@@ -230,12 +215,13 @@
             "alt": "Figure 2",
             "width": "0.9"
         },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 2. The images of 2-methyl-2-buten-1-ol are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 2.", "format": "bold" }, 
+   { "type": "span", "text": " The images of 2-methyl-2-buten-1-ol are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."} 
+] },
         {
             "type": "text",
             "format": "normal",
@@ -248,36 +234,62 @@
             "alt": "Figure 3",
             "width": "0.9"
         },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 3. The images of 2-pentyne are shown in different types of structures:(a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 3.", "format": "bold" }, 
+   { "type": "span", "text": " The images of 2-pentyne are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."} 
+] },
          {
             "type": "text",
             "format": "bold",
             "border": "false",
             "content": "Condensed Formulas" 
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "We will not use these as much, but we will encounter them. Let’s consider the structure of ethyl benzoate, which is shown below. We can represent this using a condensed formula as C6H5CO2CH2CH3. Comparing this to the structures, we can see that C6H5 is an abbreviation for the six-membered ring containing three double bonds. This is a very common structure called a benzene ring or phenyl group. It is also commonly abbreviated as Ph, so this compound could also be written as PhCO2CH2CH3. Note that CO2 represents carbon double-bonded to one oxygen and single-bonded to another. It will always represent this arrangement of atoms. In condensed formulas, the number of atoms is subscripted, so CH2 indicates two hydrogen atoms are bonded to that carbon atom." 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "We will not use these as much, but we will encounter them. Let's consider the structure of ethyl benzoate, which is shown below. We can represent this using a condensed formula as C" }, 
+   { "type": "span", "text": "6",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "5",  "format": "sub"},
+   { "type": "span", "text": "CO" }, 
+   { "type": "span", "text": "2",  "format": "sub"},
+   { "type": "span", "text": "CH" }, 
+   { "type": "span", "text": "2",  "format": "sub"},
+   { "type": "span", "text": "CH" }, 
+   { "type": "span", "text": "3",  "format": "sub"}, 
+   { "type": "span", "text": ". Comparing this to the structures, we can see that C"},
+   { "type": "span", "text": "6",  "format": "sub"}, 
+   { "type": "span", "text": "H"},
+   { "type": "span", "text": "5 ",  "format": "sub"}, 
+   { "type": "span", "text": " is an abbreviation for the six-membered ring containing three double bonds. This is a very common structure called a benzene ring or phenyl group. It is also commonly abbreviated as Ph, so this compound could also be written as PhCO"},
+   { "type": "span", "text": "2",  "format": "sub"}, 
+   { "type": "span", "text": "CH"},
+   { "type": "span", "text": "2",  "format": "sub"}, 
+   { "type": "span", "text": "CH"},
+   { "type": "span", "text": "3",  "format": "sub"}, 
+   { "type": "span", "text": ". Note that CO"},
+   { "type": "span", "text": "2",  "format": "sub"}, 
+   { "type": "span", "text": ". represents carbon double-bonded to one oxygen and single-bonded to another. It will always represent this arrangement of atoms. In condensed formulas, the number of atoms is subscripted, so CH"},
+   { "type": "span", "text": "2",  "format": "sub"}, 
+   { "type": "span", "text": " indicates two hydrogen atoms are bonded to that carbon atom."}
+] },
         {
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/6.%20Figure%204.png",
             "alt": "Figure 4",
             "width": "0.9"
         },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Figure 4. The images of ethyl benzoate (benzoic acid) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Figure 4.", "format": "bold" }, 
+   { "type": "span", "text": " The images of ethyl benzoate (benzoic acid) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."} 
+] },
         {
             "type": "text",
             "format": "bold",
@@ -296,12 +308,13 @@
             "border": "false",
             "content": "Other than alkenes and alkynes, functional groups are characterized by some atom other than carbon and hydrogen. We call these heteroatoms. For us, these will usually be oxygen and nitrogen. We will start with just a few of the functional groups we will encounter, shown in the table below. We will learn additional functional groups later. You will also need to know them in future classes, like biochemistry. In the table, the letter R serves as a kind of variable. It stands for any carbon-containing group." 
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Table 1. The structure and nomenclature of some common functional groups." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Table 1.", "format": "bold" }, 
+   { "type": "span", "text": " The structure and nomenclature of some common functional groups."} 
+] },
         {
             "type": "table",
 
@@ -309,44 +322,44 @@
             "rows": [
                 [
                     "Alkene",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/7.%20Table.png", "alt": "7. Alkene generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/8.%20Table.png", "alt": "8. Alkene example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/7.%20Table.png", "alt": "7. Alkene generic structure", "width": 0.5 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/8.%20Table.png", "alt": "8. Alkene example", "width": 0.5 },
                     "-ene"
                 ],
                 [
                     "Alkyne",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/9.%20Table.png", "alt": "9. Alkyne generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/10.%20Table.png", "alt": "10. Alkyne example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/9.%20Table.png", "alt": "9. Alkyne generic structure", "width": 0.5 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/10.%20Table.png", "alt": "10. Alkyne example", "width": 0.3 },
                     "-yne"
                 ],
                 [
                     "Alcohol",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/11.%20Table.png", "alt": "11. Alcohol generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/12.%20Table.png", "alt": "12. Alcohol example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/11.%20Table.png", "alt": "11. Alcohol generic structure", "width": 0.3 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/12.%20Table.png", "alt": "12. Alcohol example", "width": 0.3 },
                     "-ol"
                 ],
                 [
                     "Amine",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/13.%20Table.png", "alt": "13. Amine generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/14.%20Table.png", "alt": "14. Amine example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/13.%20Table.png", "alt": "13. Amine generic structure", "width": 0.28 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/14.%20Table.png", "alt": "14. Amine example", "width": 0.5 },
                     "-amine"
                 ],
                 [
                     "Aldehyde",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/15.%20Table.png", "alt": "15. Aldehyde generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/16.%20Table.png", "alt": "16. Aldehyde example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/15.%20Table.png", "alt": "15. Aldehyde generic structure", "width": 0.3 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/16.%20Table.png", "alt": "16. Aldehyde example", "width": 0.5 },
                     "-al"
                 ],
                 [
                     "Ketone",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/17.%20Table.png", "alt": "17. Ketone generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/18.%20Table.png", "alt": "18. Ketone example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/17.%20Table.png", "alt": "17. Ketone generic structure", "width": 0.35 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/18.%20Table.png", "alt": "18. Ketone example", "width": 0.4 },
                     "-one"
                 ],
                 [
                     "Carboxylic acid",
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png", "alt": "19. Carboxylic acid generic structure", "width": 1 },
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png", "alt": "20. Carboxylic acid example", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png", "alt": "19. Carboxylic acid generic structure", "width": 0.4 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png", "alt": "20. Carboxylic acid example", "width": 0.4 },
                     "-oic acid"
                 ]
           
