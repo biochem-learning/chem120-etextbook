@@ -30,7 +30,7 @@
         },
         {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/1.%20common%20bonding%20patterns.png",
             "alt": "1. Common bonding patterns table",
             "width": "0.9"
         },
@@ -42,7 +42,7 @@
         },
           {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/2.%20functional%20groups.png",
             "alt": "2. Functional groups table",
             "width": "0.9"
         },
@@ -66,8 +66,8 @@
         },
           {
             "type": "image",
-            "src": "link",
-            "alt": "3. Name compound",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/3.%20Two%20rings%20compound.png",
+            "alt": "3. Two rings compound",
             "width": "0.9"
         },
         {
@@ -96,7 +96,7 @@
         },
         {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%201.%20Naming%20substituents.MP4",
             "title": "Video 1. Naming substituents",
             "caption": "Naming substituents",
             "width": "0.9"
@@ -109,7 +109,7 @@
  },
  {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%202.%20Naming%20compounds%20with%201%20FG.MP4",
             "title": "Video 2. Naming compounds with one functional group",
             "caption": "Naming compounds with one functional group",
             "width": "0.9"
@@ -128,7 +128,7 @@
         },
           {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/4.%20Naming%203%20compounds.png",
             "alt": "4. Name 2 compounds",
             "width": "0.9"
         },
@@ -140,7 +140,7 @@
         },
         {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%203.%20Naming%20esters.MP4",
             "title": "Video 3. Naming esters",
             "caption": "Naming esters",
             "width": "0.9"
@@ -159,7 +159,7 @@
         },
           {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/5.%20Naming%20compound.png",
             "alt": "5. Name compound",
             "width": "0.9"
         },
@@ -171,7 +171,7 @@
         },
          {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%204.%20Naming%20amines%20and%20amides.MP4",
             "title": "Video 4. Naming amines and amides",
             "caption": "Naming Amines and Amides",
             "width": "0.9"
@@ -190,7 +190,7 @@
         },
         {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/6.%20Naming%202%20compounds.png",
             "alt": "6. Name 2 compounds",
             "width": "0.9"
         },
@@ -214,13 +214,13 @@
         },
          {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/7.%20butane%20vs%202-methylpropane%20(add%203D).png",
             "alt": "7. butane vs 2-methylpropane 2D",
             "width": "0.9"
         },
  {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/8.%202-butane%20vs%203D.png",
             "alt": "8. butane vs 2-methylpropane 3D",
             "width": "0.9"
         },
@@ -238,7 +238,7 @@
         },
          {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%205.%20Same%20molecule%20video.MP4",
             "title": "Video 5. Same molecule video",
             "caption": "Same molecule",
             "width": "0.9"
@@ -257,7 +257,7 @@
         },
         {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/9.%20four%20compounds%2C%20same%20or%20not.png",
             "alt": "9. Same molecule or not",
             "width": "0.9"
         },
@@ -269,7 +269,7 @@
         },
           {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%206.%20Isomers%20of%20C6H14.MP4",
             "title": "Video 6. Isomers of C6H14",
             "caption": "Isomers of C6H14",
             "width": "0.9"
@@ -307,7 +307,7 @@
         },
           {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%208.%20C3H6O%20isomers.mp4",
             "title": "Video 8. C3H6O isomers",
             "caption": "C3H6O isomers",
             "width": "0.9"
