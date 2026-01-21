@@ -46,12 +46,14 @@
             "alt": "2. Functional groups table",
             "width": "0.9"
         },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Notice that several functional groups contain a carbon double-bonded to an oxygen, C=O. This common and very important type of bond is called a carbonyl. We will use that term frequently. Also, please note the aromatic ring. Aromaticity, being aromatic, is something we will talk about in greater detail later. The word aromatic means something different in chemistry than in normal usage. It has little to do with the sense of smell. For now, when you see a ring of G carbons with alternating single and double bonds, you can identify that as aromatic. The double bonds in an aromatic ring do not count as alkenes. As we said, functional groups are about having a particular function with regard to properties and reactivity. Aromatic rings function differently from alkenes." 
-        },
+          { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Notice that several functional groups contain a carbon double-bonded to an oxygen, C=O. This common and very important type of bond is called a carbonyl. We will use that term frequently. Also, please note the aromatic ring. Aromaticity, being aromatic, is something we will talk about in greater detail later. The word aromatic means something different in chemistry than in normal usage. It has little to do with the sense of smell. For now, when you see a ring of G carbons with alternating single and double bonds, you can identify that as aromatic. The double bonds in an aromatic ring" }, 
+   { "type": "span", "text": " do not count as alkenes.", "format": "bold" }, 
+   { "type": "span", "text": " As we said, functional groups are about having a particular function with regard to properties and reactivity. Aromatic rings function differently from alkenes."} 
+] },
           {
             "type": "text",
             "format": "normal",
@@ -80,7 +82,7 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "aldehyde      carboxylic acid      alkyne      ester" 
+            "content": "aldehyde; carboxylic acid; alkyne; ester" 
         },
         {
             "type": "text",
@@ -161,7 +163,7 @@
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/5.%20Naming%20compound.png",
             "alt": "5. Name compound",
-            "width": "0.4"
+            "width": "0.3"
         },
          {
             "type": "text",
@@ -192,7 +194,7 @@
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/6.%20Naming%202%20compounds.png",
             "alt": "6. Name 2 compounds",
-            "width": "0.7"
+            "width": "0.6"
         },
          {
             "type": "text",
@@ -206,17 +208,21 @@
             "border": "false",
             "content": "When compounds have the same molecular formula, but the atoms are connected differently, they are called isomers. Since one of our goals for this course is to begin to understand how organic molecules are put together (we call this structure) and how structure affects properties and reactivity, we need to develop a couple of skills. Understanding isomers will help us do that. One skill we need is simply being able to see when two structures are the same or not. This sounds trivial, but it isn’t necessarily. Especially as structures become more complex we will see that there may be many ways to draw the same structure." 
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Our system for naming compounds helps us to understand how the atoms are connected and enables us to identify similarities and differences in structure. Let’s consider alkanes with four carbons and a formula of C4H10. We can see below that there are two possible structures with this formula. Our system for naming organic compounds would name these butane and 2-methylpropane." 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Our system for naming compounds helps us to understand how the atoms are connected and enables us to identify similarities and differences in structure. Let's consider alkanes with four carbons and a formula of C" }, 
+   { "type": "span", "text": "4",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "10 ",  "format": "sub"}, 
+   { "type": "span", "text": ". We can see below that there are two possible structures with this formula. Our system for naming organic compounds would name these butane and 2-methylpropane."} 
+] },
          {
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/7.%20butane%20vs%202-methylpropane%20(add%203D).png",
             "alt": "7. butane vs 2-methylpropane 2D",
-            "width": "0.9"
+            "width": "0.7"
         },
  {
             "type": "image",
@@ -228,7 +234,7 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "One of the learning outcomes for this course is that students will be able to write the structure of organic molecules and understand what the symbolism used to write structures means. Part of that is being able to recognize when our structural representations, the drawings we make to represent structures, are representing the same structure or different structures. We also want to be able to draw representations of all the possible structures for a given molecular formula - making sure we get all of them and don’t duplicate any. This is all just to say that we want to fully understand how the atoms are connected and how we represent that with our drawings." 
+            "content": "One of the learning outcomes for this course is that students will be able to write the structure of organic molecules and understand what the symbolism used to write structures means. Part of that is being able to recognize when our structural representations, the drawings we make to represent structures, are representing the same structure or different structures. We also want to be able to draw representations of all the possible structures for a given molecular formula - making sure we get all of them and don't duplicate any. This is all just to say that we want to fully understand how the atoms are connected and how we represent that with our drawings." 
         },
         {
             "type": "text",
@@ -261,12 +267,16 @@
             "alt": "9. Same molecule or not",
             "width": "0.9"
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "We can use this same way of thinking about structures to help us figure out all the possible isomers for a given molecular formula without duplication. As with naming compounds, we start by focusing on the longest chain. Consider the C4H10 example above. To write the isomer,s we start by writing all of the carbons in the longest possible chain. Once we have done that, we write the next longest chain and draw a carbon branching from it. Let’s look at a more complicated example with more carbon atoms." 
-        },
+          { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "We can use this same way of thinking about structures to help us figure out all the possible isomers for a given molecular formula without duplication. As with naming compounds, we start by focusing on the longest chain. Consider the C" }, 
+   { "type": "span", "text": "4",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "10 ",  "format": "sub"}, 
+   { "type": "span", "text": "example above. To write the isomers we start by writing all of the carbons in the longest possible chain. Once we have done that, we write the next longest chain and draw a carbon branching from it. Let's look at a more complicated example with more carbon atoms."} 
+] },
           {
             "type": "video",
             "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%206.%20Isomers%20of%20C6H14.MP4",
@@ -280,18 +290,26 @@
             "border": "false",
             "content": "Now you try:" 
         },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Write all the isomers of C4H9Cl." 
-        },
-         {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Now we need to consider some more complexity. What if the compound can contain a functional group? First, we need to consider what functional groups might be present. A key consideration is whether the compound can have a double bond or a ring. This is determined by the number of hydrogens present. A simple example is the formula C2H4O." 
-        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Write all the isomers of C" }, 
+   { "type": "span", "text": "4",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "9",  "format": "sub"}, 
+   { "type": "span", "text": "Cl"} 
+] },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Now we need to consider some more complexity. What if the compound can contain a functional group? First, we need to consider what functional groups might be present. A key consideration is whether the compound can have a double bond or a ring. This is determined by the number of hydrogens present. A simple example is the formula C" }, 
+   { "type": "span", "text": "2",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "4",  "format": "sub"}, 
+   { "type": "span", "text": "O"} 
+] },
          {
             "type": "video",
             "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%207.%20Isomers%20video.mov",
@@ -299,12 +317,20 @@
             "caption": "Isomers video",
             "width": "0.9"
         },
-          {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "So fewer hydrogens will mean the compound has a ring or a double bond. Depending on how many hydrogens are “missing,” the compound might have some combination of rings, double bonds, or triple bonds. As we have seen, other than alkenes or alkynes, the functional groups we are learning this semester contain oxygen or nitrogen. By seeing if the compound can have a double bond or not, and if it contains oxygen or nitrogen, we can determine the functional groups possible for a given molecular formula. We just did that for C2H4O, which had isomers with an aldehyde, an alkene and alcohol, or a cyclic ether. Now let’s do it for C3H6O. Using our focus of longest chain together with knowing what functional groups are possible, we can figure out all the possible isomers." 
-        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "So fewer hydrogens will mean the compound has a ring or a double bond. Depending on how many hydrogens are “missing,” the compound might have some combination of rings, double bonds, or triple bonds. As we have seen, other than alkenes or alkynes, the functional groups we are learning this semester contain oxygen or nitrogen. By seeing if the compound can have a double bond or not, and if it contains oxygen or nitrogen, we can determine the functional groups possible for a given molecular formula. We just did that for C" }, 
+   { "type": "span", "text": "2",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "4",  "format": "sub"}, 
+   { "type": "span", "text": "O, which had isomers with an aldehyde, an alkene and alcohol, or a cyclic ether. Now let's do it for C"},
+   { "type": "span", "text": "3",  "format": "sub"},
+   { "type": "span", "text": "H"},
+   { "type": "span", "text": "6",  "format": "sub"},
+   { "type": "span", "text": "O. Using our focus of longest chain together with knowing what functional groups are possible, we can figure out all the possible isomers." }
+] },
           {
             "type": "video",
             "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%208.%20C3H6O%20isomers.mp4",
@@ -320,7 +346,7 @@
         },
         {
             "type": "iframe",
-            "src": "https://www.mapembed.org/?gad_source=1&gad_campaignid=22280139497&gbraid=0AAAAA98a5IPIDkrDPfsI0aL2syFcCR7M4&gclid=Cj0KCQiA1JLLBhCDARIsAAVfy7jm5TPPRaXjg39M5O-H5AfZO4YjbqXJQVw8MOIinfNwkSuKdOwYFrQaAnzaEALw_wcB",
+            "src": "https://jefhans4.github.io/IsomerGame/",
             "width": 1
         }
     ]
