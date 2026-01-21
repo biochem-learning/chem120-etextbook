@@ -68,7 +68,7 @@
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/3.%20Two%20rings%20compound.png",
             "alt": "3. Two rings compound",
-            "width": "0.9"
+            "width": "0.3"
         },
         {
             "type": "text",
@@ -161,7 +161,7 @@
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/5.%20Naming%20compound.png",
             "alt": "5. Name compound",
-            "width": "0.9"
+            "width": "0.4"
         },
          {
             "type": "text",
@@ -192,7 +192,7 @@
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/6.%20Naming%202%20compounds.png",
             "alt": "6. Name 2 compounds",
-            "width": "0.9"
+            "width": "0.7"
         },
          {
             "type": "text",
@@ -222,7 +222,7 @@
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/8.%202-butane%20vs%203D.png",
             "alt": "8. butane vs 2-methylpropane 3D",
-            "width": "0.9"
+            "width": "0.85"
         },
          {
             "type": "text",
@@ -294,7 +294,7 @@
         },
          {
             "type": "video",
-            "src": "link",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%207.%20Isomers%20video.mov",
             "title": "Video 7. Isomers video",
             "caption": "Isomers video",
             "width": "0.9"
