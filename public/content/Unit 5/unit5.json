@@ -3,11 +3,22 @@
     "content": [
         {
             "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Equity and Inclusion in STEM" 
+        },
+         {
+            "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "In this Unit, we bring awareness and appreciation to the current state of chemistry and STEM education. We explore the differences between equality and equity, and the importance of diversity and inclusion in STEM." 
         },
-        {
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The field of organic chemistry has historically been dominated by male Anglo-Saxon individuals, leading to disparities for people of various racial, gender, and ability identities in terms of opportunities to participate in scientific endeavors. For instance, Alice Ball, who discovered a treatment for leprosy, had her work stolen and published by her male colleagues. Similarly, Dr. Percy Julian, a graduate of DePauw University, encountered numerous challenges and institutionalized barriers in his scientific pursuits. Yet, Dr. Julian still received more than 130 patents.        " 
+        },{
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
             "alt": "cat pic",
