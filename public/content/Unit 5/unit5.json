@@ -60,6 +60,24 @@
             "content": "The chart shows the percentage of students receiving different levels of degrees by race. It clearly shows that white people receive a lower percentage of associates degrees relative to the overall U.S. population while receiving increasingly higher percentages of more advanced degrees. The more advanced the degree the higher the percentage of white people receiving them. Of course, this means non-white people receive those degrees to a lesser degree. The disparities mostly show up in changes in percentages for Hispanic or Latino people." 
         },
         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DegreeLevelByRace.png",
+            "alt": "Image of diverse scientists.",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Demographic Data" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The pie charts below show demographic for the Chem 120 course, DePauw University, and the United States ages 18-22. All the data is averaged over the period 2021-2024. Take a look. How do they compare? Where do you see similarities? Where do you see differences?" 
+        },
+        {
             "type": "list",
             "content": [
                 "Item 1",
