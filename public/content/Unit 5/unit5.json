@@ -90,6 +90,12 @@
             "width": "0.9"
         },
         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DePauwDemoData.png",
+            "alt": "Image of DePauw Demographic Data.",
+            "width": "0.9"
+        },
+        {
             "type": "list",
             "content": [
                 "Item 1",
