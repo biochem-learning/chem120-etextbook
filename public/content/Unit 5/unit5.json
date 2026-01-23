@@ -75,7 +75,7 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "The pie charts below show demographic for the Chem 120 course, DePauw University, and the United States ages 18-22. All the data is averaged over the period 2021-2024. Take a look. How do they compare? Where do you see similarities? Where do you see differences?" 
+            "content": "The following pie charts show demographic for the Chem 120 course, DePauw University, and the United States ages 18-22. All the data is averaged over the period 2021-2024. Take a look. How do they compare? Where do you see similarities? Where do you see differences?" 
         },
         {
             "type": "image",
@@ -91,9 +91,15 @@
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DePauwDemoData.png",
-            "alt": "Image of DePauw Demographic Data.",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/USDemoData.png",
+            "alt": "Image of US Demographic Data.",
             "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The data we just looked at is interesting, but next let’s look at how this might translate into an individual’s classroom experience. The data below shows actual numbers of students in sections of Chem 120 according to demographic group and gender. " 
         },
         {
             "type": "list",
