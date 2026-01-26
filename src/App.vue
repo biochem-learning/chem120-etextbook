@@ -11,9 +11,9 @@
                   <ul style="list-style-type: none; padding: 0;">
                     <li @click="selectUnit('unit1')"><router-link to="/unit4">Unit 1. Bonding, Introduction to Structural Representations</router-link></li>
                     <li @click="selectUnit('unit2')"><router-link to="/unit4">Unit 2. More Structural Representations and Isomers</router-link></li>
-                    <li @click="selectUnit('unit3')"><router-link to="/unit4">Unit 3. </router-link></li>
+                    <li @click="selectUnit('unit3')"><router-link to="/unit4">Unit 3. Functional groups and isomers </router-link></li>
                     <li @click="selectUnit('unit4')"><router-link to="/unit4">Unit 4. </router-link></li>
-                    <li @click="selectUnit('unit5')"><router-link to="/unit4">Unit 5. </router-link></li>
+                    <li @click="selectUnit('unit5')"><router-link to="/unit4">Unit 5. Equity and Inclusion in the STEM Field </router-link></li>
                     <li @click="selectUnit('unit6')"><router-link to="/unit4">Unit 6. </router-link></li>
                     <li @click="selectUnit('unit7')"><router-link to="/unit4">Unit 7. </router-link></li>
                     <li @click="selectUnit('unit8')"><router-link to="/unit4">Unit 8. </router-link></li>
