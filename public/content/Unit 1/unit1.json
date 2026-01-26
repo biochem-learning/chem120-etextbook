@@ -142,7 +142,7 @@
         },
         {
             "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/21.%20Video%202.mp4",
             "title": "Video 2. Drawing Lewis dot structures",
             "caption": "Examples of drawing Lewis dot structures",
             "width": "0.9"
