@@ -8,6 +8,7 @@ Organic chemistry is a highly visual subject  since organic compounds are 3D obj
 ### Use provided JSON files
 - Find the folder for the unit you want to update in  ```content``` folder
 - Inside each unit folder, there will be a JSON file contain the content of the corresponding unit, adjust the content inside this folder to update content
+- To install dependency run npm install
 - Adjust/Add the content you want with the following syntax:
 
     "title": Unit title <br />
