@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "sh deploy.sh"
+    "deploy-mac": "sh deploy-mac.sh",
+    "deploy-win": "sh deploy-win.sh"
   },
   "dependencies": {
     "@tresjs/core": "^3.7.0",
