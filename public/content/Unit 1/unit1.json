@@ -141,10 +141,8 @@
             "content": "Lewis dot symbols are written by writing the symbol (letter) for each atom, then surrounding it with dots to represent electrons. Imagine the symbol is inside a square. We write up to two electrons on each side of the square, but start with one electron per side and only pair them up when we have more than 4 valence electrons. The dot structures show us how we can connect atoms to make molecules. Everywhere we have a single electron on a side, we can make a bond to another atom. When all the atoms have all their single electrons used up, the molecule is complete. Usually, we represent a bond with a line between the two atoms. A line represents a bond, which is a sharing of two electrons. On sides where there are two electrons, we don’t make a bond. Those electrons are not shared. Sometimes they are referred to as non-bonding electrons or as “lone pairs.”" 
         },
         {
-            "type": "video",
-            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/21.%20Video%202.mp4",
-            "title": "Video 2. Drawing Lewis dot structures",
-            "caption": "Examples of drawing Lewis dot structures",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/PkBkNOoqfOQ",
             "width": "0.9"
         },
         {
