@@ -1,99 +1,263 @@
 {
-    "title": "Unit 1",
+    "title": "Unit 4. More Functional Groups, Naming, and Understanding",
     "content": [
         {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "What we will learn in this unit:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "How to name compounds with an alkene or alkyne plus one other functional group",
+                "Prioritizing functional groups",
+                "Connecting name and structure"
+            ]
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Priorities of Functional Groups"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Our goal for naming organic compounds is to completely describe the compound’s structure, and we want to do that in a way that is as unambiguous as possible. In other words, we want only one name for a compound, and we want that name to allow the trained reader to write only one possible structure from it. To achieve that goal, we must have an agreement on how we are going to do it. For example, we agree to list substituents in alphabetical order. Priorities for functional groups are similar. If a compound has more than one functional group, we must have an agreed-upon way to name it so we all do it consistently the same way and avoid confusion."
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "This table lists the functional groups we are learning in this course in order of priority. To some extent, we need to memorize this order. Fortunately, the order makes some sense. Basically, more bonds to oxygen have a higher priority."
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "link",
+            "alt": "1. Common functional groups",
             "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Naming compounds with a functional group and an alkene or alkyne"
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Naming compounds with an alkene or alkyne and another functional group works similarly to what we’ve seen before. We name the alkene or alkyne as we’ve done before, including a number to tell us where it is. We name the other functional group similarly. The main thing we have to pay attention to is the numbering. We have to choose the longest chain containing all the functional groups and numbers starting from the end closer to the functional group with the highest priority."
         },
         {
             "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
+            "src": "link",
+            "title": "Video 1. Naming 2 FG when 1 is alkene",
+            "caption": "Naming two FG when one if alkene",
             "width": "0.9"
-        },
-        {
-            "type": "list",
-            "content": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
-            ]
-        },
-        {
-            "type": "bullet-list",
-            "content": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
-            ]
-        },
-        {
-            "type": "table",
-
-            "head": ["Name", "Age", "Job","A","B"],
-            "rows": [
-                ["Anh Vu", "21", "Researcher", "A", "B"],
-                [
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    "21",
-                    "Cute Doll",
-                    "A",
-                    "B"
-                ]
-            ]
-        },
-        {
-            "type": "textarea",
-            "height": "100",
-            "prompt": "Hello world"
-        },
-        {
-            "type": "podcast",
-            "introduction": "Deena did a podcast describing her motivation for her research:",
-            "link": "https://playlist.megaphone.fm/?e=PPY5510118240",
-            "image": {
-                "type": "image",
-                "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-                "alt": "Gwen avatar"
-            },
-            "text-content": [
-                {
-                "type": "text",
-                "format": "normal",
-                "content": "When anxiety begins to overtake her, biology student Deena Walker begins to worry she'll end up just like her mentally ill sister."
-                },
-                {
-                "type": "text",
-                "format": "normal",
-                "content": "Deena Walker is a postdoctoral fellow at Mt. Sinai School of Medicine where she studies the molecular mechanisms of addiction and depression..."
-                }
-            ]
         },
         {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "Now you try:"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Write a systematic name for each of the following structures."
+        },
+          {
+            "type": "image",
+            "src": "link",
+            "alt": "2. Name 2 compounds",
+            "width": "0.9"
         },
         {
-            "type": "iframe",
-            "src": "https://www.mapembed.org/?gad_source=1&gad_campaignid=22280139497&gbraid=0AAAAA98a5IPIDkrDPfsI0aL2syFcCR7M4&gclid=Cj0KCQiA1JLLBhCDARIsAAVfy7jm5TPPRaXjg39M5O-H5AfZO4YjbqXJQVw8MOIinfNwkSuKdOwYFrQaAnzaEALw_wcB",
-            "width": 1
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Naming compounds with two functional groups"
         },
-
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Here is where it gets a little more complicated. This is as hard as it will get for us. The main thing that is different here is that only the highest priority functional group is named with an ending or suffix. All of the other functional groups (except alkene and alkyne, of course) are named like they are a substituent using the prefix shown in the table."
+        },
+         {
+            "type": "video",
+            "src": "link",
+            "title": "Video 2. Naming 2 FG",
+            "caption": "Naming two functional groups",
+            "width": "0.9"
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Write names for the following compounds."
+        },
+          {
+            "type": "image",
+            "src": "link",
+            "alt": "3. Name other 2 compounds",
+            "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Summary of the nomenclature process"
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Take a look back over all we've done with nomenclature and write a step-wise process for naming organic compounds. Once you've done that, compare it to the one I've provided."
+        },
+         {
+            "type": "bullet-list",
+            "content": [
+                "Identify and prioritize functional groups",
+                "Find the longest carbon chain containing the functional groups",
+                "Number the chain according to the highest priority functional group",
+                "Name and number each substituent, including lower priority functional groups",
+                "Put substituents in alphabetical order",
+                "Write the name starting with substituents in alphabetical order, including the position number. Commas between numbers and dashes between a number and a letter",
+                "End name with parent name, including a number for each alkene or alkyne and a number for the highest priority functional group. Use the appropriate suffix for the highest priority functional group"
+            ]
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Note that esters are named in two parts. The piece coming off the single-bonded O is named first as you would name a substituent (ending with yl). The rest is named second using the process above."
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Note that substituents on N are located using a capital N as you would use a number for other substituents."
+        },
+            {
+            "type": "video",
+            "src": "link",
+            "title": "Video 3. Seven stepprocess",
+            "caption": "Seven step process",
+            "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Name the following compounds."
+        },
+          {
+            "type": "image",
+            "src": "link",
+            "alt": "4. Name another 2 compounds",
+            "width": "0.9"
+        },
         {
-            "type": "3d-model",
-            "src": "",
-            "width": 0.7,
-            "height": 0.3
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Anatomy of a name"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As we have seen, the names of organic compounds contain lots of information about the compound. When we construct a name for a given structure, we are recording information about that structure. Likewise, when we see a name for a compound, it contains instructions for writing the structure. In our quest to develop a deeper understanding of structure, we need to develop the skill of constructing a name from a structure and writing a structure from a name. We have already seen how a name is constructed for a given structure. We also need to develop the skill to write a structure from a name. Let’s take a look at the components of a name."
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "2,6-"
+    },
+    {
+      "type": "span",
+      "text": "dichloro",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": "-3-"
+    },
+    {
+      "type": "span",
+      "text": "ethyl",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": "oct-6-en-4-one",
+      "format": "underline"
+    }
+  ]
+},
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The underlined part of the name is the parent name. It always comes at the end of the name, but it is the first thing we should look at. It tells us how long the longest chain is, what functional groups are present, and where the functional groups are. In this case, the “en” part of the name tells us there is an alkene functional group (C=C) and the double bond starts at carbon 6. The 'one' part of the name tells us there is a ketone functional group, and it is at carbon 4."
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The bold  part of the name tells us what substituents are connected to the longest chain. The black part tells us where the substituents are connected to the chain. The substituent part of the name always goes at the beginning of the name. There is always a number for every substituent to make sure we know where they all connect to the chain. If there are 2 or more of a particular kind of substituent, we include a numerical prefix like di, tri, tetra, etc. So this name is telling us the compound has two chlorine substituents connected to carbons 2 and 6, and one ethyl group substituent connected to carbon 3. All of that tells us all the information required to write the entire structure."
+        },
+           {
+            "type": "video",
+            "src": "link",
+            "title": "Video 4. Structure from name",
+            "caption": "Structure from name",
+            "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Draw structures corresponding to the following names"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "4,5,N-trimethyloct-2,4-dien-1-amine"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "5-isopropylcyclopent-2-en-1-one"
         }
     ]
 }
+

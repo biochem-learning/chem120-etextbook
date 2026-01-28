@@ -1,99 +1,158 @@
 {
-    "title": "Unit 1",
+    "title": "Unit 6. Study skills",
     "content": [
-        {
+       {
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
+            "content": "What we will learn in this unit:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "What is metacognition?",
+                "How to use homework",
+                "How to read",
+                "Learning strategies"
+            ]
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Metacognition"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Metacognition is the ability to think about thinking. It is not something that comes naturally. We must learn and practice it like any other knowledge or skill. Skills we need to develop include:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "Being consciously aware of yourself as a thinker.",
+                "Monitoring and controlling your mental processing (e.g., Am I understanding this?)",
+                "Accurately judging your level of understanding."
+            ]
+        },
+           {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Bloom's taxonomy"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We have seen Bloom’s taxonomy previously in our Course Manual. We need to learn to apply it to our studying regarding metacognition."
         },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-            "alt": "cat pic",
+            "src": "link",
+            "alt": "1. Bloom's taxonomy",
             "width": "0.9"
         },
-        {
-            "type": "video",
-            "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
-            "title": "cat vid",
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "One of the difficult things to learn is the ability to identify what cognitive level a question is asking for. To help with this, we will provide practice questions before the first exam with examples of questions at different Bloom’s cognitive levels. Let’s look at an example."
+        },
+           {
+            "type": "image",
+            "src": "link",
+            "alt": "2. Exam 1 answer comparison",
             "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "This question is asking for an answer at least at the Application level. In general, if an question is asking for an explanation It is not looking for simple recall of information, which is what the insufficient answer is providing. For the insufficient answer, the student has memorized some relationships: polar bonds = higher bp and less branching = higher bp. The problem isn’t that these are completely wrong; they just don’t demonstrate a high enough level of understanding. The better answer goes further than this by applying an understanding of how the strength of the IMF and the amount of surface area affect the boiling point."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "The learning cycle"
+        },
+           {
+            "type": "image",
+            "src": "link",
+            "alt": "3. The learning cycle",
+            "width": "0.9"
+        },
+          {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Applying metacognition"
+        },
+         {
+            "type": "list",
+            "content": [
+                "Always solve problems without looking at an example or the solution",
+                "Memorize everything you need to memorize",
+                "Always ask why, how, and what-if questions",
+                "Test understanding by giving “mini-lectures” on concepts",
+                "Spend time on chemistry every day",
+                "Use the Learning Cycle with Intense Study Sessions",
+                "Attend STEM Guide sessions regularly",
+                "Aim for 100% mastery, not 90%!",
+                "Intellectual Honesty - Don’t fool yourself into thinking you understand something. Require proof.",
+                "Intellectual Vulnerability - Don’t worry about someone finding out you don’t know something. It isn’t about showing people how much you know. It is about showing what you don’t know and helping each other grow.",
+                "Don’t give up too soon (<15 min.)",
+                "Don’t spend too much time (>30 min.)"
+            ]
+        },
+         {
+            "type": "image",
+            "src": "link",
+            "alt": "4. Intense study sessions",
+            "width": "0.9"
+        },
+          {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "How to read"
         },
         {
             "type": "list",
             "content": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
+                "Preview your reading - what do you want to accomplish in this reading? Learning goals.",
+                "Develop questions to be answered by the reading.",
+                "Read one paragraph/slide at a time and paraphrase it.",
+                "Highlight, make notes, write questions, concept maps, or outlines."
             ]
         },
-        {
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Choose 2 or more strategies you are most likely to implement before the first test"
+        },
+          {
             "type": "bullet-list",
             "content": [
-                "Item 1",
-                "Item 2",
-                "Item 3"
+                "Do a preview and review.",
+                "Give the quiz an honest try.",
+                "Do homework differently - no referring to examples.",
+                "Use the reading more - see Professor for help with active reading.",
+                "Do more problems.",
+                "Teaching the material.", "format", "bold",
+                "Creating your own practice exams.",
+                "Working in pairs or groups."
             ]
         },
-        {
-            "type": "table",
-
-            "head": ["Name", "Age", "Job","A","B"],
-            "rows": [
-                ["Anh Vu", "21", "Researcher", "A", "B"],
-                [
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
-                    "21",
-                    "Cute Doll",
-                    "A",
-                    "B"
-                ]
-            ]
-        },
-        {
-            "type": "textarea",
-            "height": "100",
-            "prompt": "Hello world"
-        },
-        {
-            "type": "podcast",
-            "introduction": "Deena did a podcast describing her motivation for her research:",
-            "link": "https://playlist.megaphone.fm/?e=PPY5510118240",
-            "image": {
-                "type": "image",
-                "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
-                "alt": "Gwen avatar"
-            },
-            "text-content": [
-                {
-                "type": "text",
-                "format": "normal",
-                "content": "When anxiety begins to overtake her, biology student Deena Walker begins to worry she'll end up just like her mentally ill sister."
-                },
-                {
-                "type": "text",
-                "format": "normal",
-                "content": "Deena Walker is a postdoctoral fellow at Mt. Sinai School of Medicine where she studies the molecular mechanisms of addiction and depression..."
-                }
-            ]
-        },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
-        },
-        {
-            "type": "iframe",
-            "src": "https://www.mapembed.org/?gad_source=1&gad_campaignid=22280139497&gbraid=0AAAAA98a5IPIDkrDPfsI0aL2syFcCR7M4&gclid=Cj0KCQiA1JLLBhCDARIsAAVfy7jm5TPPRaXjg39M5O-H5AfZO4YjbqXJQVw8MOIinfNwkSuKdOwYFrQaAnzaEALw_wcB",
-            "width": 1
-        },
-
-        {
-            "type": "3d-model",
-            "src": "",
-            "width": 0.7,
-            "height": 0.3
+          {
+            "type": "image",
+            "src": "link",
+            "alt": "5. If you don't try within the next 48 hours",
+            "width": "0.9"
         }
     ]
 }
+
