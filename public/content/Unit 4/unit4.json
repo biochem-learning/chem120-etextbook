@@ -35,7 +35,7 @@
         },
         {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/FunctionalGroupTable.png",
             "alt": "1. Common functional groups",
             "width": "0.9"
         },
@@ -52,8 +52,8 @@
             "content": "Naming compounds with an alkene or alkyne and another functional group works similarly to what we’ve seen before. We name the alkene or alkyne as we’ve done before, including a number to tell us where it is. We name the other functional group similarly. The main thing we have to pay attention to is the numbering. We have to choose the longest chain containing all the functional groups and numbers starting from the end closer to the functional group with the highest priority."
         },
         {
-            "type": "video",
-            "src": "link",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/_veKlzGz1wE",
             "title": "Video 1. Naming 2 FG when 1 is alkene",
             "caption": "Naming two FG when one if alkene",
             "width": "0.9"
