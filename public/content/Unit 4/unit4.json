@@ -72,7 +72,7 @@
         },
           {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/Unit4Part2NowYouTry.png",
             "alt": "2. Name 2 compounds",
             "width": "0.9"
         },
@@ -89,8 +89,8 @@
             "content": "Here is where it gets a little more complicated. This is as hard as it will get for us. The main thing that is different here is that only the highest priority functional group is named with an ending or suffix. All of the other functional groups (except alkene and alkyne, of course) are named like they are a substituent using the prefix shown in the table."
         },
          {
-            "type": "video",
-            "src": "link",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/DAUO_D7A8z0",
             "title": "Video 2. Naming 2 FG",
             "caption": "Naming two functional groups",
             "width": "0.9"
