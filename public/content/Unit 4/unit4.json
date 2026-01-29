@@ -109,7 +109,7 @@
         },
           {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/Unit4Part3NowYouTry.png",
             "alt": "3. Name other 2 compounds",
             "width": "0.9"
         },
@@ -150,8 +150,8 @@
             "content": "Note that substituents on N are located using a capital N as you would use a number for other substituents."
         },
             {
-            "type": "video",
-            "src": "link",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/Lc4AczdrHKs",
             "title": "Video 3. Seven stepprocess",
             "caption": "Seven step process",
             "width": "0.9"
