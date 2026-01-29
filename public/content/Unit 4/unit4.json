@@ -170,7 +170,7 @@
         },
           {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/Unit4Part4NowYouTry.png",
             "alt": "4. Name another 2 compounds",
             "width": "0.9"
         },
@@ -228,8 +228,8 @@
             "content": "The bold  part of the name tells us what substituents are connected to the longest chain. The black part tells us where the substituents are connected to the chain. The substituent part of the name always goes at the beginning of the name. There is always a number for every substituent to make sure we know where they all connect to the chain. If there are 2 or more of a particular kind of substituent, we include a numerical prefix like di, tri, tetra, etc. So this name is telling us the compound has two chlorine substituents connected to carbons 2 and 6, and one ethyl group substituent connected to carbon 3. All of that tells us all the information required to write the entire structure."
         },
            {
-            "type": "video",
-            "src": "link",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/b2UtMJ9hswA",
             "title": "Video 4. Structure from name",
             "caption": "Structure from name",
             "width": "0.9"
