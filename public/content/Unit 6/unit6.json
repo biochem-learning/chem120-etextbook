@@ -50,7 +50,7 @@
         },
         {
             "type": "image",
-            "src": "link",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%206/BloomsTaxonomy.png",
             "alt": "1. Bloom's taxonomy",
             "width": "0.9"
         },
