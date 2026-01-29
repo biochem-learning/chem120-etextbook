@@ -1,0 +1,353 @@
+{
+    "title": "Unit 3. Functional groups and isomers",
+    "content": [
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "What we will learn in this unit:" 
+        },
+        {
+            "type": "list",
+            "content": [
+                "What are functional groups?",
+                "Identifying functional groups",
+                "Nomenclature of functional groups",
+                "  Using the nomenclature process to draw isomers"
+            ]
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Functional groups" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Functional groups are basically what the name says. They are parts of molecules, groups of atoms, that have a function. This function can be related to physical properties or reactivity. We’ve actually already learned two functional groups, alkenes and alkynes. You might be wondering, what about alkanes, aren’t they a functional group too? The carbon-carbon single bonds and carbon-hydrogen single bonds don’t really contribute much to a compound’s properties or reactivity. In a way, alkanes are the opposite of a functional group. We have already seen common bonding patterns for carbon, oxygen, and nitrogen. Functional groups will incorporate these common bonding patterns." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/1.%20common%20bonding%20patterns.png",
+            "alt": "1. Common bonding patterns table",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Other than alkenes, alkynes, and aromatic rings, functional groups are characterized by an atom other than carbon and hydrogen. We call these heteroatoms. For us, these will usually be oxygen and nitrogen. The table shows the functional groups you need to know for this course. You will also need to know them in future courses like biochemistry. In the table, the letter R serves as a kind of variable. It stands for any carbon-containing group." 
+        },
+          {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/2.%20functional%20groups.png",
+            "alt": "2. Functional groups table",
+            "width": "0.9"
+        },
+          { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Notice that several functional groups contain a carbon double-bonded to an oxygen, C=O. This common and very important type of bond is called a carbonyl. We will use that term frequently. Also, please note the aromatic ring. Aromaticity, being aromatic, is something we will talk about in greater detail later. The word aromatic means something different in chemistry than in normal usage. It has little to do with the sense of smell. For now, when you see a ring of G carbons with alternating single and double bonds, you can identify that as aromatic. The double bonds in an aromatic ring" }, 
+   { "type": "span", "text": " do not count as alkenes.", "format": "bold" }, 
+   { "type": "span", "text": " As we said, functional groups are about having a particular function with regard to properties and reactivity. Aromatic rings function differently from alkenes."} 
+] },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Identify the functional groups in the following molecule." 
+        },
+          {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/3.%20Two%20rings%20compound.png",
+            "alt": "3. Two rings compound",
+            "width": "0.3"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Write the structure of a single compound containing each of the following functional groups." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "aldehyde; carboxylic acid; alkyne; ester" 
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Naming compounds with one functional group" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "In Unit 2, we learned how to identify the longest carbon chain and functional group to write a parent name for a compound. Each functional group has its own ending. You can see the ending, or suffix, for each functional group in the table above. Besides numbering the chain to show where the functional group is located, we also use that numbering to indicate where any substituents are located. Carbon group substituents are named using the same method we use for the parent game. We use a name corresponding to the length of the carbon chain (meth, eth, prop, etc.) Instead of ending the substituent name with ane, ene, yne, etc., we use a yl ending, e.g., methyl, ethyl, propyl, etc. For ethers, we name the substituent methoxy, ethoxy, propoxy, etc. Other substituents we will encounter are cyano, nitro, chloro, bromo, and iodo. As we did with multiple functional groups, we use prefixes like di, tri, and tetra when we have more than one of a particular substituent." 
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/xrVS4IR2Xk8",
+            "title": "Video 1. Naming substituents",
+            "caption": "Naming substituents",
+            "width": "0.9"
+        },
+ {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We put the entire name together by writing all the substituent names in alphabetical order, including a number for where they are located, then writing the parent name. We put a comma between any two numbers and a dash between numbers and letters."
+ },
+ {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/ivM7GNhK2p8",
+            "title": "Video 2. Naming compounds with one functional group",
+            "caption": "Naming compounds with one functional group",
+            "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Provide a systematic name for each of the following compounds." 
+        },
+          {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/4.%20Naming%203%20compounds.png",
+            "alt": "4. Name 2 compounds",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Esters are a special case. Until now, all of the names have had no spaces, only commas and dashes. Now we have two functional groups with spaces in their names. Carboxylic acids have a suffix with a space in it, oic acid. Esters take this to another level. Essentially we give esters two names. Look at the structure of the ester; it has two parts. There is the part in red coming off the single-bonded oxygen and the part in blue including the carbonyl group. The first part of the name is the name of the red part. The second part of the name is the name of the blue part. We name the first part like a substituent, so it has a yl ending. The second part has the oate ending of an ester." 
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/O2R_OBPfz_g",
+            "title": "Video 3. Naming esters",
+            "caption": "Naming esters",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Provide a systematic name for the following." 
+        },
+          {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/5.%20Naming%20compound.png",
+            "alt": "5. Name compound",
+            "width": "0.3"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Amines and amides have a little twist to their names, too. Because amines can have 1, 2, or 3 carbon groups bonded to the nitrogen, we have to have a way to handle that. We identify one as the parent chain based on size or having another functional group. The others we name as substituents. Like every other substituent, we need to say where it is. Instead of a number, we use a capital N. We treat that N like a number in every other respect. Amides are similar. The part with the carbonyl will always be the parent." 
+        },
+         {
+            "type": "video",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%204.%20Naming%20amines%20and%20amides.MP4",
+            "title": "Video 4. Naming amines and amides",
+            "caption": "Naming Amines and Amides",
+            "width": "0.9"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Provide a systematic name for each of the following." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/6.%20Naming%202%20compounds.png",
+            "alt": "6. Name 2 compounds",
+            "width": "0.6"
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Isomers" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "When compounds have the same molecular formula, but the atoms are connected differently, they are called isomers. Since one of our goals for this course is to begin to understand how organic molecules are put together (we call this structure) and how structure affects properties and reactivity, we need to develop a couple of skills. Understanding isomers will help us do that. One skill we need is simply being able to see when two structures are the same or not. This sounds trivial, but it isn’t necessarily. Especially as structures become more complex we will see that there may be many ways to draw the same structure." 
+        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Our system for naming compounds helps us to understand how the atoms are connected and enables us to identify similarities and differences in structure. Let's consider alkanes with four carbons and a formula of C" }, 
+   { "type": "span", "text": "4",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "10 ",  "format": "sub"}, 
+   { "type": "span", "text": ". We can see below that there are two possible structures with this formula. Our system for naming organic compounds would name these butane and 2-methylpropane."} 
+] },
+         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/7.%20butane%20vs%202-methylpropane%20(add%203D).png",
+            "alt": "7. butane vs 2-methylpropane 2D",
+            "width": "0.7"
+        },
+ {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/8.%202-butane%20vs%203D.png",
+            "alt": "8. butane vs 2-methylpropane 3D",
+            "width": "0.85"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "One of the learning outcomes for this course is that students will be able to write the structure of organic molecules and understand what the symbolism used to write structures means. Part of that is being able to recognize when our structural representations, the drawings we make to represent structures, are representing the same structure or different structures. We also want to be able to draw representations of all the possible structures for a given molecular formula - making sure we get all of them and don't duplicate any. This is all just to say that we want to fully understand how the atoms are connected and how we represent that with our drawings." 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The system we have learned to name the compounds is for more than just naming. The system gives us a way to think about the structures that can help us to better understand them. Let’s look at an example of how we can connect the name to the structure to help us better understand." 
+        },
+         {
+            "type": "video",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%205.%20Same%20molecule%20video.MP4",
+            "title": "Video 5. Same molecule video",
+            "caption": "Same molecule",
+            "width": "0.9"
+        },
+{
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "For each pair of molecules below, determine if they are the same or not." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/9.%20four%20compounds%2C%20same%20or%20not.png",
+            "alt": "9. Same molecule or not",
+            "width": "0.9"
+        },
+          { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "We can use this same way of thinking about structures to help us figure out all the possible isomers for a given molecular formula without duplication. As with naming compounds, we start by focusing on the longest chain. Consider the C" }, 
+   { "type": "span", "text": "4",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "10 ",  "format": "sub"}, 
+   { "type": "span", "text": "example above. To write the isomers we start by writing all of the carbons in the longest possible chain. Once we have done that, we write the next longest chain and draw a carbon branching from it. Let's look at a more complicated example with more carbon atoms."} 
+] },
+          {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/jLX-8uck8DE",
+            "title": "Video 6. Isomers of C6H14",
+            "caption": "Isomers of C6H14",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now you try:" 
+        },
+        { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Write all the isomers of C" }, 
+   { "type": "span", "text": "4",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "9",  "format": "sub"}, 
+   { "type": "span", "text": "Cl"} 
+] },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "Now we need to consider some more complexity. What if the compound can contain a functional group? First, we need to consider what functional groups might be present. A key consideration is whether the compound can have a double bond or a ring. This is determined by the number of hydrogens present. A simple example is the formula C" }, 
+   { "type": "span", "text": "2",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "4",  "format": "sub"}, 
+   { "type": "span", "text": "O"} 
+] },
+         {
+            "type": "video",
+            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%207.%20Isomers%20video.mov",
+            "title": "Video 7. Isomers video",
+            "caption": "Isomers video",
+            "width": "0.9"
+        },
+         { 
+"type": "text", 
+"border": "false", 
+   "content": [ 
+   { "type": "span", "text": "So fewer hydrogens will mean the compound has a ring or a double bond. Depending on how many hydrogens are “missing,” the compound might have some combination of rings, double bonds, or triple bonds. As we have seen, other than alkenes or alkynes, the functional groups we are learning this semester contain oxygen or nitrogen. By seeing if the compound can have a double bond or not, and if it contains oxygen or nitrogen, we can determine the functional groups possible for a given molecular formula. We just did that for C" }, 
+   { "type": "span", "text": "2",  "format": "sub"},
+   { "type": "span", "text": "H" }, 
+   { "type": "span", "text": "4",  "format": "sub"}, 
+   { "type": "span", "text": "O, which had isomers with an aldehyde, an alkene and alcohol, or a cyclic ether. Now let's do it for C"},
+   { "type": "span", "text": "3",  "format": "sub"},
+   { "type": "span", "text": "H"},
+   { "type": "span", "text": "6",  "format": "sub"},
+   { "type": "span", "text": "O. Using our focus of longest chain together with knowing what functional groups are possible, we can figure out all the possible isomers." }
+] },
+          {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/R8twCsjdO9g",
+            "title": "Video 8. C3H6O isomers",
+            "caption": "C3H6O isomers",
+            "width": "0.9"
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Now go play the Isomer Game!" 
+        },
+        {
+            "type": "iframe",
+            "src": "https://jefhans4.github.io/IsomerGame/",
+            "width": 1
+        }
+    ]
+}

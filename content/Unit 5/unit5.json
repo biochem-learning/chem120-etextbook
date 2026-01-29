@@ -1,0 +1,118 @@
+{
+    "title": "Unit 5. Equity and Inclusion in the STEM Field",
+    "content": [
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Equity and Inclusion in STEM" 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "In this Unit, we bring awareness and appreciation to the current state of chemistry and STEM education. We explore the differences between equality and equity, and the importance of diversity and inclusion in STEM." 
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The field of organic chemistry has historically been dominated by male Anglo-Saxon individuals, leading to disparities for people of various racial, gender, and ability identities in terms of opportunities to participate in scientific endeavors. For instance, Alice Ball, who discovered a treatment for leprosy, had her work stolen and published by her male colleagues. Similarly, Dr. Percy Julian, a graduate of DePauw University, encountered numerous challenges and institutionalized barriers in his scientific pursuits. Yet, Dr. Julian still received more than 130 patents. Asima Chatterjee made significant contributions to natural product chemistry even though she had to purchase her own chemicals and glassware." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/Unit5Image1.png",
+            "alt": "Image of diverse scientists.",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Equality vs. Equity: the Importance in Education" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "These videos highlight the differences between equity and equality and their crucial importance in education and success for all." 
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/0nbA0WoYozc",
+            "width": 1
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/tcPGacPFt6E",
+            "width": 1
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Current State of STEM Education Nationally" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The chart shows the percentage of students receiving different levels of degrees by race. It clearly shows that white people receive a lower percentage of associates degrees relative to the overall U.S. population while receiving increasingly higher percentages of more advanced degrees. The more advanced the degree the higher the percentage of white people receiving them. Of course, this means non-white people receive those degrees to a lesser degree. The disparities mostly show up in changes in percentages for Hispanic or Latino people." 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DegreeLevelByRace.png",
+            "alt": "Image of US Degrees by Race/Ethnicity.",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Demographic Data" 
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The following pie charts show demographic for the Chem 120 course, DePauw University, and the United States ages 18-22. All the data is averaged over the period 2021-2024. Take a look. How do they compare? Where do you see similarities? Where do you see differences?" 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/Chem120DemoData.png",
+            "alt": "Image of Chem 120 Demographic Data.",
+            "width": "0.7"
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DePauwDemoData.png",
+            "alt": "Image of DePauw Demographic Data.",
+            "width": "0.7"
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/USDemoData.png",
+            "alt": "Image of US Demographic Data.",
+            "width": "0.7"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The data we just looked at is interesting, but next let’s look at how this might translate into an individual’s classroom experience. The data below shows actual numbers of students in sections of Chem 120 according to demographic group and gender. " 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/Chem120DemoDataTable.png",
+            "alt": "Table of Chem 120 Demographic Data.",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Consider the 8 semesters shown in the table. For each non-white identity, in how many of the semesters would an individual have someone else of similar identity in the same class? How can we make our classroom environment easier to participate in for each person in our class?"
+        }
+
+    ]
+}
