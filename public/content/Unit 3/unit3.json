@@ -172,8 +172,8 @@
             "content": "Amines and amides have a little twist to their names, too. Because amines can have 1, 2, or 3 carbon groups bonded to the nitrogen, we have to have a way to handle that. We identify one as the parent chain based on size or having another functional group. The others we name as substituents. Like every other substituent, we need to say where it is. Instead of a number, we use a capital N. We treat that N like a number in every other respect. Amides are similar. The part with the carbonyl will always be the parent." 
         },
          {
-            "type": "video",
-            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%204.%20Naming%20amines%20and%20amides.MP4",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/cJ0ll5oRVs4",
             "title": "Video 4. Naming amines and amides",
             "caption": "Naming Amines and Amides",
             "width": "0.9"
@@ -243,8 +243,8 @@
             "content": "The system we have learned to name the compounds is for more than just naming. The system gives us a way to think about the structures that can help us to better understand them. Let’s look at an example of how we can connect the name to the structure to help us better understand." 
         },
          {
-            "type": "video",
-            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%205.%20Same%20molecule%20video.MP4",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/gj_r6IG5TQw",
             "title": "Video 5. Same molecule video",
             "caption": "Same molecule",
             "width": "0.9"
@@ -311,8 +311,8 @@
    { "type": "span", "text": "O"} 
 ] },
          {
-            "type": "video",
-            "src": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%203/Video%207.%20Isomers%20video.mov",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/6OaYzbXiNsA",
             "title": "Video 7. Isomers video",
             "caption": "Isomers video",
             "width": "0.9"
@@ -342,7 +342,7 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Now go play the Isomer Game!" 
+            "content": "Now go play the Isomer Game! Right click and choose Open frame in New Tab." 
         },
         {
             "type": "iframe",
