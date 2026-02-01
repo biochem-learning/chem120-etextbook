@@ -32,6 +32,12 @@
             "content": "Scientist Spotlight- Otto Loewi-not a matter of 'if' but of 'when'" 
         },
         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%208/OttoLoewi.png",
+            "alt": "Photo of Otto Loewi",
+            "width": "0.9"
+        },
+        {
             "type": "list",
             "content": [
                 "Otto Loewi was born in Frankfurt, Germany on June 3, 1873 in a Jewish family. He is pharmacologist and psychobiologist who discovered the role of acetylcholine (a neurotransmitter that plays a role in heart muscle movement, and is believed to be involved in learning, memory, and mood in the central nervous system.)",
@@ -39,12 +45,6 @@
                 "After being arrested, along with two of his sons, on the night of the German invasion of Austria, March 11, 1938, Loewi was released on condition that he 'voluntarily' relinquish all his possessions, including his research, to the Nazis. Loewi moved to the United States in 1940, where he became a research professor at the New York University College of Medicine. In 1946, he became a naturalized citizen of the United States.",
                 "Loewi is also known for the means by which the idea for his experiment came to him. On Easter Saturday 1921, he dreamed of an experiment that would prove once and for all that transmission of nerve impulses was chemical, not electrical. He woke up, scribbled the experiment onto a scrap of paper on his nightstand, and went back to sleep. The next morning, he found, to his horror, that he couldn't read his midnight scribbles. That day, he said, was the longest day of his life, as he could not remember his dream. That night, however, he had the same dream. This time, he immediately went to his lab to perform the experiment. From that point on, the consensus was that the Nobel was not a matter of 'if' but of 'when.'"
             ]
-        },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "true",
-            "content": "[Add Scientist spotlight]"
         },
         {
             "type": "text",
@@ -146,11 +146,11 @@
             "type": "text",
             "format": "normal",
             "border": "false",
-            "content": "Earlier, we saw a video showing a neurotransmitter binding to a protein receptor. In that video, we saw that binding to the receptor relied on the shape of the molecule and the receptor, and also having complementary charges in just the right places. Now we should take a closer look at the binding to see how IMFs help the neurotransmitter bind to the receptor."
+            "content": "Earlier, we saw a video showing a neurotransmitter binding to a protein receptor. In that video, we saw that binding to the receptor relied on the shape of the molecule and the receptor, and also having complementary charges in just the right places. Now we should take a closer look at all various Intramolecular Forces (IMF)."
         },
         {
-            "type": "video",
-            "src": "link",
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/VLLxTeO1Vyc",
             "title": "Video 1. All IMFs combined",
             "caption": "All types of IMFs",
             "width": "0.9"
