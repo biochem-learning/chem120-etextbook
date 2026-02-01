@@ -19,12 +19,6 @@
         {
             "type": "text",
             "format": "normal",
-            "border": "true",
-            "content": "[Add Scientist Spotlight]"
-        },
-        {
-            "type": "text",
-            "format": "normal",
             "border": "false",
             "content": "We have already talked about the 3D nature of organic molecules and ways we make 2D representations of them. We will continue to build on that skill throughout the semester because it is one of the most important ideas in chemistry and biochemistry. As an example, we will look at how neurotransmitters interact with protein receptors in the brain. This example demonstrates both the importance of 3D shape and electronegativity and polarity."
         },
