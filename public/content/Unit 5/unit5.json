@@ -112,7 +112,13 @@
             "format": "normal",
             "border": "false",
             "content": "Consider the 8 semesters shown in the table. For each non-white identity, in how many of the semesters would an individual have someone else of similar identity in the same class? How can we make our classroom environment easier to participate in for each person in our class?"
-        }
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "alt": "cat pic",
+            "width": "0.9"
+        },
 
     ]
 }
