@@ -39,8 +39,8 @@
         },
          {
             "type": "image",
-            "src": "link",
-            "title": "Video 1. Boiling process at a molecular level",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/BoilingImage.png",
+            "title": "Boiling process at a molecular level",
             "caption": "Boiling process at molecular level",
             "width": "0.9"
         },
@@ -57,7 +57,7 @@
             "content": "The melting process is perhaps a little more difficult to understand. To begin, we must understand the difference, at the molecular level, between the solid phase and the liquid phase. Above, we saw that molecules in the liquid phase are close to each other but moving around relative to each other. In the solid phase, they aren’t really closer to each other, but they don’t move around relative to each other. They form what is referred to as a three-dimensional array. Imagine you have a bunch of hexagons. You could arrange them together in a honeycomb pattern. This would be a two-dimensional array. If you took many of these honeycomb sheets of hexagons and stacked them on top of each other, you would have a three-dimensional array. This is very much like how molecules form 3D arrays in solids. In this orderly arrangement, they don’t move around relative to each other. They can kind of jiggle around in their location within the array, but no more than that. To go from the solid state to the liquid state requires gaining enough energy to break out of that orderly arrangement and start moving around. It always happens from the outside in."
         },
         {
-            "type": "video",
+            "type": "image",
             "src": "link",
             "title": "Video 2. Melting process at a molecular level.",
             "caption": "Melting process at molecular level",
