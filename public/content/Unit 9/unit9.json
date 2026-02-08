@@ -118,9 +118,9 @@
             "content": "The shape of molecules affects boiling point in a very different way. In the case of boiling point, it is mostly about surface area, and this relates mostly to Van der Waals forces. Therefore, the shape affects the boiling point much less than the type of IMF does (also true for the melting point). The surface area of molecules is greater with less branching and longer carbon chains. The effect of shape on boiling point is therefore opposite to the effect on melting point. More branching increases the melting point. More branching decreases the boiling point."
         },
          {
-            "type": "video",
-            "src": "link",
-            "title": "Video 3. Video of shape and bp/mp",
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/BoilingMeltingShape.png",
+            "title": "Image of shape and bp/mp",
             "caption": "Video of shape and bp/mp",
             "width": "0.9"
         },
