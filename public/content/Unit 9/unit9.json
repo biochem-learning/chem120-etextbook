@@ -58,8 +58,8 @@
         },
         {
             "type": "image",
-            "src": "link",
-            "title": "Video 2. Melting process at a molecular level.",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/MeltingImage.png",
+            "title": "Melting process at a molecular level.",
             "caption": "Melting process at molecular level",
             "width": "0.9"
         },
