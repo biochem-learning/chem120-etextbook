@@ -7,13 +7,13 @@
             "border": "false",
             "content": "Equity and Inclusion in STEM" 
         },
-         {
+        {
             "type": "text",
             "format": "normal",
             "border": "false",
             "content": "In this Unit, we bring awareness and appreciation to the current state of chemistry and STEM education. We explore the differences between equality and equity, and the importance of diversity and inclusion in STEM." 
         },
-         {
+        {
             "type": "text",
             "format": "normal",
             "border": "false",
@@ -118,7 +118,7 @@
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
             "alt": "cat pic",
             "width": "0.9"
-        },
+        }
 
     ]
 }
