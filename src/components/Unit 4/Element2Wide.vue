@@ -471,6 +471,15 @@
             div.textContent = "3D model placeholder";
             div.style.height = `${Number(b.height || 0.3) * 1000}px`;
             return div;
+            },
+
+            link: (b) => {
+                let link = document.createElement("a");
+                link.setAttribute("href", b.src);
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+                link.textContent = b.content;
+                return link;
             }
         };
 
