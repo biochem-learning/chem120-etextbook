@@ -27,11 +27,18 @@
             "content": "In the solid phase, glucose is stacked in a regular pattern. As you can see from the structure, glucose has lots of H-bond donors and acceptors. The attraction of one molecule of glucose to another will be really strong. To get them to separate will require an equally strong attraction to water. Fortunately, water has lots of ability to form H-bonds, too."
         },
         {
-            "type": "video",
-            "src": "link",
-            "title": "Video 1. Glucose dissolving in water ",
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/glucoseSolid.png",
+            "title": "Glucose solid",
+            "caption": "Glucose solid",
+            "width": "0.3"
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/GlucoseInWater.png",
+            "title": "Glucose dissolving in water ",
             "caption": "Glucose dissolving in water ",
-            "width": "0.9"
+            "width": "0.5"
         },
         {
             "type": "text",
@@ -117,11 +124,11 @@
             "content": "As we saw above, for a solute to dissolve in a solvent, there must be a mutual attraction, and it must be comparable to the attraction between solute molecules. However, we should extend that to say that for the solute to go into the solvent, the attraction ofthe solute to the solvent must also be comparable to the attraction between solvent molecules. When the solute dissolves, solute-solute interactions are replaced by solute-solvent interactions, but solute-solvent interactions also replace solvent-solvent interactions. Both of these ideas will be helpful to explain solubility. We must consider what IMFs the solute can do and what IMFs the solvent can do. Some examples will help us see how to apply this."
         },
         {
-            "type": "video",
-            "src": "link",
-            "title": "Video 2. NaCl dissolving in water",
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/dissolvingNaCl.gif",
+            "title": "NaCl dissolving in water",
             "caption": "NaCl dissolving in water",
-            "width": "0.9"
+            "width": "0.5"
         },
         {
   "type": "text",
