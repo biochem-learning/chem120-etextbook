@@ -31,7 +31,7 @@
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/glucoseSolid.png",
             "title": "Glucose solid",
             "caption": "Glucose solid",
-            "width": "0.3"
+            "width": "0.5"
         },
         {
             "type": "image",
@@ -128,7 +128,7 @@
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/dissolvingNaCl.gif",
             "title": "NaCl dissolving in water",
             "caption": "NaCl dissolving in water",
-            "width": "0.5"
+            "width": "0.7"
         },
         {
   "type": "text",
@@ -154,24 +154,10 @@
   ]
 },
         {
-            "type": "video",
-            "src": "link",
-            "title": "Video 3. NaCl in Ethyl Acetate",
-            "caption": "NaCl in Ethyl Acetate",
-            "width": "0.9"
-        },
-        {
             "type": "text",
             "format": "normal",
             "border": "false",
             "content": "Here, the ions will be interacting with a compound, ethyl acetate, that has less polar bonds than water. The attraction to the solvent is much less than the ion-ion interactions in the solute. Ions have very low solubility in ethyl acetate or any other organic solvent."
-        },
-        {
-            "type": "video",
-            "src": "link",
-            "title": "Video 4. Comparison of Acetone in Water vs. Ethyl Acetate in Water",
-            "caption": "Comparison of Acetone in Water vs. Ethyl Acetate in Water",
-            "width": "0.9"
         },
         {
             "type": "text",
@@ -184,13 +170,6 @@
             "format": "normal",
             "border": "false",
             "content": "Comparing the two structures, both have polar bonds in the middle and nonpolar bonds on the ends. Acetone has one oxygen that can be a H-bond acceptor, while ethyl acetate has two. Neither compound has H=bond donors. The ethyl acetate molecule has more surface area and a greater amount of VDW. That is probably the most significant difference between the two. While both can H-bond with water, ethyl acetate’s greater VDW will have a negative effect on its mixing with water. These VDW interactions make the ethyl acetate interact more strongly with each other and are especially bad at overcoming the water-water H-bonding. On the other hand, acetone’s smaller size minimizes the amount of negative VDW interaction with water."
-        },
-        {
-            "type": "video",
-            "src": "link",
-            "title": "Video 5. Hexanol in Water vs. Hexanol in Hexanes",
-            "caption": "Hexanol in Water vs. Hexanol in Hexanes",
-            "width": "0.9"
         },
         {
             "type": "text",
