@@ -8,6 +8,11 @@
             "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
         },
         {
+            "type": "link",
+            "content": "Click here",
+            "src": "https://www.google.com/maps/place/DePauw+University/@39.6394293,-86.8660736,16z/data=!3m1!4b1!4m6!3m5!1s0x886cdfb2472897a7:0x4bdfb79c1d40bc99!8m2!3d39.6394252!4d-86.8634933!16zL20vMDE3eTZs?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
             "type": "image",
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
             "alt": "cat pic",
