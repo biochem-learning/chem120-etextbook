@@ -226,8 +226,15 @@
             "format": "normal",
             "border": "false",
             "content": "Notice in both of these reactions that the molecules start out with no charge. After reacting, the molecule has a charge. The carboxylic acid and phenol compounds become negatively charged, and the amine compounds become positively charged. This change significantly affects their solubility. As we have seen, organic compounds with 4 or more carbons tend to have lower solubility in water, even if they have functional groups that can H-bond with water. We have also seen that ions tend to be soluble in water due to the stronger ion-dipole interaction. So when these organic compounds with no charge react to become ions, they go from being not soluble in water (but soluble in organic solvents) to being soluble in water (but not in organic solvents). This means we can control the solubility of these compounds. If we want them to be soluble in organic solvents, we make sure they have no charge. If we want them to be soluble in water, we make sure they have a charge."
+        },
+       {
+            "type": "3d-model",
+            "name": "test",
+            "src": "public/content/Unit 10/test.mol",
+            "width": 0.7,
+            "height": 0.3,
+            "background_color": "black"
         }
-       
     ]
 }
 

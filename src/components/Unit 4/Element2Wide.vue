@@ -84,8 +84,6 @@
     </div>
 </template>
 
-<!-- <style scoped src="public/libraries/chemdoodle/ChemDoodleWeb.css"></style> -->
-
 <script>
     /// !!! PROBLEMS: 
     // - Problem with ScrollIntoView functionality
@@ -530,10 +528,10 @@ import { NoToneMapping } from 'three';
                     console.log(molText)
 
                     const viewer = new ChemDoodle.TransformCanvas3D(canvasId, 250, 250);
-                    viewer.styles.atoms_color = b.atoms_color || "red";
-                    viewer.styles.bonds_color = b.bonds_color || "white";
-                    viewer.styles.backgroundColor = b.background_color || "white";
-
+                    viewer.styles.backgroundColor = b.background_color || "black";
+                    viewer.styles.atoms_useJMOLColors = true;
+                    viewer.styles.bonds_color = "#CCCCCC"
+                    viewer.styles.set3DRepresentation("Ball and Stick");
                     // nicer rendering
                     const molecule = ChemDoodle.readMOL(molText, 1);
 
