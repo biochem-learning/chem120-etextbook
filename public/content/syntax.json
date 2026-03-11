@@ -135,6 +135,16 @@
             "src": "",
             "width": 0.7,
             "height": 0.3
+        },
+        {
+            "type": "3d-model",
+            "name": "test",
+            "src": "public/content/Unit 10/test.mol",
+            "width": 0.7,
+            "height": 0.3,
+            "atoms_color": "red",
+            "bonds_color": "white",
+            "background_color": "white"
         }
     ]
 }
