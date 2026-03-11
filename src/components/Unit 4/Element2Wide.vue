@@ -84,6 +84,8 @@
     </div>
 </template>
 
+<!-- <style scoped src="public/libraries/chemdoodle/ChemDoodleWeb.css"></style> -->
+
 <script>
     /// !!! PROBLEMS: 
     // - Problem with ScrollIntoView functionality
@@ -107,6 +109,7 @@
     import unit10 from '/public/content/Unit 10/unit10.json';
     import unit11 from '/public/content/Unit 11/unit11.json';
     import unit12 from '/public/content/Unit 12/unit12.json';
+import { NoToneMapping } from 'three';
 
     export default {
         props: ["btnText"],
@@ -147,6 +150,36 @@
         },
 
         mounted() {
+
+        // const loadScript = (src) => {
+        //     return new Promise((resolve, reject) => {
+        //     const s = document.createElement("script");
+        //     s.src = src;
+        //     s.onload = resolve;
+        //     s.onerror = () => reject(new Error(`Failed to load ${src}`));
+        //     document.body.appendChild(s);
+        //     });
+        // };
+
+        // const init = async () => {
+        //     try {
+        //     // Load in dependency order
+        //     const base = process.env.BASE_URL || "/";
+        //     await loadScript(`${base}libraries/chemdoodle/ChemDoodleWeb.js`);
+        //     await loadScript(`${base}libraries/chemdoodle/ChemDoodleWeb-uis.js`);
+            
+        //     // now ChemDoodle exists
+        //     console.log(window.ChemDoodle);
+
+        //     // render blocks here only after scripts are ready
+        //     // this.renderAllBlocks();
+        //     } catch (err) {
+        //     console.error(err);
+        //     }
+        // };
+
+        // init();
+
         // ---------- helpers: inline rich text ----------
         const applyInlineFormat = (el, fmt) => {
             switch (fmt) {
@@ -467,14 +500,57 @@
             },
 
             "3d-model": (b) => {
-            const div = document.createElement("div");
-            div.textContent = "3D model placeholder";
-            div.style.height = `${Number(b.height || 0.3) * 1000}px`;
-            return div;
+                const canvas = document.createElement("canvas");
+
+                const canvasId = b.name || `rotator-${Math.random().toString(36).slice(2)}`;
+                canvas.id = canvasId;
+
+                canvas.style.display = "block";
+                canvas.style.margin = "0 auto";
+                canvas.style.width = b.width !== undefined ? `${Number(b.width) * 100}%` : "100%";
+                canvas.style.height = `${Number(b.height || 0.3) * 1000}px`;
+
+                requestAnimationFrame(async () => {
+
+                    if (!ChemDoodle) {
+                    console.error("ChemDoodle not loaded");
+                    return;
+                    }
+
+                    if (!b.src) {
+                    console.error("3d-model missing src");
+                    return;
+                    }
+
+                    try {
+                    const cleanSrc = b.src.replace(/^public\//, "");
+                    const res = await fetch(process.env.BASE_URL + cleanSrc);
+                    const molText = await res.text();
+
+                    console.log(molText)
+
+                    const viewer = new ChemDoodle.TransformCanvas3D(canvasId, 250, 250);
+                    viewer.styles.atoms_color = b.atoms_color || "red";
+                    viewer.styles.bonds_color = b.bonds_color || "white";
+                    viewer.styles.backgroundColor = b.background_color || "white";
+
+                    // nicer rendering
+                    const molecule = ChemDoodle.readMOL(molText, 1);
+
+                    viewer.loadMolecule(molecule);
+                    viewer.repaint();
+
+                    } catch (err) {
+                    console.error("Failed to load MOL file:", err);
+                    }
+                });
+
+                return canvas;
             },
 
             link: (b) => {
                 let link = document.createElement("a");
+                link.width = "100%"
                 link.setAttribute("href", b.src);
                 link.setAttribute("target", "_blank");
                 link.setAttribute("rel", "noopener noreferrer");
