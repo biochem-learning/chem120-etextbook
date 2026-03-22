@@ -1,0 +1,160 @@
+{
+    "title": "Unit 8: Intermolecular Forces of Attraction",
+    "content": [
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "What we will learn in this unit:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "Bond polarity leads to attraction between molecules; opposite charges attract."
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The amount of attraction varies: Ion-Ion, H-bonding, Dipole-Dipole, and Van der Waals."
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "These attractions between molecules, called Intermolecular Forces of Attraction or non-covalent interactions, are much weaker than covalent bonds between atoms."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Scientist Spotlight- Otto Loewi-not a matter of 'if' but of 'when'" 
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%208/OttoLoewi.png",
+            "alt": "Photo of Otto Loewi",
+            "width": "0.5"
+        },
+        {
+            "type": "list",
+            "content": [
+                "Otto Loewi was born in Frankfurt, Germany on June 3, 1873 in a Jewish family. He is pharmacologist and psychobiologist who discovered the role of acetylcholine (a neurotransmitter that plays a role in heart muscle movement, and is believed to be involved in learning, memory, and mood in the central nervous system.)",
+                "For his discovery he was awarded the Nobel Prize in Physiology or Medicine in 1936, which he shared with Sir Henry Dale, who was a lifelong friend who helped to inspire the neurotransmitter experiment.",
+                "After being arrested, along with two of his sons, on the night of the German invasion of Austria, March 11, 1938, Loewi was released on condition that he 'voluntarily' relinquish all his possessions, including his research, to the Nazis. Loewi moved to the United States in 1940, where he became a research professor at the New York University College of Medicine. In 1946, he became a naturalized citizen of the United States.",
+                "Loewi is also known for the means by which the idea for his experiment came to him. On Easter Saturday 1921, he dreamed of an experiment that would prove once and for all that transmission of nerve impulses was chemical, not electrical. He woke up, scribbled the experiment onto a scrap of paper on his nightstand, and went back to sleep. The next morning, he found, to his horror, that he couldn't read his midnight scribbles. That day, he said, was the longest day of his life, as he could not remember his dream. That night, however, he had the same dream. This time, he immediately went to his lab to perform the experiment. From that point on, the consensus was that the Nobel was not a matter of 'if' but of 'when.'"
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "In Unit 7, we saw that shape and polarity work together to determine if a neurotransmitter will bind to a receptor. In this unit, we will see this interaction with a little more detail. We will define 4 types of intermolecular forces: Ion-Ion, H-bonding, Dipole-Dipole, and Van der Waals (not the only types, but the ones we will mostly concern ourselves with). We will see that all of these amount to a positive charge being attracted to a negative charge. The only difference between the types is the magnitude of the charges involved."
+        },
+{
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Types of Intermolecular Forces (IMFs)"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "In chemistry, attractive forces are often due to what we call electrostatic interactions. This is really just a fancy way to say that positive charges are attracted to negative charges. We could also add that positive charges repel other positive charges and negative charges repel other negative charges. The strength of these attractive forces depends on the amount of charge and the distance between the two charges. Generally, we will mostly consider that the greater the charges, the stronger the attraction."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "So far in this unit, we have seen that because of differences in electronegativity, some atoms within a molecule are more negative and some are more positive. However, these are partial charges or fractions of a charge, not full +1 or -1 charges. We have also seen that sometimes atoms within a molecule can have a formal charge. This is an indicator that those atoms have the potential (pun intended) to form these attractions. We have also seen that sometimes molecules have an actual full positive or negative charge. So we have a range from slightly polar molecules with a small fraction of a positive and negative charge within the molecule to ions with a full positive 1 or negative 1 charge (or maybe even more charge). Consequently, we have a range of IMFs."
+        },
+         {
+            "type": "list",
+            "content": [
+                "Ion-Ion: the strongest IMF. A cation with a full +1 (or greater) charge is attracted to an anion with a full -1 (or greater) charge.",
+                "Hydrogen bond: the second strongest IMF. A hydrogen atom that is bonded to a highly electronegative atom (N, O, or F) in one molecule is attracted to a lone pair of electrons on a highly electronegative atom (N, O, or F) in another molecule. These atoms have an especially high partial charge.",
+                "Dipole-Dipole: the third strongest IMF. The positive partial charge of one polar molecule is attracted to the negative partial charge of another molecule.",
+                "Van der Waals (sometimes called London Forces): the weakest IMF. The partial charges in these molecules are very small (near zero) or are temporary due to the normal movement of electrons within a molecule."
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "These intermolecular forces affect many things, like the physical properties of compounds and interactions with protein receptors. To understand these things, we need to be able to recognize the types of IMFs a compound is capable of. It tends to be the case that molecules capable of a particular type of IMF will interact well with other similar compounds, and the stronger the attraction it can have, the greater it will affect those properties."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Identifying Intermolecular Forces"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "In general, we look for atoms other than carbon or hydrogen. If only carbon and hydrogen are present, the type of IMF will be Van der Waals (VDW). This is because carbon and hydrogen have similar electronegativity, so that the C-H bond is not very polar, and neither atom has a charge very much. Identifying potential for Ion-Ion interactions is simple; just look for compounds that have a charge. To have Ion-Ion you must have both a cation and an anion present. Dipole-Dipole will be possible when the molecule has electronegative atoms so that some bonds are polar."
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Hydrogen bonding has two requirements. As described above, one requirement is a hydrogen atom bonded to N, O, or F. This is called the hydrogen bond donor (often abbreviated as don). The other requirement is an N, O, or F with a lone pair. This is called the hydrogen bond acceptor (often abbreviated acc). It is possible for a compound to have only an acceptor. All donors are also acceptors."
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Any given molecule might have the potential to participate in more than one type of IMF. Especially when we are considering larger compounds, a portion of the molecule might have mostly C and H, and therefore it could do VDW. Another part of the molecule might have an alcohol functional group; the O-H bond has both donor and acc so hydrogen bonding is possible."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Strength of IMFs"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Putting these IMFs in order of relative strength:"
+        },
+        {
+            "type": "bullet-list",
+            "content": [
+                "Ion-Ion - by far the strongest",
+                "Hydrogen Bonding - less than Ion-Ion",
+                "Dipole-Dipole - less than hydrogen bonding",
+                "Van der Waals - very, very much less than dipole-dipole"
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "It is very important that we recognize that all of these IMFs are significantly weaker than the covalent bonds that hold atoms together in molecules. They are transient; they come and go - unlike covalent bonds, which are relatively permanent in comparison. Chemists use the concept of dissociation energy to compare the strengths of bonds and interactions. A dissociation energy is basically how much energy must be put into a system to separate the two things. These are reported as an amount of energy per mole, such as kcal/mol or kJ/mol. A single bond has a bond dissociation energy of roughly 85-120 kcal/mol, depending on the type of bond. For comparison, a hydrogen bond has a dissociation energy of about 5 kcal/mol. This is a huge difference. Breaking a covalent bond takes lots of energy. When it breaks, the molecule is not the same molecule anymore; a chemical reaction happens, and a different molecule results. Overcoming an IMF requires significantly less energy, and all it does is separate one molecule from another; the molecules are still intact."
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "How we communicate these ideas is important. Being a scientist requires using precise language so our meaning is clear. When we are talking about separating molecules from each other by overcoming the intermolecular force of attraction between them, we need to say that. We can use phrases like “overcoming interactions” or “overcoming attractions” but not “breaking bonds.” It is very unfortunate that we use the term hydrogen bond for one of these IMFs because it actually isn’t very clear. It isn’t a bond in the same sense as a covalent bond. However, we are stuck with this historical anomaly. To be as clear as possible: a hydrogen bond is not actually a bond; it is an intermolecular force of attraction. We should not talk about “breaking bonds” when we are separating molecules that are attracted to each other by hydrogen bonds. Again, breaking bonds means breaking covalent bonds, not IMFs."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Earlier, we saw a video showing a neurotransmitter binding to a protein receptor. In that video, we saw that binding to the receptor relied on the shape of the molecule and the receptor, and also having complementary charges in just the right places. Now we should take a closer look at all various Intramolecular Forces (IMF)."
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/VLLxTeO1Vyc",
+            "title": "Video 1. All IMFs combined",
+            "caption": "All types of IMFs",
+            "width": "0.9"
+        }
+    ]
+}
+

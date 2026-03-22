@@ -1,0 +1,150 @@
+{
+    "title": "Unit 9. Physical Properties: Boiling Point and Melting Point",
+    "content": [
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "What we will learn in this unit:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "How IMFs and the shape of the molecule affect the boiling point and melting point of compounds"
+            ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Probably the biggest idea in this book is that an organic compound’s structure determines its properties, both physical and chemical. So far, this book has focused on the structural part of this relationship. Now we will begin connecting the structure to the properties. IMFs play a major role in this."
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Boiling Point"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "By definition, the boiling point of a liquid is when its vapor pressure is the same as the atmospheric pressure. Normally, this means that we heat the liquid, causing the molecules to gain enough energy to transition from the liquid state or phase to the gas state or phase. This is sometimes called a change of state or a phase change. We will see in the lab that it is also possible to reach the boiling point by reducing the atmospheric pressure."
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Heating a liquid adds kinetic energy to the molecules; they move around faster. If we get them moving faster, it becomes more likely that they can escape the liquid phase and enter the gas phase. Thinking about this on the molecular level, the molecules in the liquid phase are close together, while in the gas phase, they are very far apart. To get them to go from the liquid phase to the gas phase, we must overcome the attraction between the molecules and separate them from each other."
+        },
+         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/BoilingImage.png",
+            "title": "Boiling process at a molecular level",
+            "caption": "Boiling process at molecular level",
+            "width": "0.9"
+        },
+          {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Melting Point"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The melting process is perhaps a little more difficult to understand. To begin, we must understand the difference, at the molecular level, between the solid phase and the liquid phase. Above, we saw that molecules in the liquid phase are close to each other but moving around relative to each other. In the solid phase, they aren’t really closer to each other, but they don’t move around relative to each other. They form what is referred to as a three-dimensional array. Imagine you have a bunch of hexagons. You could arrange them together in a honeycomb pattern. This would be a two-dimensional array. If you took many of these honeycomb sheets of hexagons and stacked them on top of each other, you would have a three-dimensional array. This is very much like how molecules form 3D arrays in solids. In this orderly arrangement, they don’t move around relative to each other. They can kind of jiggle around in their location within the array, but no more than that. To go from the solid state to the liquid state requires gaining enough energy to break out of that orderly arrangement and start moving around. It always happens from the outside in."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/MeltingImage.png",
+            "title": "Melting process at a molecular level.",
+            "caption": "Melting process at molecular level",
+            "width": "0.9"
+        },
+          {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Effect of IMFs on Boiling Point"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As we saw above, going from liquid to gas requires overcoming any attraction between molecules so they can be farther from each other. So the stronger the attraction between molecules, the more energy is needed to separate them from each other, and the higher the boiling point. Therefore, the largest contributing factor determining the boiling point is the type of IMF possible between molecules of that compound. The stronger the IMF, the higher the boiling point. So compounds with ion-ion attractions have the highest boiling point - so high that they are never gases at room temperature and usually have almost no molecules in the gas phase. Second would be compounds capable of hydrogen bonding between molecules; they must have at least one donor and at least one acceptor. Third would be molecules that can’t hydrogen bond but have polar bonds, so they can do dipole-dipole interactions. The lowest boiling points are when the molecules have only Van der Waals attractions."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The next consideration is how many of these interactions can occur. For example, a molecule with two hydrogen bond donors and two hydrogen bond acceptors will have a higher boiling point than a molecule with only one of each. In regard to Van der Waals, longer chains of carbons with hydrogens will have more opportunity for VDW attraction, so they will have higher boiling points."
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Effect of IMFs on Melting Point"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Breaking out of that rigid, 3D array of molecules still requires overcoming the attraction between molecules. Though they still remain fairly close together in the liquid phase, any given molecule moves away from other molecules nearby it, just not into the gas phase. So the most important factor in determining the melting point is the type and amount of IMFs, just like it was with the boiling point. The stronger the IMF between molecules, the more of them, the higher the melting point."
+        },
+         {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Effect of Shape on Melting Point"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The shape of a molecule can also influence boiling point and melting point. This is most easily seen with the melting point, as it is fairly easy to see that things with irregular shapes won’t fit together in an orderly way very well. Considering our previous example with hexagons, they fit together really well, so arranging hexagons in an orderly array is easy. Anything like this with lots of symmetry and/or flat surfaces should fit easily into an orderly array. Things with less symmetry and irregular shapes don’t fit together so well and have a lower melting point. More branching in a carbon chain results in compounds that are easier to stack in an array and have a higher melting point."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Effect of Shape on Boiling Point"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The shape of molecules affects boiling point in a very different way. In the case of boiling point, it is mostly about surface area, and this relates mostly to Van der Waals forces. Therefore, the shape affects the boiling point much less than the type of IMF does (also true for the melting point). The surface area of molecules is greater with less branching and longer carbon chains. The effect of shape on boiling point is therefore opposite to the effect on melting point. More branching increases the melting point. More branching decreases the boiling point."
+        },
+         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/BoilingMeltingShape.png",
+            "title": "Image of shape and bp/mp",
+            "caption": "Video of shape and bp/mp",
+            "width": "0.9"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Summary of Melting Point and Boiling Point"
+        },
+           {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "When comparing compounds in regard to their boiling point and melting point:"
+        },
+       {
+  "type": "bullet-list",
+  "content": [
+    "Look at the type of IMF.\n   a. A stronger IMF leads to higher MP and BP.\n   b. Ion-Ion > H-bonding > Dipole-Dipole > VDW.",
+    "If, and only if, two compounds have similar IMFs, look at the shape.\n   a. Compounds that stack easily (flat, symmetrical, or with greater branching) have a higher melting point.\n   b. Compounds that do not stack well (irregular shapes, less branching) have a lower melting point.\n   c. Compounds with less branching have a greater surface area and a higher boiling point.\n   d. Compounds with more branching have less surface area and a lower boiling point."
+  ]
+}
+
+
+    ]
+}
+

@@ -1,0 +1,423 @@
+{
+    "title": "Unit 7. VSEPR Theory and Molecular Geometry. Electronegativity and Molecular Polarity",
+    "content": [
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "What we will learn in this unit:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "Valence Shell Electron Pair Repulsion theory",
+                "Electron Geometry and Molecular Geometry",
+                 "Electronegativity and Polar Covalent Bonds",
+                 "Molecular Polarity"
+                        ]
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "We have already talked about the 3D nature of organic molecules and ways we make 2D representations of them. We will continue to build on that skill throughout the semester because it is one of the most important ideas in chemistry and biochemistry. As an example, we will look at how neurotransmitters interact with protein receptors in the brain. This example demonstrates both the importance of 3D shape and electronegativity and polarity."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/2.%20neurotransmitter%20binding%20to%20receptor.npg.png",
+            "alt": "2. Neurotransmitter binding to receptor",
+            "caption": "Source: https://en.wikipedia.org/wiki/Excitatory_synapse",
+            "width": "0.9"
+        },
+         {
+"type": "text",
+"border": "false",
+   "content": [
+   { "type": "span", "text": "Figure 1.", "format": "bold" },
+   { "type": "span", "text": " The image of neurotransmitter binding to receptor."}
+] },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Before we can really understand how this works, we need to introduce the Valence Shell Electron Pair Repulsion (VSEPR) theory as well as electronegativity and how it results in polar bonds."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "VSEPR"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "So far, we have learned that atoms are made of a nucleus that contains protons and neutrons, and orbiting around that nucleus are electrons. The nucleus is very small in volume relative to the overall volume of the atom, but contains most of the atom's mass. The protons in the nucleus are positively charged, the neutrons have no charge, and the electrons have a negative charge. Electrons take up most of the space in the atom. Since electrons are shared to make bonds between atoms, where the electrons are determines the shape, or geometry, or spatial arrangement of atoms in a molecule. This arrangement is mostly based on the idea that electrons, because they are all negative, repel each other. They try to get as far away from each other as possible."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Let's consider the carbon atom in carbon dioxide as an example. It has the Lewis structure shown below."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/3.%20Carbon%20dioxide.png",
+            "alt": "3. Carbon dioxide",
+            "width": "0.2"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The carbon atom is bonded to two oxygen atoms and has no lone pairs. Because carbon shares electrons with each oxygen, there must be electrons in that space between carbon and oxygen. For the purposes of VSEPR, it doesn’t really matter how many bonds there are between the atoms, only that the two atoms are sharing electrons. The electrons between carbon and the left oxygen repel the electrons between carbon and the right oxygen. These electrons try to get as far away from each other as possible, which in this case is 180º from each other - they point in opposite directions. We call this linear."
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Now let's consider the carbon atom in the middle of a CO"
+    },
+    {
+      "type": "span",
+      "text": "2",
+      "format": "sub"
+    },
+    {
+      "type": "span",
+      "text": " ion, shown below."
+    },
+    {
+      "type": "span",
+      "text": "2-",
+      "format": "sup"
+    }
+  ]
+},
+{
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/4.%20CO32-.png",
+            "alt": "4. Carbonate ion",
+            "width": "0.2"
+        },
+          {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "This carbon atom is bonded to three oxygen atoms and has no lone pairs. That means it has three regions of electrons surrounding it, and each repels the others. They will be arranged pointing as far away from each other as possible – towards the corners of a triangle. We call this trigonal planar since all of the atoms are in a single plane and point toward the corners of a triangle. The angle between each oxygen is 120º."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "The angles for linear (180º) and trigonal planar (120º) should make sense. It is like we are dividing a circle into 2 or three equal parts. Since going around an entire circle is 360º, dividing it into two equal parts makes 180º (360/2). Dividing the circle into three equal parts is 120º (360/3)."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Finally, let's consider methane, which has a carbon with four hydrogen atoms bonded to it as shown below."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/5.%20CH4.png",
+            "alt": "5. Methane",
+            "width": "0.2"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "If we were to extrapolate what we saw in the two previous examples, we might think the bonds around these carbon atoms would point toward the corners of a square, and the angle would be 90º (360/4). However, this isn’t the case because the atoms do not all have to be in the same plane as they were in the previous example. For linear and trigonal planar, moving the atoms so they aren’t in the same plane would make them closer together. In methane, if we move the hydrogen atoms so they aren’t in the same plane, they can be farther apart. In this case, the bonds point towards the corners of a geometrical shape called a tetrahedron, and the angle is 109.5º."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Electron Geometry vs. Molecular Geometry"
+        },
+ {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "So far, our examples have only looked at central atoms in a molecule and atoms that only make bonds and do not have any lone pairs. Some atoms, though, have lone pairs, and they also affect the arrangement of electrons around the atom. Let’s consider water and ammonia as examples."
+        },
+          {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/6.%20H2O.png",
+            "alt": "6. Water",
+            "width": "0.2"
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Water, as shown above, has four regions of electrons around the oxygen atom. Much like methane, these four regions will arrange themselves as far apart as possible and point towards the corners of a tetrahedron. It doesn’t matter whether the electrons are making bonds or are lone pairs; they still try to get as far away from each other as possible. We say that this oxygen has a "
+    },
+    {
+      "type": "span",
+      "text": "tetrahedral electron geometry",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": ". The "
+    },
+    {
+      "type": "span",
+      "text": "electron geometry",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": " takes into account all the regions of electrons around an atom. However, we say the oxygen has a "
+    },
+    {
+      "type": "span",
+      "text": "bent molecular geometry",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": ". The "
+    },
+    {
+      "type": "span",
+      "text": "molecular geometry",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": " only considers the location of the atoms. If you just look at where the atoms are, they make a bent arrangement. The angle is still close to the 109.5º we saw for methane. Because the lone pairs actually take up more space than a bond, the angle between the hydrogens is a little less than 109.5º."
+    }
+  ]
+},
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Ammonia, shown below, is similar to water, but it has three bonds and one lone pair. It still has a tetrahedral electron geometry. We call the molecular geometry trigonal pyramidal because the atoms make a pyramid shape."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/7.%20NH3.png",
+            "alt": "7. Ammonia",
+            "width": "0.2"
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/B9YHnseKn24",
+            "title": "video 2. Ammonia shapes",
+            "caption": "Ammonia shapes",
+            "width": "0.9"
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Table 1.",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": " The summary of all molecular geometry shapes with angles, represented via AXE method. The central atom is represented by A, each X is shown by an atom bonded to A (or bond pair), and each E by a lone pair on the central atom. The first column shows bond angles for each of molecular geometry shapes in each row."
+    }
+  ]
+},
+ {
+            "type": "table",
+
+
+            "head": ["Steric No.*", "Molecular geometry (0 lone pairs)", "Molecular geometry (1 lone pairs)","Molecular geometry (2 lone pairs)"],
+            "rows": [
+                [
+                    "2 (180॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/8.%20Table%201%20linear.png", "alt": "8. Linear", "width": 0.6 },
+                    "-",
+                    "-"
+                ],
+                [
+                    "3 (120॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/9.%20Table%201%20trigonal%20planar.png", "alt": "9. Trigonal planar", "width": 1 },
+                { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/10.%20Table%201%20bent.png", "alt": "10. Bent", "width": 0.5 },
+                    "-"
+                ],
+                [
+                    "4 (109.5॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/11.%20Table%201%20tetrahedral.png", "alt": "11. Tetrahedral", "width": 0.8 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/12.%20Table%201%20trigonal%20pyramidal.png", "alt": "12. Trigonal pyramidal", "width": 1 },
+                { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/13.%20Table%201%20bent.png", "alt": "13. Bent", "width": 1 }
+                ]
+
+
+            ]
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Note:",
+      "format": "italic"
+    },
+    {
+      "type": "span",
+      "text": " Steric Number is the sum of the number of atoms and lone pairs, e.g., total number of groups (electron domains) connected to the main atom."
+    }
+  ]
+},
+{
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Table 2.",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": " The summary of examples of molecular geometry shown in 2D. The lone electron pairs on non-main atoms are not shown."
+    }
+  ]
+},
+{
+            "type": "table",
+
+
+            "head": ["Steric No.", "0 lone pairs", "1 lone pairs","2 lone pairs"],
+            "rows": [
+                [
+                    "2 (180॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/14.%20Table%202%20CO2.png", "alt": "14. CO2", "width": 1 },
+                    "-",
+                    "-"
+                ],
+                [
+                    "3 (120॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/15.%20Table%202%20BH3.png", "alt": "15. BH3", "width": 0.8 },
+                { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/16.%20Table%202%20SO2.png", "alt": "16. SO2", "width": 1 },
+                    "-"
+                ],
+                [
+                    "4 (109.5॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/17.%20Table%202%20CH4.png", "alt": "17. CH4", "width": 0.7 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/18.%20Table%202%20NH3.png", "alt": "18. NH3", "width": 0.9 },
+                { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/19.%20Table%202%20H2O.png", "alt": "19. H2O", "width": 1 }
+                ]
+
+
+            ]
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Table 3.",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": " The summary of the same examples of molecular geometry shown in 3D. Compare these with 2D representation from Table 2."
+    }
+  ]
+},
+{
+            "type": "table",
+
+
+            "head": ["Steric No.", "0 lone pairs", "1 lone pairs","2 lone pairs"],
+            "rows": [
+                [
+                    "2 (180॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/20.%20Table%203%20(CO2).png", "alt": "20. CO2", "width": 0.3 },
+                    "-",
+                    "-"
+                ],
+                [
+                    "3 (120॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/21.%20Table%203%20(BH3).png", "alt": "21. BH3", "width": 0.3 },
+                { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/22.%20Table%203%20(SO2).png", "alt": "22. SO2", "width": 0.3 },
+                    "-"
+                ],
+                [
+                    "4 (109.5॰)",
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/23.%20Table%203%20(CH4).png", "alt": "23. CH4", "width": 0.3 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/24.%20Table%203%20(NH3).png", "alt": "24. NH3", "width": 0.3 },
+                { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/25.%20Table%203%20(H2O).png", "alt": "25. H2O", "width": 1 }
+                ]
+
+
+            ]
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Electronegativity and Polar Covalent Bonds"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As was briefly introduced in Unit 1, some bonds between atoms involve unequal sharing of electrons. This is due to a property of atoms called electronegativity. We will gain a deeper understanding of electronegativity later in the course. For now, we can think of it as “greediness” for electrons. Some atoms just have a greater desire for electrons. For example, carbon’s electronegativity is 2.5, while oxygen’s electronegativity is 3.5. When they share a pair of electrons (make a bond), oxygen’s nucleus attracts the shared electrons more than carbon’,s so the shared electrons hang out around the oxygen nucleus a little more than they hang out around the carbon nucleus. This creates an unequal distribution of electrons, which creates small amounts of positive and negative charges."
+        },
+         {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/26.%20Electronegativity.png",
+            "alt": "26. Electronegativity trend",
+            "caption": "Source: https://chemistrytalk.org/electronegativity-chart-trends/",
+            "width": "0.9"
+        },
+{
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Figure 2.",
+      "format": "bold"
+    },
+    {
+      "type": "span",
+      "text": " The periodic table with electronegativities and electronegativity trends."
+    }
+  ]
+},
+  {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Putting It All Together: Molecular Polarity"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "A molecule’s shape and the polarity of each bond combine to give a molecule an overall polarity. The polarity of each bond can be described by vectors. You may or may not be familiar with vectors from math or physics. Basically, a vector has both a magnitude (amount) and a direction. This is often visualized by an arrow with the arrow's length indicating the magnitude and the arrow pointing in a direction, along the bond from the atom with lower electronegativity towards the atom with higher electronegativity. The overall polarity for the molecule is like adding together all the individual bond polarities. We also often visualize polarity in molecules using molecular modeling software, using what is called an electrostatic potential map, which colors the surface of the molecule according to partial charges: more positive is blue, more negative is red."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Shape and Polarity in Binding of Neurotransmitters to Receptors"
+        },
+        {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/RuAnBarJETU",
+            "title": "Video 4. Neurotransmitter binding to receptor",
+            "caption": "Neurotransmitter binding to receptor",
+            "width": "0.9"
+        }
+    ]
+}
+

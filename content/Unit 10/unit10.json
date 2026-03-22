@@ -1,0 +1,242 @@
+{
+    "title": "Unit 10: Physical Properties: Solubility",
+    "content": [
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "What we will learn in this unit:"
+        },
+          {
+            "type": "list",
+            "content": [
+                "How IMFs affect the solubility of compounds",
+                "How does a sample of a compound dissolve in a solvent? A simple answer is through the action of IMFs. Of course, it isn’t really all that simple, but we do have to understand much about IMFs to really understand the process of dissolving."
+            ]
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Let's begin with a familiar example - sugar dissolving in water. We will use the sugar glucose to somewhat simplify things."
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "In the solid phase, glucose is stacked in a regular pattern. As you can see from the structure, glucose has lots of H-bond donors and acceptors. The attraction of one molecule of glucose to another will be really strong. To get them to separate will require an equally strong attraction to water. Fortunately, water has lots of ability to form H-bonds, too."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/glucoseSolid.png",
+            "title": "Glucose solid",
+            "caption": "Glucose solid",
+            "width": "0.5"
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/GlucoseInWater.png",
+            "title": "Glucose dissolving in water ",
+            "caption": "Glucose dissolving in water ",
+            "width": "0.5"
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Definitions"
+        },
+ {
+"type": "text",
+"border": "false",
+   "content": [
+   { "type": "span", "text": "Solute:", "format": "underline" },
+   { "type": "span", "text": " The thing being dissolved. The solute is present in a smaller quantity than the solvent."}
+] },
+{
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "Solvent:",
+      "format": "underline"
+    },
+    {
+      "type": "span",
+      "text": " The thing being dissolved in. The solvent is present in a larger quantity. The solvent is a liquid. In this class, we will mostly be concerned about solubility in water or organic solvents. Typical organic solvents are diethyl ether (commonly called ether), ethyl acetate, hexanes (a mixture of six-carbon alkane isomers), ethanol, methanol, dichloromethane (DCM), carbon tetrachloride (CCl"
+    },
+    {
+      "type": "span",
+      "text": "4",
+      "format": "sub"
+    },
+    {
+      "type": "span",
+      "text": "), tetrahydrofuran (THF), toluene, dimethyl sulfoxide (DMSO), and dimethylformamide (DMF)."
+    }
+  ]
+},
+{
+"type": "text",
+"border": "false",
+   "content": [
+   { "type": "span", "text": "Solubility:", "format": "underline" },
+   { "type": "span", "text": " The amount of solute that can be dissolved in a given amount of solvent. Usually expressed in grams per liter (g/L) or moles per liter (mol/L or M)."}
+] },
+{
+"type": "text",
+"border": "false",
+   "content": [
+   { "type": "span", "text": "Soluble:", "format": "underline" },
+   { "type": "span", "text": " A less precise term than solubility. If we say a solute is soluble in a solvent, we mean an appreciable amount of it can dissolve, not a small amount."}
+] },
+{
+"type": "text",
+"border": "false",
+   "content": [
+   { "type": "span", "text": "Insoluble:", "format": "underline" },
+   { "type": "span", "text": " Also not very precise. This means something is not very soluble. It may dissolve to a very small extent, but not much."}
+] },
+{
+"type": "text",
+"border": "false",
+   "content": [
+   { "type": "span", "text": "Miscible:", "format": "underline" },
+   { "type": "span", "text": " The solute can be mixed with the solvent completely. You might say it is infinitely soluble. For example, ethanol and water are miscible. No matter how much of each you have, they will completely mix together. This typically refers to two liquids."}
+] },
+{
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Assessing the Solubility of a Compound in a Given Solvent"
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "You may have heard of the common axiom “like dissolves like.” While this is a handy and easy thing to remember, it over-simplifies what is going on, and you are strongly encouraged not to rely on it or use it to explain why a particular compound dissolves in a particular solvent. Instead, we will explain solubility based on IMFs. Additionally, it is tempting to try to say polar solutes dissolve in polar solvents and non-polar solutes dissolve in non-polar solvents. Again, this is an over-simplification that will not serve you well. You are strongly advised not to use the terms polar and non-polar when explaining solubility. These are very imprecise terms. Be precise. Use the IMFs (ion-ion, H-bonding, dipole-dipole, VDW) to help you understand solubility."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "As we saw above, for a solute to dissolve in a solvent, there must be a mutual attraction, and it must be comparable to the attraction between solute molecules. However, we should extend that to say that for the solute to go into the solvent, the attraction ofthe solute to the solvent must also be comparable to the attraction between solvent molecules. When the solute dissolves, solute-solute interactions are replaced by solute-solvent interactions, but solute-solvent interactions also replace solvent-solvent interactions. Both of these ideas will be helpful to explain solubility. We must consider what IMFs the solute can do and what IMFs the solvent can do. Some examples will help us see how to apply this."
+        },
+        {
+            "type": "image",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/dissolvingNaCl.gif",
+            "title": "NaCl dissolving in water",
+            "caption": "NaCl dissolving in water",
+            "width": "0.7"
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    { "type": "span", "text": "This is something we are very familiar with. NaCl is common table salt, and we know it dissolves easily in water. NaCl is an ionic compound. The attraction between Na" },
+    { "type": "span", "text": "+", "format": "sup" },
+    { "type": "span", "text": " and Cl" },
+    { "type": "span", "text": "–", "format": "sup" },
+    { "type": "span", "text": " is an ion-ion interaction. The O-H bond in water is very polar. We have seen that this makes the oxygen very negative (though not a full -1) and the hydrogen very positive (though not a full +1), which results in the ability to form hydrogen bonds - a type of IMF. What is the attraction between Na" },
+    { "type": "span", "text": "+", "format": "sup" },
+    { "type": "span", "text": " and water and between Cl" },
+    { "type": "span", "text": "–", "format": "sup" },
+    { "type": "span", "text": " and water? It isn’t quite an ion-ion interaction. We could call it an ion-dipole interaction. Keep in mind that the O-H bond is very polar, more so than most other polar bonds we will encounter. So, while these ion-dipole interactions are not quite ion-ion, they are still very strong, and there are a lot of them. They are sufficient to overcome the ion-ion interactions between Na" },
+    { "type": "span", "text": "+", "format": "sup" },
+    { "type": "span", "text": " and Cl" },
+    { "type": "span", "text": "–", "format": "sup" },
+    { "type": "span", "text": ". Each Na" },
+    { "type": "span", "text": "+", "format": "sup" },
+    { "type": "span", "text": " and each Cl" },
+    { "type": "span", "text": "–", "format": "sup" },
+    { "type": "span", "text": " is surrounded by many waters. Additionally, the ion-dipole interaction between these ions and water is stronger than the hydrogen bonding between water molecules." }
+  ]
+},
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Here, the ions will be interacting with a compound, ethyl acetate, that has less polar bonds than water. The attraction to the solvent is much less than the ion-ion interactions in the solute. Ions have very low solubility in ethyl acetate or any other organic solvent."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Observationally, we know that acetone and water are miscible. On the other hand, ethyl acetate and water are not. If we combine ethyl acetate and water in the lab, they separate into layers. A very small amount of ethyl acetate dissolves in water, and a very small amount of water dissolves in ethyl acetate, but mostly they stay separated. Why is there such a difference between acetone and ethyl acetate when we mix them with water?"
+        },
+         {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Comparing the two structures, both have polar bonds in the middle and nonpolar bonds on the ends. Acetone has one oxygen that can be a H-bond acceptor, while ethyl acetate has two. Neither compound has H=bond donors. The ethyl acetate molecule has more surface area and a greater amount of VDW. That is probably the most significant difference between the two. While both can H-bond with water, ethyl acetate’s greater VDW will have a negative effect on its mixing with water. These VDW interactions make the ethyl acetate interact more strongly with each other and are especially bad at overcoming the water-water H-bonding. On the other hand, acetone’s smaller size minimizes the amount of negative VDW interaction with water."
+        },
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Hexanol has both an alcohol group, which can effectively H-bond with water, and a long, non-polar carbon chain, which will not interact well with water. Looking at alcohols with carbon chains ranging from 1-6, we see that methanol, ethanol, and propanol are completely miscible with water, but by the time we get to a 4-carbon chain, it is not miscible, and the longer the chain, the less soluble it is in water. The opposite is true for solubility in hexanes. The long carbon chain of hexanol is attracted to hexanes, but the alcohol group is not. Hexanol will be only slightly soluble in each."
+        },
+        {
+            "type": "text",
+            "format": "bold",
+            "border": "false",
+            "content": "Acid-Base Reactions and Changing a Compound's Solubility"
+        },
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "In the laboratory, we will encounter compounds that can react as acids or bases. Typical functional groups that can react as acids are carboxylic acids and phenols. We will talk more about why this is later in the course. Both of these functional groups react with strong bases by giving up an H"
+    },
+    {
+      "type": "span",
+      "text": "+",
+      "format": "sup"
+    },
+    {
+      "type": "span",
+      "text": " as shown below."
+    }
+  ]
+},
+        {
+  "type": "text",
+  "border": "false",
+  "content": [
+    {
+      "type": "span",
+      "text": "The amine functional group (but not amides) is the most common type of organic compound that reacts as a base. Amines react with strong acids by gaining an H"
+    },
+    {
+      "type": "span",
+      "text": "+",
+      "format": "sup"
+    },
+    {
+      "type": "span",
+      "text": " as shown below."
+    }
+  ]
+},
+        {
+            "type": "text",
+            "format": "normal",
+            "border": "false",
+            "content": "Notice in both of these reactions that the molecules start out with no charge. After reacting, the molecule has a charge. The carboxylic acid and phenol compounds become negatively charged, and the amine compounds become positively charged. This change significantly affects their solubility. As we have seen, organic compounds with 4 or more carbons tend to have lower solubility in water, even if they have functional groups that can H-bond with water. We have also seen that ions tend to be soluble in water due to the stronger ion-dipole interaction. So when these organic compounds with no charge react to become ions, they go from being not soluble in water (but soluble in organic solvents) to being soluble in water (but not in organic solvents). This means we can control the solubility of these compounds. If we want them to be soluble in organic solvents, we make sure they have no charge. If we want them to be soluble in water, we make sure they have a charge."
+        },
+       {
+            "type": "3d-model",
+            "name": "test",
+            "src": "public/content/Unit 10/test.mol",
+            "width": 0.7,
+            "height": 0.3,
+            "background_color": "black"
+        }
+    ]
+}
+
+
+
