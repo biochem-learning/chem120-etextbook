@@ -1,9 +1,11 @@
 {
   "name": "chem120-etextbook",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "build:pages": "bash scripts/build-pages.sh",
+    "deploy:pages": "bash scripts/deploy-pages.sh",
     "build": "vue-cli-service build",
     "deploy-mac": "sh deploy-mac.sh",
     "deploy-win": "sh deploy-win.sh",

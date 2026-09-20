@@ -4,9 +4,9 @@ The active application is a Vue 3 textbook. Each lesson is authored in JSON and 
 
 ## Versions
 
-Version 2 is a substantial redesign of the original textbook system. The final original implementation is preserved by the `v1` branch and `v1.0.0` tag at commit `49dfcaf`. The `main` branch and `v2.0.0` tag identify the redesigned reader. See the [content parity audit](docs/content-parity-audit.md) for the exact differences between them.
+Version 2 is a substantial redesign of the original textbook system. The final original implementation is preserved by the `v1` branch and `v1.0.0` tag at commit `49dfcaf`. The `main` branch contains the redesigned reader; `v2.0.0` marks its first release. See the [content parity audit](docs/content-parity-audit.md) for the exact differences between them.
 
-Git branches and tags preserve source code; they do not publish two websites. To keep both versions available to students, publish each build at a separate URL. The existing deployment scripts target `biochem-learning/chem120-etextbook` and force-push its `gh-pages` branch, so they cannot be used unchanged to publish both versions to that one site.
+Git branches and tags preserve source code; GitHub Pages publishes the builds. Both versions use the same `biochem-learning/chem120-etextbook` repository: v2 is at [the current textbook URL](https://biochem-learning.github.io/chem120-etextbook/), and v1 is at [the legacy URL](https://biochem-learning.github.io/chem120-etextbook/v1/). Run `npm run build:pages` to build both into ignored `dist-pages/`, then `npm run deploy:pages -- --publish-built` to publish that reviewed build. Running `npm run deploy:pages` builds and publishes in one step. The deployment script updates the existing `gh-pages` branch without force-pushing. It builds v1 from the untouched `v1.0.0` tag in a temporary directory, adjusts only its deployment path, and pins its existing GitHub media URLs to that tag so future edits to `main` cannot change legacy media. The old `deploy-mac.sh` and `deploy-win.sh` commands now use this same dual-version process.
 
 ## Run and build
 

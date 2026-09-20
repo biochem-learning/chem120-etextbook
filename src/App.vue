@@ -1,7 +1,7 @@
 <template>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header"><div class="header-inner">
-    <RouterLink class="brand" to="/">ORGANIC CHEMISTY E-TEXTBOOK <small>CHEM 120: Structure and Properties of Organic Molecules · DePauw University</small></RouterLink>
+    <RouterLink class="brand" to="/">ORGANIC CHEMISTRY E-TEXTBOOK <small>CHEM 120: Structure and Properties of Organic Molecules · DePauw University</small></RouterLink>
     <details ref="menu" class="unit-menu"><summary>Contents</summary>
       <nav aria-label="Textbook contents">
         <RouterLink to="/" @click="closeMenu">Home</RouterLink>
