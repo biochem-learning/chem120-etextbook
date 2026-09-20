@@ -3,30 +3,13 @@
     "content": [
         {
             "type": "text",
-            "format": "underline",
+            "format": "normal",
             "border": "false",
             "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
         },
-        { 
-        "type": "text", 
-        "border": "false", 
-        "content": [ 
-            { "type": "span", "text": " Table 1.  ", "format": "bold" }, 
-            { "type": "span", "text": " Common functional groups"} 
-        ] },
-        { 
-        "type": "text", 
-        "border": "false", 
-        "content": [ 
-            { "type": "span", "text": " C " }, 
-            { "type": "span", "text": " 2",  "format": "sub"},
-            { "type": "span", "text": " H " }, 
-            { "type": "span", "text": " 5",  "format": "sub"},
-            { "type": "span", "text": " OH"} 
-        ] },
         {
             "type": "image",
-            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+            "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/tags/v1.0.0/public/content/Unit%204/test.jpg",
             "alt": "cat pic",
             "width": "0.9"
         },
@@ -34,25 +17,7 @@
             "type": "video",
             "src": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
             "title": "cat vid",
-            "caption": "cat vid",
             "width": "0.9"
-        },
-        {
-            "type": "text",
-            "format": "normal",
-            "border": "false",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
-        },
-        {
-            "type": "text",
-            "border": "false",
-            "content": [
-                { "type": "span", "text": "Sed ut perspiciatis unde omnis " },
-                { "type": "span", "text": "iste natus error", "format": "underline" },
-                { "type": "span", "text": " sit voluptatem accusantium " },
-                { "type": "span", "text": "doloremque", "format": "bold" },
-                { "type": "span", "text": " laudantium." }
-            ]
         },
         {
             "type": "list",
@@ -61,12 +26,6 @@
                 "Item 2",
                 "Item 3"
             ]
-        },
-        {
-            "type": "text",
-            "format": "italic",
-            "border": "true",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" 
         },
         {
             "type": "bullet-list",
@@ -83,7 +42,7 @@
             "rows": [
                 ["Anh Vu", "21", "Researcher", "A", "B"],
                 [
-                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
+                    { "type": "image", "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/tags/v1.0.0/public/content/Unit%204/test.jpg", "alt": "Gwen avatar", "width": 1 },
                     "21",
                     "Cute Doll",
                     "A",
@@ -102,7 +61,7 @@
             "link": "https://playlist.megaphone.fm/?e=PPY5510118240",
             "image": {
                 "type": "image",
-                "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+                "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/tags/v1.0.0/public/content/Unit%204/test.jpg",
                 "alt": "Gwen avatar"
             },
             "text-content": [
@@ -135,14 +94,6 @@
             "src": "",
             "width": 0.7,
             "height": 0.3
-        },
-        {
-            "type": "3d-model",
-            "name": "test",
-            "src": "public/content/Unit 10/test.mol",
-            "width": 0.7,
-            "height": 0.3,
-            "background_color": "black"
         }
     ]
 }
