@@ -22,24 +22,24 @@
                 Some of the medias are hidden from view
             -->
             <video id="media1" class="media" controls>
-                <source src="@/assets/Unit1-twoPeopleSharingSoda.mp4" type="video/mp4" showControl>
+                <source src="@/assets/unit1/Unit1-twoPeopleSharingSoda.mp4" type="video/mp4" showControl>
             </video>
 
-            <img id="media2" class="media" src="@/assets/Unit1-PeriodicTable.webp"> 
+            <img id="media2" class="media" src="@/assets/unit1/Unit1-PeriodicTable.webp">
 
-            <img id="media3" class="media" style="width: 40%;" src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda.png">
+            <img id="media3" class="media" style="width: 40%;" src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda.png">
 
-            <img id="media4" class="media" style="width: 40%;" src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda2.png">
+            <img id="media4" class="media" style="width: 40%;" src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda2.png">
 
-            <img id="media5" class="media" src="@/assets/Unit1-BondSymbolTable.webp">
+            <img id="media5" class="media" src="@/assets/unit1/Unit1-BondSymbolTable.webp">
 
-            <img id="media6" class="media" src="@/assets/Unit1LewisDot (1).webp">
+            <img id="media6" class="media" src="@/assets/unit1/Unit1LewisDot (1).webp">
 
-            <img id="media7" class="media" src="@/assets/Unit1NumberOfBonds.webp">
+            <img id="media7" class="media" src="@/assets/unit1/Unit1NumberOfBonds.webp">
 
-            <img id="media8" class="media" src="@/assets/Unit1LewisToCondensed.webp">
+            <img id="media8" class="media" src="@/assets/unit1/Unit1LewisToCondensed.webp">
 
-            <img id="media9" class="media"  src="@/assets/Unit1CondensedToLewis.webp">
+            <img id="media9" class="media"  src="@/assets/unit1/Unit1CondensedToLewis.webp">
 
             
             <p class="title">
@@ -74,7 +74,7 @@
                             Deena did a podcast describing her motivation for her research:
                         </p>
                         <div class="podcast">
-                            <img src="@/assets/Unit1-DeenaWalker.jpg">
+                            <img src="@/assets/unit1/Unit1-DeenaWalker.jpg">
                             <iframe frameBorder="0" scrolling="no" src="https://playlist.megaphone.fm/?e=PPY5510118240"
                            width="60%"></iframe>
                         </div>
@@ -115,7 +115,7 @@
                 <div class="page" id="page4">
                     <div class="wrap-textbox" @click="playVideo('overlay'); playVideo('media2')">
                         <div class="periodic-table-container">
-                            <img class="periodic-table" src="@/assets/Unit1-PeriodicTable.webp" >
+                            <img class="periodic-table" src="@/assets/unit1/Unit1-PeriodicTable.webp" >
                         </div>
                         <p class="wrap-text">
                             These elements follow specific patterns when they make covalent bonds with each other.
@@ -145,7 +145,7 @@
                     <div class="video">
                         <h6 class="vid-title">Animation: Two people sharing soda?</h6>
                         <div class="hover-container">
-                            <img class="thumbnail" src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda.png" @click="playVideo('overlay'); playVideo('media1')" >
+                            <img class="thumbnail" src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda.png" @click="playVideo('overlay'); playVideo('media1')" >
                         </div>
                     </div>
                 </div>
@@ -156,8 +156,8 @@
                     </p>
                     <div class="wrap-textbox">
                         <div class="wrap-img-container">
-                            <img class="wrap-img" src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda.png" @click="playVideo('overlay'); playVideo('media3')">
-                            <img class="wrap-img" src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda2.png" @click="playVideo('overlay'); playVideo('media4')">
+                            <img class="wrap-img" src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda.png" @click="playVideo('overlay'); playVideo('media3')">
+                            <img class="wrap-img" src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda2.png" @click="playVideo('overlay'); playVideo('media4')">
                         </div>
                         <p class="wrap-text">
                             It is possible for two atoms to share more electrons with each other, always in pairs. 
@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div class="page" id="page7">
-                    <img class="bond-table" src="@/assets/Unit1-BondSymbolTable.webp" @click="playVideo('overlay'); playVideo('media5')">
+                    <img class="bond-table" src="@/assets/unit1/Unit1-BondSymbolTable.webp" @click="playVideo('overlay'); playVideo('media5')">
                     <p>
                         Lewis dot symbols are written by writing the symbol (letter) for each atom then surrounding 
                         it with dots to represent electrons. Imagine the symbol is inside a square. We write up to 
@@ -219,18 +219,18 @@
                 <div class="page" id="page10">
                     <p><strong>Now you try</strong></p>
                     <p>Write Lewis dot structures for the following compounds.</p>
-                    <img class="excercise" src="@/assets/Unit1LewisDot (1).webp" @click="playVideo('overlay'); playVideo('media6')">
+                    <img class="excercise" src="@/assets/unit1/Unit1LewisDot (1).webp" @click="playVideo('overlay'); playVideo('media6')">
                     <p style="margin-bottom: 20%;">Now write the structures with lines to represent the sharing of two electrons (bonds).</p>
                     <p>Identify which atoms below do not have the normal number of bonds.</p>
-                    <img class="excercise" src="@/assets/Unit1NumberOfBonds.webp" @click="playVideo('overlay'); playVideo('media7')">
+                    <img class="excercise" src="@/assets/unit1/Unit1NumberOfBonds.webp" @click="playVideo('overlay'); playVideo('media7')">
                 </div>
                 <div class="page" id="page11">
                     <p>Convert the following Lewis structures into condensed structures.</p>
-                    <img class="excercise" src="@/assets/Unit1LewisToCondensed.webp" @click="playVideo('overlay'); playVideo('media8')">
+                    <img class="excercise" src="@/assets/unit1/Unit1LewisToCondensed.webp" @click="playVideo('overlay'); playVideo('media8')">
                     <p>
                         Convert the following condensed structures into Lewis structures.
                     </p>
-                    <img class="excercise" src="@/assets/Unit1CondensedToLewis.webp" @click="playVideo('overlay'); playVideo('media9')">
+                    <img class="excercise" src="@/assets/unit1/Unit1CondensedToLewis.webp" @click="playVideo('overlay'); playVideo('media9')">
                 </div>
                 <div class="page" id="page12">
                     <p style="margin-bottom: 10px;"><strong>Wrap-up</strong></p>
@@ -257,16 +257,11 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-            const script = document.createElement("script");
-            script.src ='@/components/common.js';
-            document.body.appendChild(script);
-        },
-    };
+import slideControls from '@/legacy/slideControls.js';
+export default { mixins: [slideControls] };
 </script>
 
-<style scoped src="@/components/style.css"></style>
+<style scoped src="@/styles/slide.css"></style>
 
 <style scoped>
 .periodic-table-container {

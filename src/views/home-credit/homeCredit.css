@@ -26,7 +26,7 @@ h2 {
 
 
 .body {
-    background-image: linear-gradient(to top, rgba(64, 65, 46, 0.8), rgba(46, 49, 65, 0.8)), url('../../assets/background.jpg');
+    background-image: linear-gradient(to top, rgba(64, 65, 46, 0.8), rgba(46, 49, 65, 0.8)), url('../../assets/site/background.jpg');
     background-size: auto, cover;
 	background-attachment: fixed,fixed;
 	background-position: center, center;

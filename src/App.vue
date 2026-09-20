@@ -68,7 +68,7 @@
         <router-link class="web-title" to="/" style="text-decoration: none; font-family: 'League Spartan', sans-serif;">ORGANIC CHEMISTRY E-TEXT</router-link>
       </div>
       <a href="https://www.depauw.edu/academics/chemistry-and-biochemistry/" target="_blank" style="width: 10%; margin-right: 2vw;">
-        <img src="./assets/depauw-logo.png" style="width: 100%; cursor: pointer;" >
+        <img src="./assets/site/depauw-logo.png" style="width: 100%; cursor: pointer;" >
       </a>
     </nav>
   </header>

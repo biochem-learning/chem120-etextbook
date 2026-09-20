@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: '/chem120-etextbook/'
+  publicPath: process.env.TEXTBOOK_PUBLIC_PATH || '/chem120-etextbook/'
 })

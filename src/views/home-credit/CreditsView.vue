@@ -1,7 +1,7 @@
-<style scoped src="@/components/Home + Credit/style.css"></style>
+<style scoped src="@/views/home-credit/homeCredit.css"></style>
 <style scoped>
 .body {
-    background-image: linear-gradient(to top, rgba(64, 65, 46, 0.8), rgba(46, 49, 65, 0.8)), url('../../assets/background4.jpg');
+    background-image: linear-gradient(to top, rgba(64, 65, 46, 0.8), rgba(46, 49, 65, 0.8)), url('../../assets/site/background4.jpg');
 }
 
 /* Features */
@@ -158,28 +158,28 @@ p {
 				<p></p>
 				<section class="features" id="feature1">
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
 						<p><em>name@gmail.com</em></p>
 					</article>
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
 						<p><em>name@gmail.com</em></p>
 					</article>
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
 						<p><em>name@gmail.com</em></p>
 					</article>
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
@@ -195,28 +195,28 @@ p {
 				<p></p>
 				<section class="features"  id="feature2">
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
 						<p><em>name@gmail.com</em></p>
 					</article>
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
 						<p><em>name@gmail.com</em></p>
 					</article>
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>
 						<p><em>name@gmail.com</em></p>
 					</article>
 					<article>
-						<img src="@/assets/Unknown_person.jpg" alt="" />
+						<img src="@/assets/site/Unknown_person.jpg" alt="" />
 						<h3 class="major">Name</h3>
 						<p>Class of 202?</p>
 						<p>Major</p>

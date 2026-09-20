@@ -12,33 +12,35 @@ export default {
     },
 
     ///Move forward or backward in <- and -> buttons
-    created(){
-        let self = this;
-        window.addEventListener('scroll', this.handleScroll);
-        document.onkeydown = function(e) {
-            switch(e.which) {
-                case 37: 
-                self.previous()// left
-                break;
-
-                case 39: 
-                self.next()// right
-                break;
-            } 
+    mounted(){
+        this.onSlideKeydown = (e) => {
+            if (e.which === 37) this.previous();
+            if (e.which === 39) this.next();
         };
-        window.addEventListener('resize', () => {this.resizeAdjust()}) 
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.resizeAdjust);
+        document.addEventListener('keydown', this.onSlideKeydown);
     },
-    
+
+    beforeUnmount(){
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.resizeAdjust);
+        document.removeEventListener('keydown', this.onSlideKeydown);
+    },
+
     methods:{
         ///Readjust/fix slider position when resize window
         resizeAdjust() {
             let pageArr = document.getElementsByClassName("page");
-            pageArr[this.count * 2].scrollIntoView({ 
+            if (!pageArr.length) return;
+            const firstPage = pageArr[Math.min(this.count * 2, pageArr.length - 1)];
+            firstPage.scrollIntoView({
                 behavior: "instant", 
                 block: "start", 
                 inline: "start" });
             if (window.innerWidth >= window.innerHeight && window.innerWidth > 800)  {
-                pageArr[this.count * 2 + 1].scrollIntoView({ 
+                const secondPage = pageArr[this.count * 2 + 1];
+                if (secondPage) secondPage.scrollIntoView({
                     behavior: "instant", 
                     block: "start", 
                     inline: "end" });
@@ -82,10 +84,12 @@ export default {
             //var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             //var scrolled = (winScroll / height) * 100;
             //var totalWidth = screen.availWidth;
-            var totalWidth = document.getElementById("slide").offsetWidth;
-            var scrolled = (window.innerWidth <= window.innerHeight) ? totalWidth / (pageArr.length - 1) : totalWidth / (pageArr.length/2 - 1); 
-            document.getElementById("myBar").style.width = scrolled * this.count + "px";
-            console.log(this.count)
+            const slide = document.getElementById("slide");
+            const bar = document.getElementById("myBar");
+            if (!slide || !bar || !pageArr.length) return;
+            var totalWidth = slide.offsetWidth;
+            var scrolled = (window.innerWidth <= window.innerHeight) ? totalWidth / (pageArr.length - 1) : totalWidth / (pageArr.length/2 - 1);
+            bar.style.width = scrolled * this.count + "px";
         },
         
         ///Move slide backward
@@ -114,7 +118,7 @@ export default {
                 this.scroll("next")
             }
             this.handleScroll()
-            console.log(pageArr.length);
+
         },
 
         ///Creating and managing scroll behavior 

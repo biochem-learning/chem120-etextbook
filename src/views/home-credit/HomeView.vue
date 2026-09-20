@@ -1,8 +1,8 @@
-<style scoped src="@/components/Home + Credit/style.css"></style>
-<script src='@/components/Home + Credit/main.js'></script>
+<style scoped src="@/views/home-credit/homeCredit.css"></style>
+<script src='@/views/home-credit/homeBehavior.js'></script>
 <template>
   <div id="overlay" class="overlay" @click="clickOut('overlay'); clickOut('media')"></div>
-  <img id="media" class="media" src="@/assets/homemodel.jpg"> 
+  <img id="media" class="media" src="@/assets/site/homemodel.jpg">
   <div class="body">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
@@ -50,7 +50,7 @@
           <section id="two" class="wrapper alt spotlight style2">
             <div class="inner">
               <a class="image" id="image2" style="cursor: pointer;" @click="playVideo('overlay'); playVideo('media')">
-                <img src="@/assets/homemodel.jpg" alt="" />
+                <img src="@/assets/site/homemodel.jpg" alt="" />
                 <p class="main-content" id="description2" style=" text-align: justify; text-align-last: center;">
                   <em>These are a variety of 2D representations of the molecule epinephrine, also known as adrenaline.</em>
                 </p>

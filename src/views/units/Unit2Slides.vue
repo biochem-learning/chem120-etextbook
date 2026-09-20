@@ -88,16 +88,11 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-            const script = document.createElement("script");
-            script.src ='@/components/common.js';
-            document.body.appendChild(script);
-        },
-    };
+import slideControls from '@/legacy/slideControls.js';
+export default { mixins: [slideControls] };
 </script>
 
-<style scoped src="@/components/style.css"></style>
+<style scoped src="@/styles/slide.css"></style>
 <style scoped>
 
 #game1 {

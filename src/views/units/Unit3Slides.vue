@@ -186,7 +186,7 @@
                     <div style="width: 70%; height: 25vh; margin-left: auto; margin-right: auto; overflow: hidden;">
                         <h6>Animation: Two people sharing soda?</h6>
                         <div class="hover-container">
-                            <img src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda.png"  style="width: 40%; height: 19vh; cursor: pointer;" @click="playVideo('overlay'); playVideo('media1')" >
+                            <img src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda.png"  style="width: 40%; height: 19vh; cursor: pointer;" @click="playVideo('overlay'); playVideo('media1')" >
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                     <div style="width: 70%; height: 25vh; margin-left: auto; margin-right: auto; overflow: hidden;">
                         <h6>Animation: Two people sharing soda?</h6>
                         <div class="hover-container">
-                            <img src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda.png"  style="width: 40%; height: 19vh; cursor: pointer;" @click="playVideo('overlay'); playVideo('media1')" >
+                            <img src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda.png"  style="width: 40%; height: 19vh; cursor: pointer;" @click="playVideo('overlay'); playVideo('media1')" >
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
                     <div style="width: 70%; height: 25vh; margin-left: auto; margin-right: auto; overflow: hidden;">
                         <h6>Animation: Two people sharing soda?</h6>
                         <div class="hover-container">
-                            <img src="@/assets/Unit1-ScreenshotOfTwoPeopleSharingSoda.png"  style="width: 40%; height: 19vh; cursor: pointer;" @click="playVideo('overlay'); playVideo('media1')" >
+                            <img src="@/assets/unit1/Unit1-ScreenshotOfTwoPeopleSharingSoda.png"  style="width: 40%; height: 19vh; cursor: pointer;" @click="playVideo('overlay'); playVideo('media1')" >
                         </div>
                     </div>
                 </div>
@@ -245,5 +245,5 @@
     </div>
 </template>
 
-<script src='@/components/common.js'></script>
-<style scoped src="@/components/style.css"></style>
+<script src='@/legacy/slideControls.js'></script>
+<style scoped src="@/styles/slide.css"></style>
