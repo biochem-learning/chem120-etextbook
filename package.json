@@ -1,27 +1,25 @@
 {
-  "name": "new",
-  "version": "0.1.0",
+  "name": "chem120-etextbook",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy-mac": "sh deploy-mac.sh",
-    "deploy-win": "sh deploy-win.sh"
+    "deploy-win": "sh deploy-win.sh",
+    "validate:content": "node scripts/validate-content.cjs",
+    "prebuild": "npm run validate:content",
+    "test": "node --test tests/*.test.cjs"
   },
   "dependencies": {
-    "@floating-ui/core": "^1.7.5",
-    "@tresjs/core": "^3.7.0",
-    "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
-    "swiper": "^11.1.4",
-    "three": "^0.162.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
-    "@types/three": "^0.162.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.8"
+    "@vue/cli-service": "~5.0.8",
+    "ajv": "^6.15.0"
   }
 }

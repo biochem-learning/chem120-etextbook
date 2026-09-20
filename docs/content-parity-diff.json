@@ -1,0 +1,1742 @@
+{
+  "baselineCommit": "49dfcafeda0ae6e8a80dec04c982d00ea82ae6bc",
+  "comparison": "HEAD lesson JSON versus current working tree",
+  "units": [
+    {
+      "unit": 1,
+      "file": "public/content/Unit 1/unit1.json",
+      "originalBlockCount": 43,
+      "currentBlockCount": 43,
+      "changes": [
+        {
+          "path": "/content/4/image/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/1.%20Deena%20Walker.png",
+          "after": "public/content/Unit 1/1. Deena Walker.png"
+        },
+        {
+          "path": "/content/8/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/8/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/8/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/8/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/11/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/2.%20Periodic%20table.png",
+          "after": "public/content/Unit 1/2. Periodic table.png"
+        },
+        {
+          "path": "/content/14/src",
+          "before": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/1.%20Two%20people%20sharing%20soda.mp4",
+          "after": "public/content/Unit 1/1. Two people sharing soda.mp4"
+        },
+        {
+          "path": "/content/18/title",
+          "before": "<missing>",
+          "after": "Embedded lesson video or activity"
+        },
+        {
+          "path": "/content/19/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/19/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/19/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/19/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/23/src",
+          "before": "https://github.com/biochem-learning/chem120-etextbook/raw/refs/heads/main/public/content/Unit%201/3.%20Ethanol%202D%20vs%203D.mp4",
+          "after": "public/content/Unit 1/3. Ethanol 2D vs 3D.mp4"
+        },
+        {
+          "path": "/content/24/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/24/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/24/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/24/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/26/alt",
+          "before": "Figure 1",
+          "after": "The images of butane (n-butane) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."
+        },
+        {
+          "path": "/content/26/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/3.%20Figure%201.png",
+          "after": "public/content/Unit 1/3. Figure 1.png"
+        },
+        {
+          "path": "/content/29/alt",
+          "before": "Figure 2",
+          "after": "The images of 2-methyl-2-buten-1-ol are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."
+        },
+        {
+          "path": "/content/29/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/4.%20Figure%202.png",
+          "after": "public/content/Unit 1/4. Figure 2.png"
+        },
+        {
+          "path": "/content/32/alt",
+          "before": "Figure 3",
+          "after": "The images of 2-pentyne are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."
+        },
+        {
+          "path": "/content/32/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/5.%20Figure%203.png",
+          "after": "public/content/Unit 1/5. Figure 3.png"
+        },
+        {
+          "path": "/content/34/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/34/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/34/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/34/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/36/alt",
+          "before": "Figure 4",
+          "after": "The images of ethyl benzoate (benzoic acid) are shown in different types of structures: (a) ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, and (c) bond-line structure."
+        },
+        {
+          "path": "/content/36/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/6.%20Figure%204.png",
+          "after": "public/content/Unit 1/6. Figure 4.png"
+        },
+        {
+          "path": "/content/38/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/38/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/38/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/38/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/42/caption",
+          "before": "<missing>",
+          "after": "Table 1. The structure and nomenclature of some common functional groups."
+        },
+        {
+          "path": "/content/42/rows/0/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/7.%20Table.png",
+          "after": "public/content/Unit 1/7. Table.png"
+        },
+        {
+          "path": "/content/42/rows/0/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/8.%20Table.png",
+          "after": "public/content/Unit 1/8. Table.png"
+        },
+        {
+          "path": "/content/42/rows/1/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/9.%20Table.png",
+          "after": "public/content/Unit 1/9. Table.png"
+        },
+        {
+          "path": "/content/42/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/10.%20Table.png",
+          "after": "public/content/Unit 1/10. Table.png"
+        },
+        {
+          "path": "/content/42/rows/2/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/11.%20Table.png",
+          "after": "public/content/Unit 1/11. Table.png"
+        },
+        {
+          "path": "/content/42/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/12.%20Table.png",
+          "after": "public/content/Unit 1/12. Table.png"
+        },
+        {
+          "path": "/content/42/rows/3/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/13.%20Table.png",
+          "after": "public/content/Unit 1/13. Table.png"
+        },
+        {
+          "path": "/content/42/rows/3/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/14.%20Table.png",
+          "after": "public/content/Unit 1/14. Table.png"
+        },
+        {
+          "path": "/content/42/rows/4/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/15.%20Table.png",
+          "after": "public/content/Unit 1/15. Table.png"
+        },
+        {
+          "path": "/content/42/rows/4/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/16.%20Table.png",
+          "after": "public/content/Unit 1/16. Table.png"
+        },
+        {
+          "path": "/content/42/rows/5/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/17.%20Table.png",
+          "after": "public/content/Unit 1/17. Table.png"
+        },
+        {
+          "path": "/content/42/rows/5/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/18.%20Table.png",
+          "after": "public/content/Unit 1/18. Table.png"
+        },
+        {
+          "path": "/content/42/rows/6/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png",
+          "after": "public/content/Unit 1/19. Table.png"
+        },
+        {
+          "path": "/content/42/rows/6/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png",
+          "after": "public/content/Unit 1/20. Table.png"
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "file": "public/content/Unit 2/unit2.json",
+      "originalBlockCount": 38,
+      "currentBlockCount": 38,
+      "changes": [
+        {
+          "path": "/content/2/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/2/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/5/alt",
+          "before": "1. Figure 1",
+          "after": "The bond-line structures of (a) alkane, (b) alkene, and (c) alkyne."
+        },
+        {
+          "path": "/content/5/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/1.%20Figure%201.png",
+          "after": "public/content/Unit 2/1. Figure 1.png"
+        },
+        {
+          "path": "/content/7/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/7/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/7/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/7/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/11/caption",
+          "before": "<missing>",
+          "after": "Table 1. The zig-zag (skeletal) structures of simple alkanes with increasing carbon chain length"
+        },
+        {
+          "path": "/content/11/rows/0/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/2.%20Zigzag.png",
+          "after": "public/content/Unit 2/2. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/3.%20Zigzag.png",
+          "after": "public/content/Unit 2/3. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/4.%20Zigzag.png",
+          "after": "public/content/Unit 2/4. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/3/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/5.%20Zigzag.png",
+          "after": "public/content/Unit 2/5. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/4/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/6.%20Zigzag.png",
+          "after": "public/content/Unit 2/6. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/5/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/7.%20Zigzag.png",
+          "after": "public/content/Unit 2/7. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/6/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/8.%20Zigzag.png",
+          "after": "public/content/Unit 2/8. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/7/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/9.%20Zigzag.png",
+          "after": "public/content/Unit 2/9. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/8/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/10.%20Zigzag.png",
+          "after": "public/content/Unit 2/10. Zigzag.png"
+        },
+        {
+          "path": "/content/11/rows/9/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/11.%20Zigzag.png",
+          "after": "public/content/Unit 2/11. Zigzag.png"
+        },
+        {
+          "path": "/content/13/alt",
+          "before": "12. Figure 2",
+          "after": "Various ways of bond-line representation of n-decane"
+        },
+        {
+          "path": "/content/13/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/12.%20Figure%202.png",
+          "after": "public/content/Unit 2/12. Figure 2.png"
+        },
+        {
+          "path": "/content/17/caption",
+          "before": "<missing>",
+          "after": "Table 2. The isomers of C5H12 are shown in a bond-line and Lewis dot structure representation"
+        },
+        {
+          "path": "/content/17/rows/0/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/13.%20Table%202.png",
+          "after": "public/content/Unit 2/13. Table 2.png"
+        },
+        {
+          "path": "/content/17/rows/0/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/14.%20Table%202.png",
+          "after": "public/content/Unit 2/14. Table 2.png"
+        },
+        {
+          "path": "/content/17/rows/1/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/15.%20Table%202.png",
+          "after": "public/content/Unit 2/15. Table 2.png"
+        },
+        {
+          "path": "/content/17/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/16.%20Table%202.png",
+          "after": "public/content/Unit 2/16. Table 2.png"
+        },
+        {
+          "path": "/content/17/rows/2/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/17.%20Table%202.png",
+          "after": "public/content/Unit 2/17. Table 2.png"
+        },
+        {
+          "path": "/content/17/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/18.%20Table%202.png",
+          "after": "public/content/Unit 2/18. Table 2.png"
+        },
+        {
+          "path": "/content/22/alt",
+          "before": "19. Figure 3",
+          "after": "The images of 2-butyl-1-octene are shown in different types of structures:(a) Ball-and-stick model (3D view of the molecule), (b) Lewis dot structure, (c) Bond-line structure."
+        },
+        {
+          "path": "/content/22/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/19.%20Figure%203.png",
+          "after": "public/content/Unit 2/19. Figure 3.png"
+        },
+        {
+          "path": "/content/26/caption",
+          "before": "<missing>",
+          "after": "Table 3. The structure and nomenclature of some common functional groups."
+        },
+        {
+          "path": "/content/26/rows/0/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/7.%20Table.png",
+          "after": "public/content/Unit 1/7. Table.png"
+        },
+        {
+          "path": "/content/26/rows/0/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/8.%20Table.png",
+          "after": "public/content/Unit 1/8. Table.png"
+        },
+        {
+          "path": "/content/26/rows/1/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/9.%20Table.png",
+          "after": "public/content/Unit 1/9. Table.png"
+        },
+        {
+          "path": "/content/26/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/10.%20Table.png",
+          "after": "public/content/Unit 1/10. Table.png"
+        },
+        {
+          "path": "/content/26/rows/2/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/11.%20Table.png",
+          "after": "public/content/Unit 1/11. Table.png"
+        },
+        {
+          "path": "/content/26/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/12.%20Table.png",
+          "after": "public/content/Unit 1/12. Table.png"
+        },
+        {
+          "path": "/content/26/rows/3/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/13.%20Table.png",
+          "after": "public/content/Unit 1/13. Table.png"
+        },
+        {
+          "path": "/content/26/rows/3/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/14.%20Table.png",
+          "after": "public/content/Unit 1/14. Table.png"
+        },
+        {
+          "path": "/content/26/rows/4/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/15.%20Table.png",
+          "after": "public/content/Unit 1/15. Table.png"
+        },
+        {
+          "path": "/content/26/rows/4/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/16.%20Table.png",
+          "after": "public/content/Unit 1/16. Table.png"
+        },
+        {
+          "path": "/content/26/rows/5/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/17.%20Table.png",
+          "after": "public/content/Unit 1/17. Table.png"
+        },
+        {
+          "path": "/content/26/rows/5/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/18.%20Table.png",
+          "after": "public/content/Unit 1/18. Table.png"
+        },
+        {
+          "path": "/content/26/rows/6/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/19.%20Table.png",
+          "after": "public/content/Unit 1/19. Table.png"
+        },
+        {
+          "path": "/content/26/rows/6/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%201/20.%20Table.png",
+          "after": "public/content/Unit 1/20. Table.png"
+        },
+        {
+          "path": "/content/28/alt",
+          "before": "34. Figure 4",
+          "after": "The structures of 1,2-ethanediol and 1,3-butanediene are shown in different types of structures: (a) Lewis dot structure, (b) bond-line structure."
+        },
+        {
+          "path": "/content/28/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%202/34.%20Figure%204.png",
+          "after": "public/content/Unit 2/34. Figure 4.png"
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "file": "public/content/Unit 3/unit3.json",
+      "originalBlockCount": 52,
+      "currentBlockCount": 52,
+      "changes": [
+        {
+          "path": "/content/2/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/2/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/4/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/1.%20common%20bonding%20patterns.png",
+          "after": "public/content/Unit 3/1. common bonding patterns.png"
+        },
+        {
+          "path": "/content/6/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/2.%20functional%20groups.png",
+          "after": "public/content/Unit 3/2. functional groups.png"
+        },
+        {
+          "path": "/content/10/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/3.%20Two%20rings%20compound.png",
+          "after": "public/content/Unit 3/3. Two rings compound.png"
+        },
+        {
+          "path": "/content/13/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/13/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/20/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/4.%20Naming%203%20compounds.png",
+          "after": "public/content/Unit 3/4. Naming 3 compounds.png"
+        },
+        {
+          "path": "/content/25/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/5.%20Naming%20compound.png",
+          "after": "public/content/Unit 3/5. Naming compound.png"
+        },
+        {
+          "path": "/content/30/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/6.%20Naming%202%20compounds.png",
+          "after": "public/content/Unit 3/6. Naming 2 compounds.png"
+        },
+        {
+          "path": "/content/31/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/31/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/31/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/31/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/34/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/7.%20butane%20vs%202-methylpropane%20(add%203D).png",
+          "after": "public/content/Unit 3/7. butane vs 2-methylpropane (add 3D).png"
+        },
+        {
+          "path": "/content/35/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/8.%202-butane%20vs%203D.png",
+          "after": "public/content/Unit 3/8. 2-butane vs 3D.png"
+        },
+        {
+          "path": "/content/41/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%203/9.%20four%20compounds%2C%20same%20or%20not.png",
+          "after": "public/content/Unit 3/9. four compounds, same or not.png"
+        },
+        {
+          "path": "/content/51/title",
+          "before": "<missing>",
+          "after": "Isomer game"
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "file": "public/content/Unit 4/unit4.json",
+      "originalBlockCount": 37,
+      "currentBlockCount": 37,
+      "changes": [
+        {
+          "path": "/content/2/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/2/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/5/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/FunctionalGroupTable.png",
+          "after": "public/content/Unit 4/FunctionalGroupTable.png"
+        },
+        {
+          "path": "/content/6/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/6/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/6/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/6/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/11/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/Unit4Part2NowYouTry.png",
+          "after": "public/content/Unit 4/Unit4Part2NowYouTry.png"
+        },
+        {
+          "path": "/content/12/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/12/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/12/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/12/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/17/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/Unit4Part3NowYouTry.png",
+          "after": "public/content/Unit 4/Unit4Part3NowYouTry.png"
+        },
+        {
+          "path": "/content/18/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/18/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/18/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/18/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/26/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/Unit4Part4NowYouTry.png",
+          "after": "public/content/Unit 4/Unit4Part4NowYouTry.png"
+        },
+        {
+          "path": "/content/27/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/27/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/27/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/27/type",
+          "before": "text",
+          "after": "heading"
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "file": "public/content/Unit 5/unit5.json",
+      "originalBlockCount": 20,
+      "currentBlockCount": 20,
+      "changes": [
+        {
+          "path": "/content/0/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/0/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/0/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/0/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/3/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/Unit5Image1.png",
+          "after": "public/content/Unit 5/Unit5Image1.png"
+        },
+        {
+          "path": "/content/4/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/4/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/4/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/4/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/6/title",
+          "before": "<missing>",
+          "after": "Equality and equity in education, first video"
+        },
+        {
+          "path": "/content/7/title",
+          "before": "<missing>",
+          "after": "Equality and equity in education, second video"
+        },
+        {
+          "path": "/content/8/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/8/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/8/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/8/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/10/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DegreeLevelByRace.png",
+          "after": "public/content/Unit 5/DegreeLevelByRace.png"
+        },
+        {
+          "path": "/content/11/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/11/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/11/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/11/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/13/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/Chem120DemoData.png",
+          "after": "public/content/Unit 5/Chem120DemoData.png"
+        },
+        {
+          "path": "/content/14/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/DePauwDemoData.png",
+          "after": "public/content/Unit 5/DePauwDemoData.png"
+        },
+        {
+          "path": "/content/15/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/USDemoData.png",
+          "after": "public/content/Unit 5/USDemoData.png"
+        },
+        {
+          "path": "/content/17/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%205/Chem120DemoDataTable.png",
+          "after": "public/content/Unit 5/Chem120DemoDataTable.png"
+        },
+        {
+          "path": "/content/19/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "file": "public/content/Unit 6/unit6.json",
+      "originalBlockCount": 21,
+      "currentBlockCount": 21,
+      "changes": [
+        {
+          "path": "/content/2/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/2/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/2/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/5/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/5/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/5/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/5/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/7/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%206/BloomsTaxonomy.png",
+          "after": "public/content/Unit 6/BloomsTaxonomy.png"
+        },
+        {
+          "path": "/content/9/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%206/Exam1ExampleAnswers.png",
+          "after": "public/content/Unit 6/Exam1ExampleAnswers.png"
+        },
+        {
+          "path": "/content/11/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/11/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/11/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/11/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/12/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%206/LearningCycle.png",
+          "after": "public/content/Unit 6/LearningCycle.png"
+        },
+        {
+          "path": "/content/13/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/13/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/15/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%206/IntenseStudySessions.png",
+          "after": "public/content/Unit 6/IntenseStudySessions.png"
+        },
+        {
+          "path": "/content/16/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/16/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/16/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/16/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/18/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/18/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/18/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/18/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/20/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%206/TryIn48.png",
+          "after": "public/content/Unit 6/TryIn48.png"
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "file": "public/content/Unit 7/unit7.json",
+      "originalBlockCount": 40,
+      "currentBlockCount": 40,
+      "changes": [
+        {
+          "path": "/content/3/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/2.%20neurotransmitter%20binding%20to%20receptor.npg.png",
+          "after": "public/content/Unit 7/2. neurotransmitter binding to receptor.npg.png"
+        },
+        {
+          "path": "/content/6/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/6/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/6/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/6/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/9/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/3.%20Carbon%20dioxide.png",
+          "after": "public/content/Unit 7/3. Carbon dioxide.png"
+        },
+        {
+          "path": "/content/12/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/4.%20CO32-.png",
+          "after": "public/content/Unit 7/4. CO32-.png"
+        },
+        {
+          "path": "/content/16/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/5.%20CH4.png",
+          "after": "public/content/Unit 7/5. CH4.png"
+        },
+        {
+          "path": "/content/18/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/18/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/18/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/18/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/20/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/6.%20H2O.png",
+          "after": "public/content/Unit 7/6. H2O.png"
+        },
+        {
+          "path": "/content/23/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/7.%20NH3.png",
+          "after": "public/content/Unit 7/7. NH3.png"
+        },
+        {
+          "path": "/content/26/caption",
+          "before": "<missing>",
+          "after": "Table 1. The summary of all molecular geometry shapes with angles, represented via AXE method. The central atom is represented by A, each X is shown by an atom bonded to A (or bond pair), and each E by a lone pair on the central atom. The first column shows bond angles for each of molecular geometry shapes in each row."
+        },
+        {
+          "path": "/content/26/rows/0/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/8.%20Table%201%20linear.png",
+          "after": "public/content/Unit 7/8. Table 1 linear.png"
+        },
+        {
+          "path": "/content/26/rows/1/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/9.%20Table%201%20trigonal%20planar.png",
+          "after": "public/content/Unit 7/9. Table 1 trigonal planar.png"
+        },
+        {
+          "path": "/content/26/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/10.%20Table%201%20bent.png",
+          "after": "public/content/Unit 7/10. Table 1 bent.png"
+        },
+        {
+          "path": "/content/26/rows/2/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/11.%20Table%201%20tetrahedral.png",
+          "after": "public/content/Unit 7/11. Table 1 tetrahedral.png"
+        },
+        {
+          "path": "/content/26/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/12.%20Table%201%20trigonal%20pyramidal.png",
+          "after": "public/content/Unit 7/12. Table 1 trigonal pyramidal.png"
+        },
+        {
+          "path": "/content/26/rows/2/3/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/13.%20Table%201%20bent.png",
+          "after": "public/content/Unit 7/13. Table 1 bent.png"
+        },
+        {
+          "path": "/content/29/caption",
+          "before": "<missing>",
+          "after": "Table 2. The summary of examples of molecular geometry shown in 2D. The lone electron pairs on non-main atoms are not shown."
+        },
+        {
+          "path": "/content/29/rows/0/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/14.%20Table%202%20CO2.png",
+          "after": "public/content/Unit 7/14. Table 2 CO2.png"
+        },
+        {
+          "path": "/content/29/rows/1/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/15.%20Table%202%20BH3.png",
+          "after": "public/content/Unit 7/15. Table 2 BH3.png"
+        },
+        {
+          "path": "/content/29/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/16.%20Table%202%20SO2.png",
+          "after": "public/content/Unit 7/16. Table 2 SO2.png"
+        },
+        {
+          "path": "/content/29/rows/2/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/17.%20Table%202%20CH4.png",
+          "after": "public/content/Unit 7/17. Table 2 CH4.png"
+        },
+        {
+          "path": "/content/29/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/18.%20Table%202%20NH3.png",
+          "after": "public/content/Unit 7/18. Table 2 NH3.png"
+        },
+        {
+          "path": "/content/29/rows/2/3/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/19.%20Table%202%20H2O.png",
+          "after": "public/content/Unit 7/19. Table 2 H2O.png"
+        },
+        {
+          "path": "/content/31/caption",
+          "before": "<missing>",
+          "after": "Table 3. The summary of the same examples of molecular geometry shown in 3D. Compare these with 2D representation from Table 2."
+        },
+        {
+          "path": "/content/31/rows/0/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/20.%20Table%203%20(CO2).png",
+          "after": "public/content/Unit 7/20. Table 3 (CO2).png"
+        },
+        {
+          "path": "/content/31/rows/1/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/21.%20Table%203%20(BH3).png",
+          "after": "public/content/Unit 7/21. Table 3 (BH3).png"
+        },
+        {
+          "path": "/content/31/rows/1/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/22.%20Table%203%20(SO2).png",
+          "after": "public/content/Unit 7/22. Table 3 (SO2).png"
+        },
+        {
+          "path": "/content/31/rows/2/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/23.%20Table%203%20(CH4).png",
+          "after": "public/content/Unit 7/23. Table 3 (CH4).png"
+        },
+        {
+          "path": "/content/31/rows/2/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/24.%20Table%203%20(NH3).png",
+          "after": "public/content/Unit 7/24. Table 3 (NH3).png"
+        },
+        {
+          "path": "/content/31/rows/2/3/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/25.%20Table%203%20(H2O).png",
+          "after": "public/content/Unit 7/25. Table 3 (H2O).png"
+        },
+        {
+          "path": "/content/32/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/32/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/32/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/32/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/34/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%207/26.%20Electronegativity.png",
+          "after": "public/content/Unit 7/26. Electronegativity.png"
+        },
+        {
+          "path": "/content/36/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/36/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/36/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/36/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/38/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/38/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/38/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/38/type",
+          "before": "text",
+          "after": "heading"
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "file": "public/content/Unit 8/unit8.json",
+      "originalBlockCount": 24,
+      "currentBlockCount": 24,
+      "changes": [
+        {
+          "path": "/content/4/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/4/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/4/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/4/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/5/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%208/OttoLoewi.png",
+          "after": "public/content/Unit 8/OttoLoewi.png"
+        },
+        {
+          "path": "/content/8/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/8/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/8/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/8/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/13/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/13/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/17/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/17/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/17/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/17/type",
+          "before": "text",
+          "after": "heading"
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "file": "public/content/Unit 9/unit9.json",
+      "originalBlockCount": 23,
+      "currentBlockCount": 23,
+      "changes": [
+        {
+          "path": "/content/3/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/3/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/3/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/3/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/6/alt",
+          "before": "<missing>",
+          "after": "Boiling process at molecular level"
+        },
+        {
+          "path": "/content/6/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/BoilingImage.png",
+          "after": "public/content/Unit 9/BoilingImage.png"
+        },
+        {
+          "path": "/content/7/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/7/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/7/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/7/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/9/alt",
+          "before": "<missing>",
+          "after": "Melting process at molecular level"
+        },
+        {
+          "path": "/content/9/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/MeltingImage.png",
+          "after": "public/content/Unit 9/MeltingImage.png"
+        },
+        {
+          "path": "/content/10/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/10/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/10/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/10/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/13/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/13/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/15/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/15/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/15/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/15/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/17/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/17/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/17/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/17/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/19/alt",
+          "before": "<missing>",
+          "after": "Video of shape and bp/mp"
+        },
+        {
+          "path": "/content/19/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%209/BoilingMeltingShape.png",
+          "after": "public/content/Unit 9/BoilingMeltingShape.png"
+        },
+        {
+          "path": "/content/20/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/20/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/20/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/20/type",
+          "before": "text",
+          "after": "heading"
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "file": "public/content/Unit 10/unit10.json",
+      "originalBlockCount": 27,
+      "currentBlockCount": 27,
+      "changes": [
+        {
+          "path": "/content/4/alt",
+          "before": "<missing>",
+          "after": "Glucose solid"
+        },
+        {
+          "path": "/content/4/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/glucoseSolid.png",
+          "after": "public/content/Unit 10/glucoseSolid.png"
+        },
+        {
+          "path": "/content/5/alt",
+          "before": "<missing>",
+          "after": "Glucose dissolving in water "
+        },
+        {
+          "path": "/content/5/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/GlucoseInWater.png",
+          "after": "public/content/Unit 10/GlucoseInWater.png"
+        },
+        {
+          "path": "/content/6/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/6/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/6/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/6/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/13/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/13/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/13/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/16/alt",
+          "before": "<missing>",
+          "after": "NaCl dissolving in water"
+        },
+        {
+          "path": "/content/16/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/dissolvingNaCl.gif",
+          "after": "public/content/Unit 10/dissolvingNaCl.gif"
+        },
+        {
+          "path": "/content/22/border",
+          "before": "false",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/22/format",
+          "before": "bold",
+          "after": "<missing>"
+        },
+        {
+          "path": "/content/22/level",
+          "before": "<missing>",
+          "after": 2
+        },
+        {
+          "path": "/content/22/type",
+          "before": "text",
+          "after": "heading"
+        },
+        {
+          "path": "/content/26/description",
+          "before": "<missing>",
+          "after": "A demonstration structure with a central carbon bonded to oxygen, nitrogen, chlorine, and hydrogen. The nitrogen is also bonded to hydrogen. This is a sample viewer model, not a solubility example."
+        },
+        {
+          "path": "/content/26/title",
+          "before": "<missing>",
+          "after": "Sample molecule viewer"
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "file": "public/content/Unit 11/unit11.json",
+      "originalBlockCount": 11,
+      "currentBlockCount": 11,
+      "changes": [
+        {
+          "path": "/content/1/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        },
+        {
+          "path": "/content/2/src",
+          "before": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
+          "after": "public/content/Unit 4/cat.mp4"
+        },
+        {
+          "path": "/content/5/rows/1/0/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        },
+        {
+          "path": "/content/7/image/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        },
+        {
+          "path": "/content/9/title",
+          "before": "<missing>",
+          "after": "Embedded lesson video or activity"
+        },
+        {
+          "path": "/status",
+          "before": "<missing>",
+          "after": "draft"
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "file": "public/content/Unit 12/unit12.json",
+      "originalBlockCount": 12,
+      "currentBlockCount": 12,
+      "changes": [
+        {
+          "path": "/content/2/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        },
+        {
+          "path": "/content/3/src",
+          "before": "https://raw.githubusercontent.com/CHEM120-eBook/CHEM120-E-Textbook/refs/heads/main/public/content/Unit%204/cat.mp4",
+          "after": "public/content/Unit 4/cat.mp4"
+        },
+        {
+          "path": "/content/6/rows/1/0/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        },
+        {
+          "path": "/content/8/image/src",
+          "before": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%204/test.jpg",
+          "after": "public/content/Unit 4/test.jpg"
+        },
+        {
+          "path": "/content/10/title",
+          "before": "<missing>",
+          "after": "Embedded lesson video or activity"
+        },
+        {
+          "path": "/status",
+          "before": "<missing>",
+          "after": "draft"
+        }
+      ]
+    }
+  ]
+}

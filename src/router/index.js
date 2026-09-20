@@ -1,46 +1,16 @@
-import { createRouter, createWebHashHistory} from 'vue-router'
-import HomeView from '../components/Home + Credit/HomeView.vue'
-import Unit1View from '../components/Unit 1/Element2Wide.vue'
-import Unit2View from '../components/Unit 2/Element2Wide.vue'
-import Unit4View from '../components/Unit 4/Element2Wide.vue'
-import Credit from '../components/Home + Credit/credits.vue'
-
-const routes=[
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/unit1',
-    name: 'unti1',
-    component: Unit1View
-  },
-
-  {
-    path: '/unit2',
-    name: 'unit2',
-    component: Unit2View
-  },
-
-  {
-    path: '/unit4',
-    name: 'unit4',
-    component: Unit4View,
-    props: true
-  },
-
-
-  {
-    path: '/credit',
-    name: 'credit',
-    component: Credit
-  }
-]
-
-const router = createRouter({
+import { createRouter, createWebHashHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import LessonReader from '../views/LessonReader.vue';
+import CreditsView from '../views/CreditsView.vue';
+import NotFound from '../views/NotFound.vue';
+export default createRouter({
   history: createWebHashHistory(process.env.BASE_URL),
-  routes
-})
-
-export default router
+  routes: [
+    { path: '/', component: HomeView },
+    { path: '/units/:id', component: LessonReader, props: true },
+    { path: '/unit:legacyId(\\d+)', redirect: to => '/units/' + to.params.legacyId },
+    { path: '/credit', component: CreditsView },
+    { path: '/:pathMatch(.*)*', component: NotFound }
+  ],
+  scrollBehavior(to, from, saved) { return saved || (to.hash ? { el: to.hash, top: 24 } : { top: 0 }); }
+});
