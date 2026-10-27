@@ -31,6 +31,7 @@
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/glucoseSolid.png",
             "title": "Glucose solid",
             "caption": "Glucose solid",
+            "alt": "Glucose molecules arranged in a regular solid structure and connected by intermolecular hydrogen-bonding attractions.",
             "width": "0.5"
         },
         {
@@ -38,6 +39,7 @@
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/GlucoseInWater.png",
             "title": "Glucose dissolving in water ",
             "caption": "Glucose dissolving in water ",
+            "alt": "Glucose molecules separated and surrounded by water molecules as glucose dissolves.",
             "width": "0.5"
         },
         {
@@ -128,6 +130,7 @@
             "src": "https://raw.githubusercontent.com/biochem-learning/chem120-etextbook/refs/heads/main/public/content/Unit%2010/dissolvingNaCl.gif",
             "title": "NaCl dissolving in water",
             "caption": "NaCl dissolving in water",
+            "alt": "Sodium and chloride ions separating in water, with water molecules oriented around each ion.",
             "width": "0.7"
         },
         {

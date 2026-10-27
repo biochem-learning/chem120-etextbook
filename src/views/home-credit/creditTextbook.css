@@ -1,0 +1,198 @@
+/* Credits-page layer matching the home textbook design. */
+.body {
+  --depauw-gold: #f2c75c;
+  --depauw-black: #111c24;
+  --page-cream: #fffdf7;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to top, rgba(17, 28, 36, .86), rgba(17, 28, 36, .76)),
+    url('../../assets/site/background.jpg');
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  background-position: center, center;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#page-wrapper {
+  overflow: hidden;
+}
+
+#banner {
+  min-height: 0;
+  margin: 0;
+  padding: clamp(3.5rem, 8vw, 6rem) 1.5rem;
+}
+
+#banner .inner {
+  box-sizing: border-box;
+  width: min(76rem, calc(100% - 1.5rem)) !important;
+  height: auto;
+  padding: 0;
+  align-items: flex-start;
+}
+
+#banner h2 {
+  width: fit-content;
+  margin: 0 0 1rem;
+  padding: 0 0 .8rem;
+  border-bottom: .2rem solid var(--depauw-gold);
+  color: #fff !important;
+  font-family: inherit;
+  font-size: clamp(2rem, 4vw, 2.65rem);
+  font-weight: 750;
+  letter-spacing: -.02em;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+#banner p.intro {
+  color: rgba(255, 255, 255, .94);
+  font-family: inherit;
+  font-size: 1.1rem;
+  letter-spacing: .015em;
+  line-height: 1.65;
+  text-align: left !important;
+  text-transform: none;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  width: min(76rem, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 0 0 4rem;
+}
+
+#wrapper .wrapper {
+  margin: 0 0 2rem;
+  background: transparent;
+}
+
+#wrapper .wrapper::before,
+#wrapper .wrapper::after {
+  display: none;
+}
+
+#wrapper .wrapper .inner {
+  box-sizing: border-box;
+  width: 100% !important;
+  padding: 2rem;
+  border: 1px solid rgba(242, 199, 92, .55);
+  border-top: .45rem solid var(--depauw-gold);
+  border-radius: .35rem;
+  background: var(--page-cream);
+}
+
+#section-title1,
+#section-title2 {
+  width: 100%;
+  margin: 0 0 1.5rem;
+  padding: 0 0 .8rem;
+  border-bottom: .18rem solid var(--depauw-gold);
+  color: #183b31 !important;
+  font-family: inherit;
+  font-size: 1.65rem;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+}
+
+.features {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.features article {
+  box-sizing: border-box;
+  width: auto;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid rgba(242, 199, 92, .35);
+  border-radius: .3rem;
+  background: var(--depauw-black);
+  color: #fff;
+}
+
+.features article img {
+  width: 100% !important;
+  aspect-ratio: 1;
+  margin: 0 0 1rem;
+  border-radius: .2rem;
+  object-fit: cover;
+}
+
+.features article h3 {
+  margin: 0 0 .65rem;
+  padding: 0;
+  border: 0;
+  color: #fff !important;
+  font-family: inherit;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.features article p {
+  margin: .2rem 0;
+  color: rgba(255, 255, 255, .86);
+  font-family: inherit;
+  line-height: 1.45;
+}
+
+#footer {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(242, 199, 92, .45);
+  background: rgba(17, 28, 36, .94);
+}
+
+#footer .inner {
+  box-sizing: border-box;
+  width: min(76rem, calc(100% - 3rem)) !important;
+  padding: 2rem 0 1.5rem;
+}
+
+#footer h2.major {
+  margin: 0 0 1rem;
+  padding: 0 0 .75rem;
+  border-bottom: .18rem solid var(--depauw-gold);
+  color: #fff !important;
+  font-family: inherit;
+  font-size: 1.65rem;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+}
+
+#footer .copyright {
+  margin: 1rem 0 0;
+  padding: 1rem 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #banner {
+    padding: 3rem 1rem;
+  }
+
+  #banner .inner,
+  #wrapper,
+  #footer .inner {
+    width: min(100% - 2rem, 42rem) !important;
+  }
+
+  #wrapper .wrapper .inner {
+    padding: 1.35rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

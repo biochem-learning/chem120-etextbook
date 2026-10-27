@@ -1,0 +1,555 @@
+/* Home-only visual layer. The shared taskbar and credit page keep their legacy styles. */
+
+.body {
+  --depauw-gold: #f2c75c;
+  --depauw-black: #111c24;
+  --page-cream: #fffdf7;
+  background-image:
+    linear-gradient(to top, rgba(17, 28, 36, 0.82), rgba(17, 28, 36, 0.72)),
+    url('../../assets/site/background.jpg');
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  background-position: center, center;
+  min-height: 100vh;
+}
+
+#page-wrapper {
+  overflow: hidden;
+}
+
+#banner h2,
+#banner #text1,
+#wrapper h2,
+#footer h2 {
+  animation: none;
+}
+
+/* A restrained textbook-cover treatment over the original molecular background. */
+#banner {
+  box-sizing: border-box;
+  min-height: 28rem;
+  padding: 3.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#banner .textbook-cover {
+  box-sizing: border-box;
+  position: relative;
+  width: min(56rem, 100%);
+  min-height: 18rem;
+  height: auto;
+  padding: clamp(2.25rem, 4vw, 3.5rem) clamp(2.25rem, 6vw, 5rem);
+  justify-content: center;
+  text-align: left;
+  background: linear-gradient(135deg, rgba(17, 28, 36, 0.98), rgba(25, 42, 53, 0.96));
+  border: 1px solid rgba(242, 199, 92, 0.45);
+  border-left: 0.8rem solid var(--depauw-gold);
+  border-radius: 0.25rem 0.75rem 0.75rem 0.25rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+#banner .textbook-cover::before {
+  content: '';
+  position: absolute;
+  inset: 1rem auto 1rem 1.25rem;
+  width: 1px;
+  background: rgba(242, 199, 92, 0.38);
+}
+
+#banner h2 {
+  max-width: none;
+  margin: 0 0 1rem;
+  padding: 0 0 0.85rem;
+  border-bottom: 0.22rem solid var(--depauw-gold);
+  color: #ffffff !important;
+  font-family: 'League Spartan', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.15;
+  text-transform: none;
+  text-wrap: balance;
+}
+
+#banner p.intro {
+  max-width: 48rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'League Spartan', sans-serif;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  line-height: 1.75;
+  text-align: left !important;
+  text-align-last: left !important;
+  text-transform: none;
+}
+
+/* The two original lessons read as facing pages instead of promotional cards. */
+#wrapper {
+  box-sizing: border-box;
+  width: min(76rem, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 0 0 7rem;
+  display: grid;
+  grid-auto-rows: 1fr;
+  row-gap: 2.5rem;
+}
+
+#wrapper .wrapper {
+  margin: 0;
+  background: transparent;
+  height: 100%;
+}
+
+#wrapper .wrapper::before,
+#wrapper .wrapper::after {
+  display: none;
+}
+
+#wrapper .wrapper.spotlight,
+#wrapper .wrapper.spotlight.style2 {
+  background: transparent;
+}
+
+#wrapper .wrapper .textbook-spread {
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: clamp(2rem, 5vw, 4rem);
+  height: 100%;
+  color: var(--depauw-black);
+  text-align: left;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.035), transparent 4%, transparent 96%, rgba(0, 0, 0, 0.035)), var(--page-cream);
+  border-top: 0.45rem solid var(--depauw-gold);
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.28);
+}
+
+#wrapper .wrapper .textbook-spread::after {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(17, 28, 36, 0.14), transparent);
+  pointer-events: none;
+}
+
+#wrapper .wrapper:nth-child(2n) .textbook-spread {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+}
+
+#wrapper .wrapper.spotlight .image,
+#wrapper .wrapper.spotlight:nth-child(2n - 1) .image,
+#image1,
+#image2 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  overflow: hidden;
+  color: var(--depauw-black);
+}
+
+#wrapper .wrapper.spotlight .content,
+#wrapper .wrapper.spotlight:nth-child(2n - 1) .content {
+  width: auto;
+  text-align: left;
+}
+
+#wrapper .wrapper.spotlight:nth-child(2n - 1) .image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#wrapper .wrapper.spotlight:nth-child(2n - 1) .content {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#wrapper .epinephrine-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(242, 199, 92, .55);
+  border-radius: .3rem;
+  background: #111c24;
+}
+
+#wrapper #epinephrine-3d-canvas {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  cursor: grab;
+  touch-action: none;
+}
+
+#wrapper #epinephrine-3d-canvas:active {
+  cursor: grabbing;
+}
+
+#wrapper .image img {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(17, 28, 36, 0.12);
+  border-radius: 0.2rem;
+}
+
+#wrapper .image:focus-visible {
+  outline: 0.2rem solid var(--depauw-gold);
+  outline-offset: 0.25rem;
+}
+
+#wrapper h2.major {
+  margin: 0 0 1.35rem;
+  padding: 0 0 1rem;
+  color: var(--depauw-black) !important;
+  border-bottom: 0.18rem solid var(--depauw-gold) !important;
+  font-family: 'League Spartan', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  text-transform: none;
+}
+
+#wrapper .main-content {
+  color: #27353e !important;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  text-align: left !important;
+  text-align-last: left !important;
+}
+
+#wrapper #description1,
+#wrapper #description2 {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+  border-left: 0.18rem solid var(--depauw-gold);
+  color: #52606a !important;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.95rem !important;
+  line-height: 1.55;
+}
+
+#wrapper #content2 {
+  align-items: flex-start;
+}
+
+/* The footer remains functionally identical, but shares the textbook palette. */
+#footer {
+  background: rgba(17, 28, 36, 0.94);
+  border-top: 1px solid rgba(242, 199, 92, 0.45);
+}
+
+#footer .inner {
+  box-sizing: border-box;
+  width: min(68rem, calc(100% - 3rem));
+  padding: 4.5rem 0 2.5rem;
+}
+
+#footer h2.major {
+  border-bottom-color: var(--depauw-gold);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+#footer input[type='submit'] {
+  color: var(--depauw-black) !important;
+  background: var(--depauw-gold);
+  border-color: var(--depauw-gold);
+}
+
+#footer input[type='submit']:hover,
+#footer input[type='submit']:focus-visible {
+  background: #f7d983;
+}
+
+@media screen and (max-width: 780px) {
+  #banner {
+    min-height: auto;
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  #banner .textbook-cover {
+    padding: 2.5rem 2rem 2.5rem 2.6rem;
+  }
+
+  #wrapper {
+    width: min(100% - 2rem, 42rem);
+    padding-bottom: 4rem;
+    display: block;
+  }
+  #wrapper .wrapper {
+    margin: 0 0 1.5rem;
+  }
+
+  #wrapper .wrapper .textbook-spread,
+  #wrapper .wrapper:nth-child(2n) .textbook-spread {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 2rem;
+    min-height: 0;
+    height: auto;
+  }
+
+  #wrapper .wrapper .textbook-spread::after {
+    display: none;
+  }
+
+  #wrapper .wrapper.spotlight:nth-child(2n - 1) .image,
+  #wrapper .wrapper.spotlight:nth-child(2n - 1) .content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+
+  #footer {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #footer .inner {
+    width: min(100% - 2rem, 42rem);
+    padding: 3rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .body,
+  #page-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  #banner {
+    padding: 1.5rem 0.75rem 2.75rem;
+  }
+
+  #banner .textbook-cover {
+    min-height: 0;
+    padding: 2rem 1.35rem 2rem 2rem;
+    border-left-width: 0.55rem;
+  }
+
+  #banner .textbook-cover::before {
+    left: 0.85rem;
+  }
+
+  #banner h2 {
+    font-size: clamp(1.65rem, 8vw, 2.1rem);
+  }
+
+  #banner p.intro {
+    font-size: 0.98rem;
+    line-height: 1.62;
+  }
+
+  #wrapper {
+    width: calc(100% - 1.25rem);
+  }
+
+  #wrapper .wrapper .textbook-spread,
+  #wrapper .wrapper:nth-child(2n) .textbook-spread {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.35rem;
+  }
+
+
+  #footer .inner {
+    width: calc(100% - 2rem);
+  }
+
+  #footer form > .fields {
+    width: 100%;
+    margin: 0 0 2rem;
+  }
+
+  #footer form > .fields > .field {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 1.5rem 0 0;
+  }
+
+  #footer input,
+  #footer textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #banner h2,
+  #banner #text1 {
+    animation: none;
+  }
+}
+/* Consistent textbook typography with the introduction on the original background. */
+.body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#banner {
+  min-height: 0;
+  padding: clamp(3.5rem, 8vw, 6rem) 1.5rem;
+}
+
+#banner .textbook-cover {
+  width: min(76rem, calc(100% - 1.5rem));
+  min-height: 0;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#banner .textbook-cover::before {
+  display: none;
+}
+
+#banner h2 {
+  width: fit-content;
+  max-width: 100%;
+  white-space: nowrap;
+  margin: 0 0 1.2rem;
+  padding: 0 0 0.8rem;
+  color: #ffffff !important;
+  border-bottom: 0.2rem solid var(--depauw-gold);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.65rem);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+#banner p.intro {
+  max-width: 62rem;
+  color: rgba(255, 255, 255, 0.94);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.65;
+}
+
+#wrapper,
+#footer {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#wrapper h2.major,
+#wrapper #description1,
+#wrapper #description2,
+#footer h2.major {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#wrapper h2.major {
+  color: #183b31 !important;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+#wrapper .main-content {
+  color: #23312d !important;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 780px) {
+  #banner {
+    padding: 3.25rem 1.25rem;
+  }
+
+  #banner .textbook-cover {
+    width: min(100%, 42rem);
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #banner {
+    padding: 2.5rem 1rem;
+  }
+
+  #banner .textbook-cover {
+    min-height: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  #banner h2 {
+    max-width: 100%;
+    font-size: clamp(.8rem, 5.2vw, 1.9rem);
+    letter-spacing: -.03em;
+    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+}
+
+/* Compact contact footer: contact details only, without the removed form. */
+#footer .inner {
+  text-align: left;
+  padding: 2.5rem 0 1.5rem;
+}
+
+#footer .inner > p {
+  margin: 0 0 1rem;
+}
+
+#footer .inner .contact {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .65rem;
+  font-style: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, .88);
+}
+
+#footer .inner .contact > * {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#footer .inner .contact a {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, .45);
+}
+
+#footer .inner .copyright {
+  margin: 1.5rem 0 0;
+  padding: 1rem 0 0;
+}
+
+@media screen and (max-width: 780px) {
+  #footer .inner {
+    padding: 2rem 0 1.25rem;
+  }
+}

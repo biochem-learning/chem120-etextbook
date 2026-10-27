@@ -53,13 +53,10 @@
   background-color: aliceblue;
   text-align: left;
   margin:0;
-  overflow-y: scroll !important; 
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  overflow-y: scroll !important;
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
   
-  }
-  #slide > div::-webkit-scrollbar {
-  display: none;
   }
 
   #slide > .page > p {

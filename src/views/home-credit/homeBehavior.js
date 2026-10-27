@@ -1,8 +1,109 @@
 export default {
+    data() {
+        return {
+            epinephrineViewer: null,
+            epinephrineResizeObserver: null,
+            epinephrineWheelBlocker: null,
+            epinephrineTouchZoomBlocker: null
+        };
+    },
+    mounted() {
+        this.$nextTick(() => this.initEpinephrineModel());
+    },
+    beforeUnmount() {
+        if (this.epinephrineResizeObserver) {
+            this.epinephrineResizeObserver.disconnect();
+        }
+        const canvas = this.$refs.epinephrineCanvas;
+        if (canvas && this.epinephrineWheelBlocker) {
+            canvas.removeEventListener("wheel", this.epinephrineWheelBlocker, true);
+            canvas.removeEventListener("DOMMouseScroll", this.epinephrineWheelBlocker, true);
+        }
+        if (canvas && this.epinephrineTouchZoomBlocker) {
+            canvas.removeEventListener("touchmove", this.epinephrineTouchZoomBlocker, true);
+        }
+
+        this.epinephrineViewer = null;
+    },
     create() {
         window.addEventListener("DOMMouseScroll", event => console.log('???'))
     },
     methods:{
+        async initEpinephrineModel() {
+            const canvas = this.$refs.epinephrineCanvas;
+            if (!canvas) return;
+
+            try {
+                const chemDoodle = typeof ChemDoodle === "undefined"
+                    ? null : ChemDoodle;
+                if (!chemDoodle) throw new Error("ChemDoodle failed to load");
+
+                const response = await fetch(
+                    `${process.env.BASE_URL}content/epinephrine-3d.sdf`
+                );
+                if (!response.ok) {
+                    throw new Error(`Epinephrine model request failed: ${response.status}`);
+                }
+
+                const molText = await response.text();
+                const host = canvas.parentElement;
+                const width = Math.max(
+                    240,
+                    Math.min(Math.round(host.clientWidth || 420), 520)
+                );
+                const height = Math.max(260, Math.min(Math.round(width * 0.82), 420));
+                const viewer = new chemDoodle.TransformCanvas3D(
+                    canvas.id,
+                    width,
+                    height
+                );
+                viewer.mousewheel = () => {};
+
+                this.epinephrineWheelBlocker = event => event.stopImmediatePropagation();
+                this.epinephrineTouchZoomBlocker = event => {
+                    if (event.touches && event.touches.length > 1) {
+                        event.stopImmediatePropagation();
+                    }
+                };
+                canvas.addEventListener("wheel", this.epinephrineWheelBlocker, { capture: true });
+                canvas.addEventListener("DOMMouseScroll", this.epinephrineWheelBlocker, { capture: true });
+                canvas.addEventListener("touchmove", this.epinephrineTouchZoomBlocker, { capture: true });
+
+
+                viewer.styles.backgroundColor = "#111c24";
+                viewer.styles.atoms_useJMOLColors = true;
+                viewer.styles.bonds_color = "#d9e2df";
+                viewer.styles.set3DRepresentation("Ball and Stick");
+                viewer.loadMolecule(chemDoodle.readMOL(molText, 1));
+                viewer.repaint();
+
+                this.epinephrineViewer = viewer;
+                canvas.dataset.status = "ready";
+
+                if ("ResizeObserver" in window) {
+                    this.epinephrineResizeObserver = new ResizeObserver(() => {
+                        this.resizeEpinephrineModel();
+                    });
+                    this.epinephrineResizeObserver.observe(host);
+                }
+            } catch (error) {
+                canvas.dataset.status = "error";
+                console.error("Failed to initialize epinephrine model:", error);
+            }
+        },
+        resizeEpinephrineModel() {
+            const canvas = this.$refs.epinephrineCanvas;
+            const viewer = this.epinephrineViewer;
+            if (!canvas || !viewer || typeof viewer.resize !== "function") return;
+
+            const width = Math.max(
+                240,
+                Math.min(Math.round(canvas.parentElement.clientWidth || 420), 520)
+            );
+            const height = Math.max(260, Math.min(Math.round(width * 0.82), 420));
+            viewer.resize(width, height);
+            viewer.repaint();
+        },
         ////playVideo() invokes the overlay area that has a video on top of it.
         playVideo(id){
             document.getElementById(id).style.display = "flex";

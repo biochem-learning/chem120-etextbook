@@ -1,13 +1,32 @@
 <template>
     <div class="background">
         <div class="container" id="container" @keyup="created">
-            <div class="nav-buttons">
-                <button @click="previous" class="control">
+            <div class="nav-buttons" role="group" aria-label="Lesson page navigation">
+                <button type="button" @click="previous" class="control" aria-label="Previous pages">
                     <
                 </button>
-                <button @click="next" class="control">
+                <button type="button" @click="next" class="control" aria-label="Next pages">
                     >
                 </button>
+            </div>
+
+            <div
+                v-if="lightboxOpen"
+                class="image-lightbox"
+                ref="lightboxDialog"
+                tabindex="-1"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Enlarged image. Use Control or Command plus scroll to zoom. Press Escape to close."
+                @click.self="closeImageLightbox"
+            >
+                <div class="image-lightbox__dialog">
+                    <div class="image-lightbox__viewport" @wheel="handleLightboxWheel">
+                        <div class="image-lightbox__stage" :style="{ width: (lightboxZoom * 100) + '%' }">
+                            <img :src="lightboxSrc" :alt="lightboxAlt">
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div id="overlay" class="overlay" @click="clickOut('overlay'); clickOut('media')">
@@ -38,12 +57,12 @@
 
         -->
 
-            <p class="title">
+            <h1 class="title">
                 {{title}} 
-            </p>
+            </h1>
             
             
-            <div id="slide" v-if="!gridEnabled" @touchstart="touchStartMethod" @mousedown="mouseDownMethod" @keyup.left="next()">
+            <div id="slide" v-if="!gridEnabled" role="region" :aria-label="title" @touchstart="touchStartMethod" @mousedown="mouseDownMethod" @keyup.left="next()">
                 <!--
                 <div class="page" id="1">
                     <p>
@@ -95,18 +114,30 @@
     // - Add enlargement upon clicking to photos and images
     // - Add excercises, podcast and games as a type of media
 
-    import { units } from '@/content/units.js';
+    import { units } from '@/content/registry.js';
 
     export default {
         props: ["btnText"],
         data() {
+            const savedUnit = localStorage.getItem('selectedUnit');
+            const selectedUnit = units[this.btnText]
+                ? this.btnText
+                : (units[savedUnit] ? savedUnit : 'unit1');
             return {
                 units,
-                selectedUnit: this.btnText,
+                selectedUnit,
 
                 count: 0, ///Keep track of pages
                 lastClick: 0,
                 delay: 690,
+                onSlideKeydown: null,
+                lightboxOpen: false,
+                lightboxSrc: "",
+                lightboxAlt: "",
+                lightboxZoom: 1,
+                lightboxReturnFocus: null,
+                repaginationTimer: null,
+                repaginationFrame: null,
 
             };
         },
@@ -118,7 +149,7 @@
                 return this.units[this.selectedUnit]?.items || [];
             },
             sections() {
-                return this.units[this.selectedUnit]?.sections|| "Default Content";
+                return this.units[this.selectedUnit]?.sections || [];
             },
         },
 
@@ -256,6 +287,29 @@
             }
         };
 
+        const makeImageZoomable = (img, b = {}) => {
+            if (!b.src) return;
+            const accessibleText = b.alt || b.title ||
+                (typeof b.caption === "string" ? b.caption : "") ||
+                "image";
+            img.classList.add("zoomable-image");
+            img.tabIndex = 0;
+            img.setAttribute("role", "button");
+            img.setAttribute("aria-label", "Enlarge " + accessibleText);
+            const open = () => this.openImageLightbox(
+                b.src,
+                b.decorative ? "" : accessibleText,
+                img
+            );
+            img.addEventListener("click", open);
+            img.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    open();
+                }
+            });
+        };
+
         const renderMediaFigure = (mediaEl, caption) => {
             const fig = document.createElement("figure");
             fig.className = "media-figure";
@@ -290,10 +344,18 @@
 
         // ---------- block renderers ----------
         const blockRenderers = {
+            heading: (b) => {
+            const level = Math.min(6, Math.max(2, Number(b.level) || 2));
+            const heading = document.createElement("h" + level);
+            heading.appendChild(renderTextLike(b.content ?? "", "normal"));
+            return heading;
+            },
+
             text: (b) => {
             const p = document.createElement("p");
+            if (typeof b.content === "string" && b.content.trim() === "What we will learn in this unit:") p.classList.add("learning-objectives-label");
 
-            if (b.border === "true") {
+            if (b.border === true || b.border === "true") {
                 p.style.border = "1px solid black";
                 p.style.padding = "8px";
             }
@@ -305,8 +367,11 @@
             image: (b) => {
             const img = document.createElement("img");
             img.src = b.src;
-            img.alt = b.alt || "";
+            img.alt = b.decorative ? "" : (b.alt || "");
+            // Keep the legacy broken-image appearance while retaining the accessible name.
+            img.style.color = "transparent";
             styleMediaEl(img, b);
+            makeImageZoomable(img, b);
             return renderMediaFigure(img, b.caption);
             },
 
@@ -315,7 +380,20 @@
             video.src = b.src;
             video.controls = true;
             video.preload = "metadata";
-            if (b.title) video.title = b.title;
+            if (b.title) {
+                video.title = b.title;
+                video.setAttribute("aria-label", b.title);
+            }
+
+            (b.tracks || []).forEach((track, index) => {
+                const trackEl = document.createElement("track");
+                trackEl.src = track.src;
+                trackEl.kind = track.kind || "captions";
+                trackEl.srclang = track.lang || "en";
+                trackEl.label = track.label || "English";
+                trackEl.default = index === 0;
+                video.appendChild(trackEl);
+            });
 
             styleMediaEl(video, b);
             if (b.width === undefined) video.style.width = "100%";
@@ -334,6 +412,7 @@
             },
 
             "bullet-list": (b) => {
+            // Keep v1's historical numbered rendering for visual compatibility.
             const ol = document.createElement("ol");
             (b.content || []).forEach(item => {
                 const li = document.createElement("li");
@@ -341,6 +420,26 @@
                 ol.appendChild(li);
             });
             return ol;
+            },
+
+            "ordered-list": (b) => {
+            const ol = document.createElement("ol");
+            (b.content || []).forEach(item => {
+                const li = document.createElement("li");
+                li.appendChild(renderTextLike(item, "normal"));
+                ol.appendChild(li);
+            });
+            return ol;
+            },
+
+            "unordered-list": (b) => {
+            const ul = document.createElement("ul");
+            (b.content || []).forEach(item => {
+                const li = document.createElement("li");
+                li.appendChild(renderTextLike(item, "normal"));
+                ul.appendChild(li);
+            });
+            return ul;
             },
 
             table: (b) => {
@@ -379,8 +478,10 @@
                 if (cell && typeof cell === "object" && cell.type === "image") {
                     const img = document.createElement("img");
                     img.src = cell.src;
-                    img.alt = cell.alt || "";
+                    img.alt = cell.decorative ? "" : (cell.alt || "");
+                    img.style.color = "transparent";
                     styleMediaEl(img, cell);
+                    makeImageZoomable(img, cell);
 
                     if (cell.width === undefined) img.style.width = "120px";
 
@@ -421,7 +522,8 @@
             const row = document.createElement("div");
             row.className = "podcast";
 
-            if (b.image?.src) {
+            // The embedded player already includes its own artwork.
+            if (b.image?.src && !b.link) {
                 const img = document.createElement("img");
                 img.src = b.image.src;
                 img.alt = b.image.alt || "";
@@ -435,9 +537,10 @@
             if (b.link) {
                 const iframe = document.createElement("iframe");
                 iframe.src = b.link;
+                iframe.title = b.title || "Lesson podcast";
                 iframe.setAttribute("frameBorder", "0");
                 iframe.setAttribute("scrolling", "no");
-                iframe.style.width = "60%";
+                iframe.style.width = "100%";
                 row.appendChild(iframe);
             }
 
@@ -460,6 +563,7 @@
             let src = b.src || "";
             if (src && !src.startsWith("http")) src = "https://" + src;
             iframe.src = src;
+            iframe.title = b.title || "Embedded lesson resource";
 
             if (b.width !== undefined) iframe.style.width = `${Number(b.width) * 100}%`;
             else iframe.style.width = "100%";
@@ -477,6 +581,8 @@
 
                 const canvasId = b.name || `rotator-${Math.random().toString(36).slice(2)}`;
                 canvas.id = canvasId;
+                canvas.setAttribute("role", "img");
+                canvas.setAttribute("aria-label", b.title || "Molecular structure");
 
                 canvas.style.display = "block";
                 canvas.style.margin = "0 auto";
@@ -527,7 +633,7 @@
                 link.setAttribute("href", b.src);
                 link.setAttribute("target", "_blank");
                 link.setAttribute("rel", "noopener noreferrer");
-                link.textContent = b.content;
+                link.appendChild(renderTextLike(b.content ?? "", "normal"));
                 return link;
             }
         };
@@ -535,13 +641,20 @@
         const renderBlock = (block) => {
             if (!block || typeof block !== "object") return document.createTextNode("");
             const fn = blockRenderers[block.type];
-            if (!fn) return document.createTextNode("");
+            if (!fn) {
+                const warning = document.createElement("p");
+                warning.setAttribute("role", "alert");
+                warning.textContent = "Unsupported content block: " + block.type;
+                return warning;
+            }
             return fn(block);
         };
 
         // ---------- mount logic ----------
         const slide = document.getElementById("slide");
         const unit = this.units[this.selectedUnit];
+        if (!slide || !unit || !Array.isArray(unit.content)) return;
+
 
         // Create first page
         const pageDiv = document.createElement("div");
@@ -551,44 +664,198 @@
 
         let pageEl = pageDiv;
 
-        // Render blocks
+        // Render blocks. Caption markers let pagination keep related content together.
         const blocks = Array.isArray(unit.content) ? unit.content : [];
+        const plainText = content => Array.isArray(content)
+            ? content.map(run => run?.text ?? run?.content ?? "").join("")
+            : String(content ?? "");
+
         blocks.forEach(block => {
-            pageEl = this.handleOverflow.call(this, pageEl);
-            pageEl.appendChild(renderBlock(block));
+            const blockElement = renderBlock(block);
+            if (blockElement.dataset && block?.type === "text") {
+                const label = plainText(block.content).trim();
+                if (/^(Figure|Video)\s+\d+\s*[.:]/i.test(label)) {
+                    blockElement.dataset.keepWithPrevious = "true";
+                }
+                if (/^Table\s+\d+\s*[.:]/i.test(label)) {
+                    blockElement.dataset.keepWithNext = "true";
+                }
+            }
+
+            pageEl.appendChild(blockElement);
+
+            if (this.isOverflow(pageEl)) {
+                const moveGroup = this.paginationMoveGroup(pageEl, blockElement);
+                if (pageEl.childNodes.length > moveGroup.length) {
+                    moveGroup.forEach(node => pageEl.removeChild(node));
+                    pageEl = this.createNewPage(pageEl);
+                    moveGroup.forEach(node => pageEl.appendChild(node));
+                }
+            }
         });
 
         if (parseInt(pageEl.id, 10) % 2 !== 0) {
             this.createNewPage(pageEl);
         }
+
+        const repaginateAfterLayout = () => {
+            if (!this["$el"]?.isConnected) return;
+            this.scheduleRepagination();
+        };
+
+        Array.from(slide.querySelectorAll("img, video")).forEach(media => {
+            const ready = media.tagName === "IMG"
+                ? media.complete
+                : media.readyState >= 1;
+            if (ready) return;
+
+            const eventName = media.tagName === "IMG" ? "load" : "loadedmetadata";
+            media.addEventListener(eventName, repaginateAfterLayout, { once: true });
+            media.addEventListener("error", repaginateAfterLayout, { once: true });
+        });
+
+        this.scheduleRepagination();
+
+        if (document.fonts?.ready) {
+            Promise.resolve(document.fonts.ready).then(repaginateAfterLayout);
+        }
         },
 
 
         created() {
-            let self = this;
-            window.addEventListener('scroll', this.handleScroll);
-            document.onkeydown = function(e) {
-                switch(e.which) {
-                    case 37: 
-                    self.previous()// left
-                    break;
-
-                    case 39: 
-                    self.next()// right
-                    break;
-                } 
+            this.onSlideKeydown = (event) => {
+                if (event.key === "Escape" && this.lightboxOpen) {
+                    this.closeImageLightbox();
+                    return;
+                }
+                if (this.lightboxOpen) return;
+                if (event.which === 37) this.previous();
+                if (event.which === 39) this.next();
             };
+            window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('resize', this.resizeAdjust);
+            document.addEventListener('keydown', this.onSlideKeydown);
+        },
 
-
-            ///When selectedUnit is updated, reload this component and this component only (not the app)
-
-            window.addEventListener('resize', () => {this.resizeAdjust()}) 
+        beforeUnmount() {
+            window.removeEventListener('scroll', this.handleScroll);
+            window.removeEventListener('resize', this.resizeAdjust);
+            document.removeEventListener('keydown', this.onSlideKeydown);
+            window.clearTimeout(this.repaginationTimer);
+            window.cancelAnimationFrame(this.repaginationFrame);
         },
 
         methods: {
+            openImageLightbox(src, alt, returnFocus) {
+                this.lightboxSrc = src;
+                this.lightboxAlt = alt || "";
+                this.lightboxZoom = 1;
+                this.lightboxReturnFocus = returnFocus || null;
+                this.lightboxOpen = true;
+                this["\u0024nextTick"](() => {
+                    if (this["\u0024refs"].lightboxDialog) this["\u0024refs"].lightboxDialog.focus();
+                });
+            },
+
+            closeImageLightbox() {
+                const returnFocus = this.lightboxReturnFocus;
+                this.lightboxOpen = false;
+                this.lightboxReturnFocus = null;
+                this["\u0024nextTick"](() => {
+                    if (returnFocus && typeof returnFocus.focus === "function") returnFocus.focus();
+                });
+            },
+
+            adjustImageZoom(delta) {
+                this.lightboxZoom = Math.min(4, Math.max(0.5,
+                    Number((this.lightboxZoom + delta).toFixed(2))
+                ));
+            },
+
+            resetImageZoom() {
+                this.lightboxZoom = 1;
+            },
+
+            handleLightboxWheel(event) {
+                if (!event.ctrlKey && !event.metaKey) return;
+                event.preventDefault();
+                this.adjustImageZoom(event.deltaY < 0 ? 0.25 : -0.25);
+            },
+
+            scheduleRepagination() {
+                window.clearTimeout(this.repaginationTimer);
+                window.cancelAnimationFrame(this.repaginationFrame);
+                this.repaginationTimer = window.setTimeout(() => {
+                    this["$nextTick"](() => {
+                        this.repaginationFrame = window.requestAnimationFrame(() => {
+                            this.repaginationFrame = window.requestAnimationFrame(() => {
+                                this.repaginationFrame = null;
+                                if (this["$el"]?.isConnected) this.repaginatePages();
+                            });
+                        });
+                    });
+                }, 40);
+            },
+
             // Check if page overflows
             isOverflow(element) {
-                return element.scrollHeight > element.clientHeight;
+                return element.scrollHeight - element.clientHeight > 1;
+            },
+
+            // Rebuild page boundaries after fonts and media finish laying out.
+            paginationMoveGroup(page, block) {
+                const group = [block];
+                const previous = block.previousElementSibling;
+                const keepTogether = block.dataset?.keepWithPrevious === "true"
+                    || previous?.dataset?.keepWithNext === "true";
+                if (keepTogether && previous && previous.parentNode === page) {
+                    group.unshift(previous);
+                }
+                return group;
+            },
+
+            repaginatePages() {
+                const slide = this["$el"]?.querySelector("#slide");
+                if (!slide) return;
+
+                const oldPages = Array.from(slide.children)
+                    .filter(element => element.classList.contains("page"));
+                const blocks = oldPages.flatMap(page => Array.from(page.childNodes));
+                if (!blocks.length) return;
+
+                oldPages.forEach(page => page.remove());
+
+                const pages = [];
+                const addPage = () => {
+                    const page = document.createElement("div");
+                    page.id = String(pages.length + 1);
+                    page.className = "page";
+                    pages.push(page);
+                    slide.appendChild(page);
+                    return page;
+                };
+
+                let currentPage = addPage();
+                blocks.forEach(block => {
+                    currentPage.appendChild(block);
+                    if (this.isOverflow(currentPage)) {
+                        const moveGroup = this.paginationMoveGroup(currentPage, block);
+                        if (currentPage.childNodes.length > moveGroup.length) {
+                            moveGroup.forEach(node => currentPage.removeChild(node));
+                            currentPage = addPage();
+                            moveGroup.forEach(node => currentPage.appendChild(node));
+                        }
+                    }
+                });
+
+                if (pages.length % 2 !== 0) addPage();
+
+                const pagesPerView =
+                    window.innerWidth >= window.innerHeight && window.innerWidth > 600 ? 2 : 1;
+                const maxCount = Math.max(0, Math.ceil(pages.length / pagesPerView) - 1);
+                this.count = Math.min(this.count, maxCount);
+                this.scroll("auto");
+                this.handleScroll();
             },
 
             // Helper function to create a new page
@@ -615,17 +882,7 @@
 
             ///Readjust/fix slider position when resize window
             resizeAdjust() {
-                let pageArr = document.getElementsByClassName("page");
-                pageArr[this.count * 2].scrollIntoView({ 
-                    behavior: "instant", 
-                    block: "start", 
-                    inline: "start" });
-                if (window.innerWidth >= window.innerHeight && window.innerWidth > 800)  {
-                    pageArr[this.count * 2 + 1].scrollIntoView({ 
-                        behavior: "instant", 
-                        block: "start", 
-                        inline: "end" });
-                }
+                this.scheduleRepagination();
                 ///scale down elements in page until it fit (problem with this implementation: high runtime)
                 // let pages = document.querySelectorAll(".page")
                 // for (let i = 0; i < pages.length; i += 1) {
@@ -678,11 +935,13 @@
                 //var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 //var scrolled = (winScroll / height) * 100;
                 //var totalWidth = screen.availWidth;
-                var totalWidth = document.getElementById("slide").offsetWidth;
-                var scrolled = (window.innerWidth <= window.innerHeight) ? totalWidth / (pageArr.length - 1) : totalWidth / (pageArr.length/2 - 1); 
-                document.getElementById("myBar").style.width = scrolled*this.count + "px";
-                console.log(this.count)
-                console.log(pageArr.length)
+                const slide = document.getElementById("slide");
+                const progressBar = document.getElementById("myBar");
+                if (!slide || !progressBar || pageArr.length < 2) return;
+                var totalWidth = slide.offsetWidth;
+                var denominator = (window.innerWidth <= window.innerHeight) ? pageArr.length - 1 : pageArr.length / 2 - 1;
+                var scrolled = denominator > 0 ? totalWidth / denominator : 0;
+                progressBar.style.width = scrolled*this.count + "px";
             },
             
             ///Move slide backward
@@ -715,15 +974,24 @@
             },
 
             ///Creating and managing scroll behavior 
-            scroll(position) {
-                let el = document.getElementById("slide");
-                let page = document.getElementsByClassName("page")[0].offsetWidth;
-                let width = (window.innerWidth > 600) && (window.innerWidth > window.innerHeight) ? page * 2 : page;
-                let scrollValue = position == 'next' ? width : -width;
-                el.scrollBy({
-                    left: scrollValue,
+            scroll(position = "auto") {
+                const slide = document.getElementById("slide");
+                const pages = Array.from(slide?.querySelectorAll(".page") || []);
+                if (!slide || !pages.length) return;
+
+                const pagesPerView =
+                    window.innerWidth >= window.innerHeight && window.innerWidth > 600 ? 2 : 1;
+                const targetIndex = Math.min(this.count * pagesPerView, pages.length - 1);
+                const targetPage = pages[targetIndex];
+                const left =
+                    targetPage.getBoundingClientRect().left
+                    - slide.getBoundingClientRect().left
+                    + slide.scrollLeft;
+
+                slide.scrollTo({
+                    left: Math.round(left),
                     top: 0,
-                    behavior: 'smooth'
+                    behavior: "auto"
                 })
             },
     
@@ -814,14 +1082,17 @@
   height: 80vh !important;
   width: 100%;
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   align-items: flex-start;
   text-indent: 2%;
+  scroll-snap-type: x mandatory;
 }
 
 #slide > div {
   padding: 2%;
-  min-width: 50%;
+  min-width: 0;
+  flex: 0 0 50%;
   height: 100%;
   min-height: 400px;
   padding-right: 2%;
@@ -830,13 +1101,11 @@
   background-color: aliceblue;
   text-align: left;
   margin:0;
-  overflow-y: scroll !important; 
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  overflow-y: scroll !important;
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
+  scroll-snap-align: start;
   
-  }
-  #slide > div::-webkit-scrollbar {
-  display: none;
   }
 
   #slide > .page > p, ul, ol {
@@ -856,7 +1125,8 @@
     height: 100vh;
   }
   #slide > div { 
-      min-width: 100%;
+      min-width: 0;
+      flex-basis: 100%;
   }
   .title {
     margin: 5%;
@@ -1170,3 +1440,5 @@ iframe{
     z-index: 9;
 } */
 </style>
+
+<style src="@/views/units/contentBlocks.css"></style>

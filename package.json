@@ -5,8 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy:pages": "bash scripts/deploy-pages.sh",
     "deploy-mac": "sh deploy-mac.sh",
-    "deploy-win": "sh deploy-win.sh"
+    "deploy-win": "sh deploy-win.sh",
+    "validate:content": "node scripts/validate-content.cjs",
+    "prebuild": "npm run validate:content",
+    "test": "node --test tests/*.test.cjs"
   },
   "dependencies": {
     "@floating-ui/core": "^1.7.5",
@@ -22,6 +26,7 @@
     "@types/three": "^0.162.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.8"
+    "@vue/cli-service": "~5.0.8",
+    "ajv": "^6.12.6"
   }
 }

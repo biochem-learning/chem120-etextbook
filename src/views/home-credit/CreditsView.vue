@@ -135,6 +135,7 @@ p {
 
 }
 </style>
+<style scoped src="@/views/home-credit/creditTextbook.css"></style>
 <template>
   <div class="body">
     <!-- Page Wrapper -->
@@ -231,7 +232,7 @@ p {
 			<div class="inner">
 				<h2 class="major">Special thanks</h2>
 				<ul class="copyright">
-					<li>Copyright &copy;  2024 Dr. Jeffrey A. Hansen -  All Rights Reserved.</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Copyright &copy;  2024 Dr. Jeffrey A. Hansen -  All Rights Reserved.</li>
 				</ul>
 			</div>
 		</section>

@@ -9,16 +9,16 @@
                 <div class="section-title" @click="openSubMenu('dropdown-content1')">Section 1</div>
                 <div class="dropdown-content" id="dropdown-content1">
                   <ul style="list-style-type: none; padding: 0;">
-                    <li @click="selectUnit('unit1')"><router-link to="/unit4">Unit 1. Bonding, Introduction to Structural Representations</router-link></li>
-                    <li @click="selectUnit('unit2')"><router-link to="/unit4">Unit 2. More Structural Representations and Isomers</router-link></li>
-                    <li @click="selectUnit('unit3')"><router-link to="/unit4">Unit 3. Functional groups and isomers </router-link></li>
-                    <li @click="selectUnit('unit4')"><router-link to="/unit4">Unit 4. </router-link></li>
-                    <li @click="selectUnit('unit5')"><router-link to="/unit4">Unit 5. Equity and Inclusion in the STEM Field </router-link></li>
-                    <li @click="selectUnit('unit6')"><router-link to="/unit4">Unit 6. </router-link></li>
-                    <li @click="selectUnit('unit7')"><router-link to="/unit4">Unit 7. </router-link></li>
-                    <li @click="selectUnit('unit8')"><router-link to="/unit4">Unit 8. </router-link></li>
-                    <li @click="selectUnit('unit9')"><router-link to="/unit4">Unit 9. </router-link></li>
-                    <li @click="selectUnit('unit10')"><router-link to="/unit4">Unit 10. </router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit1' }" @click="selectUnit('unit1')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit1' ? 'page' : null">{{ unitNavLabel('unit1', 1) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit2' }" @click="selectUnit('unit2')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit2' ? 'page' : null">{{ unitNavLabel('unit2', 2) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit3' }" @click="selectUnit('unit3')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit3' ? 'page' : null">{{ unitNavLabel('unit3', 3) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit4' }" @click="selectUnit('unit4')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit4' ? 'page' : null">{{ unitNavLabel('unit4', 4) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit5' }" @click="selectUnit('unit5')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit5' ? 'page' : null">{{ unitNavLabel('unit5', 5) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit6' }" @click="selectUnit('unit6')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit6' ? 'page' : null">{{ unitNavLabel('unit6', 6) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit7' }" @click="selectUnit('unit7')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit7' ? 'page' : null">{{ unitNavLabel('unit7', 7) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit8' }" @click="selectUnit('unit8')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit8' ? 'page' : null">{{ unitNavLabel('unit8', 8) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit9' }" @click="selectUnit('unit9')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit9' ? 'page' : null">{{ unitNavLabel('unit9', 9) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit10' }" @click="selectUnit('unit10')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit10' ? 'page' : null">{{ unitNavLabel('unit10', 10) }}</router-link></li>
                   </ul>
                 </div>
               </div>
@@ -26,8 +26,8 @@
                 <div class="section-title" href="#" @click="openSubMenu('dropdown-content3')">Section 2</div>
                 <div class="dropdown-content" id="dropdown-content3">
                   <ul style="list-style-type: none; padding: 0;">
-                    <li @click="selectUnit('unit11')"><router-link to="/unit4">Unit 11. </router-link></li>
-                    <li @click="selectUnit('unit12')"><router-link to="/unit4">Unit 12. </router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit11' }" @click="selectUnit('unit11')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit11' ? 'page' : null">{{ unitNavLabel('unit11', 11) }}</router-link></li>
+                    <li :class="{ 'unit-active': selectedUnit === 'unit12' }" @click="selectUnit('unit12')"><router-link to="/unit4" :aria-current-value="selectedUnit === 'unit12' ? 'page' : null">{{ unitNavLabel('unit12', 12) }}</router-link></li>
                     <li><router-link to="/">Unit 13. </router-link></li>
                     <li><router-link to="/">Unit 14.</router-link></li>
                     <li><router-link to="/">Unit 15.</router-link></li>
@@ -65,10 +65,10 @@
         <div id="pg-content">
           <div class="open" @click="openSM">&#9776;</div>
         </div>
-        <router-link class="web-title" to="/" style="text-decoration: none; font-family: 'League Spartan', sans-serif;">ORGANIC CHEMISTRY E-TEXT</router-link>
+        <router-link class="web-title" to="/" style="text-decoration: none;">ORGANIC CHEMISTRY E-TEXTBOOK</router-link>
       </div>
-      <a href="https://www.depauw.edu/academics/chemistry-and-biochemistry/" target="_blank" style="width: 10%; margin-right: 2vw;">
-        <img src="./assets/site/depauw-logo.png" style="width: 100%; cursor: pointer;" >
+      <a class="department-link" href="https://www.depauw.edu/academics/chemistry-and-biochemistry/" target="_blank">
+        <img class="department-logo" src="./assets/site/depauw-logo-cropped.png" alt="DePauw University Chemistry and Biochemistry" >
       </a>
     </nav>
   </header>
@@ -80,21 +80,22 @@
 
 <script>
 import { RouterLink, RouterView } from 'vue-router';
+import { units } from '@/content/registry.js';
 
 export default{
   data() {
     return {
-      selectedUnit: ' ' // Initially, no unit is selected
+      selectedUnit: 'unit1',
+      units
     };
   },
 
   created() {
     const savedUnit = localStorage.getItem('selectedUnit');
-    if (savedUnit) {
-      this.selectedUnit = savedUnit; // Restore the saved unit
+    if (savedUnit && /^unit(?:[1-9]|1[0-2])$/.test(savedUnit)) {
+      this.selectedUnit = savedUnit;
     }
   },
-
 
   components:{
     RouterLink,
@@ -102,6 +103,10 @@ export default{
   },
 
   methods: {
+    unitNavLabel(unit, number) {
+      return this.units[unit]?.title || `Unit ${number}`;
+    },
+
     selectUnit(unit) {
       this.selectedUnit = unit;
       localStorage.setItem('selectedUnit', unit)
@@ -109,12 +114,14 @@ export default{
 
     ///Open + close sidemenu
     openSM(){
-      if (parseInt(document.getElementById("mySidemenu").style.width) == 450) {
+      const sideMenu = document.getElementById("mySidemenu");
+      if (parseInt(sideMenu.style.width, 10) > 0) {
         this.closeSM()
       }
       else {
-        let width = window.innerWidth <= 600 ? 350 : 450;
-        document.getElementById("mySidemenu").style.width = width + "px";
+        const maximumWidth = window.innerWidth <= 600 ? 350 : 450;
+        const width = Math.min(window.innerWidth, maximumWidth);
+        sideMenu.style.width = width + "px";
         if (window.innerWidth > 1020) {
           document.getElementById("pg-content").style.marginLeft = "450px";
         };
@@ -320,14 +327,21 @@ nav {
   justify-content: space-between;
 }
 
+.sm-wrapper a {
+  position: relative;
+}
+
 .sm-wrapper a:after{
-  z-index: -1;
+  z-index: 0;
   position: absolute;
-  left: 0%;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
   width: 0;
   height: 20px;
   background: #e85e4f;
   content: '';
+  pointer-events: none;
   transition: width 0.35s ease-in-out;
 }
  
@@ -376,5 +390,275 @@ nav {
   .section-title {
     min-width: 300px;
   }
+}
+
+/* Keep the header's vertical rhythm stable at every viewport size. */
+header,
+nav {
+  height: 64px !important;
+  min-height: 64px;
+  max-height: 64px;
+  box-sizing: border-box;
+}
+
+nav {
+  margin-left: clamp(.75rem, 3vw, 2rem) !important;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+#pg-content {
+  height: 100%;
+  padding: 0 .35rem;
+}
+
+.open {
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  line-height: 1;
+}
+
+.web-title {
+  min-width: 0 !important;
+  min-height: auto !important;
+  margin-left: clamp(.4rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 2rem) !important;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.department-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(9rem, 15vw, 10rem);
+  height: 54px;
+  padding: .25rem .4rem;
+  margin-right: 2vw;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(35, 49, 45, .22);
+  border-radius: .25rem;
+  background: #fff;
+}
+
+.department-logo {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  image-rendering: auto;
+  filter: contrast(1.12) saturate(1.02);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    margin-left: .5rem !important;
+    width: calc(100% - .5rem);
+    gap: .2rem;
+  }
+
+  .web-title {
+    margin-left: .35rem;
+    font-size: clamp(.82rem, 3.8vw, 1rem) !important;
+  }
+
+  .department-link {
+    width: 4.5rem;
+    margin-right: .5rem;
+  }
+
+
+  .open {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .web-title {
+    font-size: .76rem !important;
+  }
+
+  .department-link {
+    width: 4rem;
+  }
+}
+
+/* Use one typography system across the site and lesson headers. */
+header,
+header a,
+header .open,
+.background > .container > .title {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif !important;
+}
+
+.web-title {
+  font-weight: 750;
+  letter-spacing: -.015em;
+}
+
+.background > .container > .title {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+
+/* Only the selected textbook unit receives the navigation highlight. */
+.sidemenu a.router-link-active,
+.sidemenu a.router-link-exact-active {
+  color: #fff;
+}
+
+.sidemenu li.unit-active > a {
+  padding-left: .75rem;
+  border-left: 4px solid rgb(255, 255, 130);
+  border-radius: 0 .35rem .35rem 0;
+  background: transparent;
+  box-shadow: none;
+  color: rgb(255, 255, 130) !important;
+  font-weight: 750;
+}
+
+/* On narrow screens, wrap the brand instead of shrinking it into illegibility. */
+@media screen and (max-width: 480px) {
+  .web-title {
+    flex: 1 1 auto;
+    max-width: none;
+    white-space: normal;
+    font-size: .94rem !important;
+    line-height: 1.05;
+  }
+
+  .department-link {
+    width: 3.75rem;
+    margin-right: .4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .web-title {
+    margin-left: .2rem;
+    font-size: .82rem !important;
+  }
+
+  .department-link {
+    width: 3.25rem;
+    margin-right: .3rem;
+  }
+}
+
+/* Let complete JSON unit titles wrap inside the side taskbar. */
+.sidemenu .sm-wrapper,
+.sidemenu .sections,
+.sidemenu .dropdown,
+.sidemenu .dropdown-content {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sidemenu .dropdown-content li > a {
+  box-sizing: border-box;
+  width: calc(100% - 2.5rem);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  text-align: left;
+  text-align-last: left;
+  word-spacing: normal;
+}
+
+/* Lesson styles contain a broad `ul` rule; keep it out of the taskbar. */
+.sidemenu ul {
+  margin: 0;
+  font-size: inherit;
+  text-align: left;
+  text-align-last: left;
+  word-spacing: normal;
+}
+
+.sidemenu .section-title {
+  box-sizing: border-box;
+  width: calc(100% - 2.5rem);
+  min-width: 0;
+  text-align: center;
+}
+
+.sidemenu li.unit-active > a {
+  width: calc(100% - 2.5rem);
+}
+
+/* Keep labels at their open width while the outer panel clips closed. */
+.sidemenu .sm-wrapper {
+  width: min(450px, 100vw);
+  min-width: min(450px, 100vw);
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .sidemenu .sm-wrapper {
+    width: min(350px, 100vw);
+    min-width: min(350px, 100vw);
+  }
+}
+
+/* Retain the improved taskbar spacing with the original visual treatment. */
+.sidemenu .sm-wrapper {
+  padding: .5rem .45rem 1.25rem;
+}
+
+.sidemenu .section-title {
+  position: relative;
+  justify-content: flex-start;
+  gap: .65rem;
+  margin: .6rem 1rem .35rem;
+  padding: .7rem .85rem;
+  border: 1px solid rgba(255, 237, 147, .18);
+  border-radius: .55rem;
+  background: rgba(255, 255, 255, .055);
+  color: #ffed93;
+  font-size: 1.05rem;
+  letter-spacing: .075em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sidemenu .section-title::before {
+  width: .24rem;
+  height: 1.2rem;
+  flex: 0 0 .24rem;
+  border-radius: 999px;
+  background: #ffed93;
+  box-shadow: 0 0 .7rem rgba(255, 237, 147, .38);
+  content: "";
+}
+
+.sidemenu .dropdown-content {
+  padding: .15rem .55rem .65rem;
+}
+
+.sidemenu .dropdown-content li {
+  margin: .2rem 0;
+  list-style: none;
+}
+
+.sidemenu .dropdown-content li > a {
+  margin: 0;
+  padding: .72rem .85rem;
+}
+
+.sidemenu .dropdown-content li > a:hover,
+.sidemenu .dropdown-content li > a:focus-visible {
+  padding-left: .85rem;
 }
 </style>

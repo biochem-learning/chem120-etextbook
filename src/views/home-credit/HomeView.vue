@@ -1,4 +1,5 @@
 <style scoped src="@/views/home-credit/homeCredit.css"></style>
+<style scoped src="@/views/home-credit/homeTextbook.css"></style>
 <script src='@/views/home-credit/homeBehavior.js'></script>
 <template>
   <div id="overlay" class="overlay" @click="clickOut('overlay'); clickOut('media')"></div>
@@ -8,8 +9,8 @@
     <div id="page-wrapper">
     <!-- Banner -->
       <section id="banner">
-        <div class="inner">
-          <h2>Organic Chemistry E-Text</h2>
+        <div class="inner textbook-cover">
+          <h2>Organic Chemistry E-Textbook</h2>
           <p class="intro" id="text1" style="text-align: justify; text-align-last: center;">
             Welcome to the Chem 120 Organic Chemistry Electronic Textbook. 
             You may have encountered electronic textbooks before. 
@@ -26,9 +27,16 @@
       <section id="wrapper">
         <!-- One -->
           <section id="one" class="wrapper spotlight style1">
-            <div class="inner" id="inner2">
+            <div class="inner textbook-spread" id="inner2">
               <div class="image" id="image1">
-                <iframe scrolling="no" src="https://pubchem.ncbi.nlm.nih.gov/compound/epinephrine#section=3D-Conformer&fullscreen=true" alt="3D Model of Epinephrine"/>
+                <div class="epinephrine-model">
+                  <canvas
+                    id="epinephrine-3d-canvas"
+                    ref="epinephrineCanvas"
+                    role="img"
+                    aria-label="Interactive 3D ball-and-stick model of epinephrine"
+                  ></canvas>
+                </div>
                 <p class="main-content" id="description1" style=" text-align: justify; text-align-last: center">
                 <em>This is a 3D representation of the molecule epinephrine, also known as adrenaline.</em>
                 </p>
@@ -48,9 +56,9 @@
 
         <!-- Two -->
           <section id="two" class="wrapper alt spotlight style2">
-            <div class="inner">
+            <div class="inner textbook-spread">
               <a class="image" id="image2" style="cursor: pointer;" @click="playVideo('overlay'); playVideo('media')">
-                <img src="@/assets/site/homemodel.jpg" alt="" />
+                <img src="@/assets/site/homemodel.jpg" alt="Two-dimensional representations of the epinephrine molecule" />
                 <p class="main-content" id="description2" style=" text-align: justify; text-align-last: center;">
                   <em>These are a variety of 2D representations of the molecule epinephrine, also known as adrenaline.</em>
                 </p>
@@ -73,36 +81,15 @@
         <div class="inner">
           <h2 class="major">Get in touch</h2>
           <p>If you have any questions, please feel free to contact: </p>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="field">
-                <label for="topic">Topic</label>
-                <input type="topic" name="topic" id="topic" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-              
-            </div>
-            <ul class="actions">
-              <li><input type="submit" value="Send Message" /></li>
-            </ul>
-          </form>
-          <ul class="contact">
-            <li class="icon solid fa-home" style="display: flex !important; align-items: start !important; justify-content: flex-start !important;">
-              Julian Science and Math Center, Room 360, <br>
-              Greencastle, IN 46135  
-            </li>
-            <li class="icon solid fa-phone">(765)-719-2376</li>
-            <li class="icon solid fa-envelope"><a href="#">jhansen@depauw.edu</a></li>
-          </ul>
+          <address class="contact">
+            <span>Professor Jeffrey Hansen</span>
+            <a href="mailto:jhansen@depauw.edu">jhansen@depauw.edu</a>
+            <a href="tel:+17657192376">(765)-719-2376</a>
+            <span>Julian Science and Math Center, Room 360,<br>
+              Greencastle, IN 46135</span>
+          </address>
           <ul class="copyright">
-            <li>Copyright &copy;  2024 Dr. Jeffrey A. Hansen -  All Rights Reserved.</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>Copyright &copy;  2024 Dr. Jeffrey A. Hansen -  All Rights Reserved.</li>
           </ul>
         </div>
       </section>

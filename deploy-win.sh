@@ -1,15 +1,4 @@
-#!/usr/bin/env sh\
-
-# To deploy the website: run npm run deploy or bash deploy.sh
-set -e
-
-npm run build
-
-cd dist
-
-git init
-git add -A
-git commit -m "New Deployment"
-git push -f git@github.com:biochem-learning/chem120-etextbook.git main:gh-pages
-
-cd -
+#!/usr/bin/env sh
+set -eu
+repo_root="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+exec bash "$repo_root/scripts/deploy-pages.sh"

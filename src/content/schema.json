@@ -1,0 +1,306 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHEM 120 lesson",
+  "type": "object",
+  "required": [
+    "title",
+    "content"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "published",
+        "draft"
+      ]
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/block"
+      }
+    }
+  },
+  "definitions": {
+    "rich": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "type"
+                ],
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "span",
+                      "br"
+                    ]
+                  },
+                  "text": {
+                    "type": "string"
+                  },
+                  "format": {
+                    "enum": [
+                      "normal",
+                      "bold",
+                      "italic",
+                      "underline",
+                      "bold-italic",
+                      "code",
+                      "sub",
+                      "sup"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "text"
+            },
+            "format": {
+              "type": "string"
+            },
+            "content": {
+              "$ref": "#/definitions/rich"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "block": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "heading",
+            "text",
+            "image",
+            "video",
+            "list",
+            "bullet-list",
+            "ordered-list",
+            "unordered-list",
+            "table",
+            "textarea",
+            "podcast",
+            "iframe",
+            "3d-model",
+            "link"
+          ]
+        },
+        "content": {
+          "$ref": "#/definitions/rich"
+        },
+        "src": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "decorative": {
+          "type": "boolean"
+        },
+        "title": {
+          "type": "string"
+        },
+        "caption": {
+          "$ref": "#/definitions/rich"
+        },
+        "description": {
+          "$ref": "#/definitions/rich"
+        },
+        "transcript": {
+          "$ref": "#/definitions/rich"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 6
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "string",
+              "pattern": "^(0(\\.\\d+)?|1(\\.0+)?)$"
+            }
+          ]
+        },
+        "border": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "enum": [
+                "true",
+                "false"
+              ]
+            }
+          ]
+        },
+        "head": {
+          "type": "array"
+        },
+        "rows": {
+          "type": "array"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "image"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "src"
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "alt"
+                ]
+              },
+              {
+                "properties": {
+                  "decorative": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "decorative"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "video",
+                  "iframe",
+                  "3d-model",
+                  "link"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "src"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "text",
+                  "heading",
+                  "list",
+                  "bullet-list",
+                  "ordered-list",
+                  "unordered-list"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "content"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "heading"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "content": {
+                "$ref": "#/definitions/rich"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "table"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "rows"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "list",
+                  "bullet-list",
+                  "ordered-list",
+                  "unordered-list"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "content": {
+                "type": "array",
+                "items": {
+                  "": "#/definitions/rich"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
