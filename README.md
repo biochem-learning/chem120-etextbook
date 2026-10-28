@@ -29,3 +29,7 @@ npm run build
 ## Updating content
 
 See [UPDATE_GUIDE.md](UPDATE_GUIDE.md) for the content workflow, JSON DSL schema, media paths, validation, and publishing steps.
+
+## Acknoledgement
+
+This project uses [ChemDoodle Web Components](https://web.chemdoodle.com/) by iChemLabs, licensed under GPLv3.
