@@ -10,7 +10,7 @@ An web-based organic chemistry textbook for DePauw University's CHEM 120 course.
 
 ## Motivation
 
-Organic chemistry is a very visual subject. After all, organic compounds, which are the focus of our study this semester, are three dimensional objects. Understanding their composition, their properties, and their chemistry will require us to understand their 3D shapes. However, we often need to represent organic compounds on 2D surfaces - a piece of paper, a computer screen, or a whiteboard. One of our challenges will be to learn how to represent these molecules in 2D while having a 3D understanding of them. This e-textbook attempts to bridge the gap between 2D pictures and 3D understanding.
+Organic chemistry is a very visual subject, as organic compounds, which are the focus of CHEM120, are three-dimensional objects. Understanding their composition, their properties, and their chemistry will require the students to understand their 3D shapes. However, we often need to represent organic compounds on 2D surfaces - a piece of paper, a computer screen, or a whiteboard. One of the biggest challenges the students encounter throughout this process will be to learn how to represent these molecules in 2D while having a 3D understanding of them. This e-textbook is our attempt to bridge this gap between 2D pictures and 3D understanding.
 
 ## Setup
 
