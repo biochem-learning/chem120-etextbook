@@ -368,7 +368,6 @@
             const img = document.createElement("img");
             img.src = b.src;
             img.alt = b.decorative ? "" : (b.alt || "");
-            // Keep the legacy broken-image appearance while retaining the accessible name.
             img.style.color = "transparent";
             styleMediaEl(img, b);
             makeImageZoomable(img, b);
@@ -412,7 +411,6 @@
             },
 
             "bullet-list": (b) => {
-            // Keep v1's historical numbered rendering for visual compatibility.
             const ol = document.createElement("ol");
             (b.content || []).forEach(item => {
                 const li = document.createElement("li");
@@ -522,7 +520,6 @@
             const row = document.createElement("div");
             row.className = "podcast";
 
-            // The embedded player already includes its own artwork.
             if (b.image?.src && !b.link) {
                 const img = document.createElement("img");
                 img.src = b.image.src;
@@ -559,6 +556,14 @@
             },
 
             iframe: (b) => {
+            const container = document.createElement("div");
+            container.className = "iframe-embed";
+
+            if (b.fullPage) {
+                container.classList.add("iframe-embed--full-page");
+                container.dataset.fullPage = "true";
+            }
+
             const iframe = document.createElement("iframe");
             let src = b.src || "";
             if (src && !src.startsWith("http")) src = "https://" + src;
@@ -568,12 +573,27 @@
             if (b.width !== undefined) iframe.style.width = `${Number(b.width) * 100}%`;
             else iframe.style.width = "100%";
 
-            iframe.style.height = "400px";
+            iframe.style.height = b.fullPage ? "100%" : "400px";
             iframe.style.border = "none";
             iframe.style.display = "block";
             iframe.style.margin = "0 auto";
             iframe.setAttribute("loading", "lazy");
-            return iframe;
+
+            if (b.openInNewTab) {
+                const toolbar = document.createElement("div");
+                toolbar.className = "iframe-embed__toolbar";
+                const link = document.createElement("a");
+                link.className = "iframe-embed__open-link";
+                link.href = src;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = b.openLabel || `Open ${iframe.title} in a new tab`;
+                toolbar.appendChild(link);
+                container.appendChild(toolbar);
+            }
+
+            container.appendChild(iframe);
+            return container;
             },
 
             "3d-model": (b) => {
@@ -664,14 +684,19 @@
 
         let pageEl = pageDiv;
 
-        // Render blocks. Caption markers let pagination keep related content together.
         const blocks = Array.isArray(unit.content) ? unit.content : [];
         const plainText = content => Array.isArray(content)
             ? content.map(run => run?.text ?? run?.content ?? "").join("")
             : String(content ?? "");
 
-        blocks.forEach(block => {
+        blocks.forEach((block, index) => {
             const blockElement = renderBlock(block);
+            const fullPage = blockElement.dataset?.fullPage === "true";
+
+            if (fullPage && pageEl.childNodes.length) {
+                pageEl = this.createNewPage(pageEl);
+            }
+
             if (blockElement.dataset && block?.type === "text") {
                 const label = plainText(block.content).trim();
                 if (/^(Figure|Video)\s+\d+\s*[.:]/i.test(label)) {
@@ -683,6 +708,11 @@
             }
 
             pageEl.appendChild(blockElement);
+
+            if (fullPage) {
+                if (index < blocks.length - 1) pageEl = this.createNewPage(pageEl);
+                return;
+            }
 
             if (this.isOverflow(pageEl)) {
                 const moveGroup = this.paginationMoveGroup(pageEl, blockElement);
@@ -802,7 +832,6 @@
                 return element.scrollHeight - element.clientHeight > 1;
             },
 
-            // Rebuild page boundaries after fonts and media finish laying out.
             paginationMoveGroup(page, block) {
                 const group = [block];
                 const previous = block.previousElementSibling;
@@ -837,7 +866,20 @@
 
                 let currentPage = addPage();
                 blocks.forEach(block => {
+                    if (!currentPage) currentPage = addPage();
+                    const fullPage = block.dataset?.fullPage === "true";
+
+                    if (fullPage && currentPage.childNodes.length) {
+                        currentPage = addPage();
+                    }
+
                     currentPage.appendChild(block);
+
+                    if (fullPage) {
+                        currentPage = null;
+                        return;
+                    }
+
                     if (this.isOverflow(currentPage)) {
                         const moveGroup = this.paginationMoveGroup(currentPage, block);
                         if (currentPage.childNodes.length > moveGroup.length) {

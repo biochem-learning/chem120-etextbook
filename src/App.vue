@@ -392,7 +392,6 @@ nav {
   }
 }
 
-/* Keep the header's vertical rhythm stable at every viewport size. */
 header,
 nav {
   height: 64px !important;
@@ -495,7 +494,6 @@ nav > div {
   }
 }
 
-/* Use one typography system across the site and lesson headers. */
 header,
 header a,
 header .open,
@@ -514,7 +512,6 @@ header .open,
   letter-spacing: -.01em;
 }
 
-/* Only the selected textbook unit receives the navigation highlight. */
 .sidemenu a.router-link-active,
 .sidemenu a.router-link-exact-active {
   color: #fff;
@@ -530,7 +527,6 @@ header .open,
   font-weight: 750;
 }
 
-/* On narrow screens, wrap the brand instead of shrinking it into illegibility. */
 @media screen and (max-width: 480px) {
   .web-title {
     flex: 1 1 auto;
@@ -558,7 +554,6 @@ header .open,
   }
 }
 
-/* Let complete JSON unit titles wrap inside the side taskbar. */
 .sidemenu .sm-wrapper,
 .sidemenu .sections,
 .sidemenu .dropdown,
@@ -578,7 +573,6 @@ header .open,
   word-spacing: normal;
 }
 
-/* Lesson styles contain a broad `ul` rule; keep it out of the taskbar. */
 .sidemenu ul {
   margin: 0;
   font-size: inherit;
@@ -598,7 +592,6 @@ header .open,
   width: calc(100% - 2.5rem);
 }
 
-/* Keep labels at their open width while the outer panel clips closed. */
 .sidemenu .sm-wrapper {
   width: min(450px, 100vw);
   min-width: min(450px, 100vw);
@@ -612,7 +605,6 @@ header .open,
   }
 }
 
-/* Retain the improved taskbar spacing with the original visual treatment. */
 .sidemenu .sm-wrapper {
   padding: .5rem .45rem 1.25rem;
 }

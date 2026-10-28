@@ -1,4 +1,3 @@
-// Unit JSON files are discovered at build time. Existing v1 consumers use the keyed `units` object.
 const context = require.context('../../public/content', true, /\/unit\d+\.json$/);
 const documents = new Map();
 

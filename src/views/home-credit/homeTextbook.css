@@ -1,5 +1,3 @@
-/* Home-only visual layer. The shared taskbar and credit page keep their legacy styles. */
-
 .body {
   --depauw-gold: #f2c75c;
   --depauw-black: #111c24;
@@ -24,7 +22,6 @@
   animation: none;
 }
 
-/* A restrained textbook-cover treatment over the original molecular background. */
 #banner {
   box-sizing: border-box;
   min-height: 28rem;
@@ -86,7 +83,6 @@
   text-transform: none;
 }
 
-/* The two original lessons read as facing pages instead of promotional cards. */
 #wrapper {
   box-sizing: border-box;
   width: min(76rem, calc(100% - 3rem));
@@ -247,7 +243,6 @@
   align-items: flex-start;
 }
 
-/* The footer remains functionally identical, but shares the textbook palette. */
 #footer {
   background: rgba(17, 28, 36, 0.94);
   border-top: 1px solid rgba(242, 199, 92, 0.45);
@@ -402,7 +397,6 @@
     animation: none;
   }
 }
-/* Consistent textbook typography with the introduction on the original background. */
 .body {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -507,7 +501,6 @@
   }
 }
 
-/* Compact contact footer: contact details only, without the removed form. */
 #footer .inner {
   text-align: left;
   padding: 2.5rem 0 1.5rem;

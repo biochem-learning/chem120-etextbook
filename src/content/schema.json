@@ -154,6 +154,15 @@
             }
           ]
         },
+        "fullPage": {
+          "type": "boolean"
+        },
+        "openInNewTab": {
+          "type": "boolean"
+        },
+        "openLabel": {
+          "type": "string"
+        },
         "border": {
           "anyOf": [
             {

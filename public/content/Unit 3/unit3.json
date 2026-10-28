@@ -347,7 +347,11 @@
         {
             "type": "iframe",
             "src": "https://jefhans4.github.io/IsomerGame/",
-            "width": 1
+            "title": "Isomer Game",
+            "width": 1,
+            "fullPage": true,
+            "openInNewTab": true,
+            "openLabel": "Open Isomer Game in a new tab"
         }
     ]
 }
